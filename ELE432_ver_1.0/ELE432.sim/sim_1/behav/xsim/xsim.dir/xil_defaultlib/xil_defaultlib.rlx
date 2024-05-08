@@ -1,0 +1,13 @@
+0.7
+2020.2
+Oct 13 2023
+20:47:58
+C:/Users/ethem/ELE432/ELE432.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
+C:/Users/ethem/ELE432/ELE432.srcs/sim_1/new/ELE_432_Top_Module_tb.v,1715182021,verilog,,,,ELE_432_Top_Module_tb,,,,,,,,
+C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/Divided_Clock.v,1713780758,verilog,,C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/ELE_432_Top_Module.v,,Divided_Clock,,,,,,,,
+C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/ELE_432_Top_Module.v,1715187927,verilog,,C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/FFT_Module.v,,ELE_432_Top_Module,,,,,,,,
+C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/FFT_Module.v,1715185080,verilog,,C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/VGA_Controller.v,,FFT_Module,,,,,,,,
+C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/VGA_Controller.v,1715181679,verilog,,C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/horizantal_counter.v,,VGA_Controller,,,,,,,,
+C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/horizantal_counter.v,1713781691,verilog,,C:/Users/ethem/ELE432/ELE432.srcs/sources_1/new/twiddle.v,,horizantal_counter,,,,,,,,
+C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/vertical_counter.v,1713781694,verilog,,C:/Users/ethem/ELE432/ELE432.srcs/sim_1/new/ELE_432_Top_Module_tb.v,,vertical_counter,,,,,,,,
+C:/Users/ethem/ELE432/ELE432.srcs/sources_1/new/twiddle.v,1715179174,verilog,,C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/vertical_counter.v,,Twiddle,,,,,,,,

@@ -1,0 +1,351 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Wed May  8 21:03:22 2024
+| Host         : DESKTOP-T0BPI3M running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file ELE_432_Top_Module_control_sets_placed.rpt
+| Design       : ELE_432_Top_Module
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   273 |
+|    Minimum number of control sets                        |   273 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    40 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   273 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     3 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     4 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |   262 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               9 |            6 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              15 |           11 |
+| Yes          | No                    | No                     |           11801 |         9703 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             351 |          231 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+-------------------------------+-------------------------------------+------------------+----------------+--------------+
+|  Clock Signal  |         Enable Signal         |           Set/Reset Signal          | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+-------------------------------+-------------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG |                               |                                     |                1 |              2 |         2.00 |
+|  slow_clk_BUFG | FFT/add_to[6]_i_1_n_0         | rst_IBUF                            |                3 |              4 |         1.33 |
+|  slow_clk_BUFG | VGA/Red[3]_i_2_n_0            | VGA/horizantal/font_counter_reg_rep |                1 |              4 |         4.00 |
+|  slow_clk_BUFG |                               | rst_IBUF                            |                5 |              5 |         1.00 |
+|  slow_clk_BUFG |                               |                                     |                5 |              7 |         1.40 |
+|  slow_clk_BUFG | FFT/counter1[7]_i_1_n_0       | rst_IBUF                            |                5 |              8 |         1.60 |
+|  slow_clk_BUFG | FFT/counter[7]_i_1_n_0        | rst_IBUF                            |                6 |              8 |         1.33 |
+|  slow_clk_BUFG | FFT/offset[7]_i_1_n_0         | rst_IBUF                            |                5 |              8 |         1.60 |
+|  slow_clk_BUFG | VGA/vertical/valid_reg_0      | VGA/vertical/valid_reg              |                1 |              8 |         8.00 |
+|  slow_clk_BUFG |                               | VGA/horizantal/h_counter[9]_i_1_n_0 |                6 |             10 |         1.67 |
+|  slow_clk_BUFG | FFT/adr4[7]_i_1_n_0           |                                     |                3 |             11 |         3.67 |
+|  slow_clk_BUFG | FFT/Imag_reg[106][15]_i_1_n_0 |                                     |               30 |             32 |         1.07 |
+|  slow_clk_BUFG | FFT/Imag_reg[107][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[108][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[109][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[10][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[110][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[111][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[112][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[113][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[114][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[115][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[116][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[117][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[118][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[119][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[11][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[120][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[121][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[122][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[123][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[124][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[125][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[126][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[127][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[128][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[129][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[12][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[130][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[131][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[132][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[133][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[134][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[135][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[136][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[158][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[137][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[138][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[139][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[13][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[140][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[141][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[142][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[143][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[144][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[145][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[146][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[147][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[148][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[149][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[14][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[150][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[151][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[152][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[153][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[154][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[155][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[156][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[157][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[179][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[159][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[15][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[160][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[161][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[162][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[163][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[164][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[165][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[166][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[167][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[168][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[169][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[16][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[170][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[171][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[172][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[173][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[174][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[175][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[176][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[177][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[178][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[17][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[180][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[181][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[182][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[183][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[184][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[185][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[186][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[187][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[188][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[189][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[18][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[190][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[191][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[192][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[193][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[194][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[195][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[196][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[197][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[198][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[199][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[19][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[1][15]_i_1_n_0   |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[221][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[200][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[201][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[202][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[203][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[204][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[205][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[206][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[207][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[208][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[209][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[20][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[210][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[211][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[212][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[213][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[214][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[215][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[216][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[217][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[218][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[219][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[21][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[220][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[33][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[243][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[244][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[245][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[246][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[247][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[248][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[249][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[24][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[250][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[251][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[252][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[253][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[254][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[255][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[25][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[26][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[27][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[28][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[29][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[2][15]_i_1_n_0   |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[30][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[31][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[32][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[34][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[35][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[36][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[37][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[38][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[39][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[3][15]_i_1_n_0   |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[40][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[41][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[42][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[43][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[44][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[45][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[46][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[47][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[48][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[49][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[4][15]_i_1_n_0   |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[50][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[51][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[52][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[53][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[54][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[55][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[56][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[57][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[58][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[59][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[5][15]_i_1_n_0   |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[60][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[61][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[62][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[63][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[64][15]_i_1_n_0  |                                     |               31 |             32 |         1.03 |
+|  slow_clk_BUFG | FFT/Imag_reg[65][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[66][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[67][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[68][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[69][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[6][15]_i_1_n_0   |                                     |               31 |             32 |         1.03 |
+|  slow_clk_BUFG | FFT/Imag_reg[70][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[71][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[72][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[73][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[74][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[75][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[76][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[77][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[78][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[79][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[7][15]_i_1_n_0   |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[80][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[81][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[82][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[83][15]_i_1_n_0  |                                     |               31 |             32 |         1.03 |
+|  slow_clk_BUFG | FFT/Imag_reg[84][15]_i_1_n_0  |                                     |               31 |             32 |         1.03 |
+|  slow_clk_BUFG | FFT/Imag_reg[85][15]_i_1_n_0  |                                     |               31 |             32 |         1.03 |
+|  slow_clk_BUFG | FFT/Imag_reg[86][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[87][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[88][15]_i_1_n_0  |                                     |               31 |             32 |         1.03 |
+|  slow_clk_BUFG | FFT/Imag_reg[89][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[8][15]_i_1_n_0   |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[90][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[91][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[92][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[93][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[94][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[96][15]_i_1_n_0  |                                     |               30 |             32 |         1.07 |
+|  slow_clk_BUFG | FFT/Imag_reg[95][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[97][15]_i_1_n_0  |                                     |               31 |             32 |         1.03 |
+|  slow_clk_BUFG | FFT/Imag_reg[98][15]_i_1_n_0  |                                     |               31 |             32 |         1.03 |
+|  slow_clk_BUFG | FFT/Imag_reg[99][15]_i_1_n_0  |                                     |               30 |             32 |         1.07 |
+|  slow_clk_BUFG | FFT/Imag_reg[9][15]_i_1_n_0   |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[222][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[223][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[224][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[225][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[226][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[227][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[228][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[229][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[22][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[230][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[231][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[232][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[233][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[234][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[235][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[236][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[237][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[238][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[239][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[23][15]_i_1_n_0  |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[240][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[241][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[242][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[0][15]_i_1_n_0   |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | FFT/Imag_reg[100][15]_i_1_n_0 |                                     |               31 |             32 |         1.03 |
+|  slow_clk_BUFG | FFT/Imag_reg[101][15]_i_1_n_0 |                                     |               29 |             32 |         1.10 |
+|  slow_clk_BUFG | FFT/Imag_reg[102][15]_i_1_n_0 |                                     |               31 |             32 |         1.03 |
+|  slow_clk_BUFG | FFT/index0_reg[7]_i_1_n_0     | rst_IBUF                            |               14 |             32 |         2.29 |
+|  slow_clk_BUFG | FFT/Imag_reg[103][15]_i_1_n_0 |                                     |               30 |             32 |         1.07 |
+|  slow_clk_BUFG | VGA/horizantal/E[0]           | rst_IBUF                            |               13 |             32 |         2.46 |
+|  slow_clk_BUFG | FFT/Imag_reg[104][15]_i_1_n_0 |                                     |               30 |             32 |         1.07 |
+|  slow_clk_BUFG | FFT/Imag_reg[105][15]_i_1_n_0 |                                     |               32 |             32 |         1.00 |
+|  slow_clk_BUFG | VGA/horizantal/enable_V_top   | VGA/vertical/v_counter[9]_i_1_n_0   |               33 |             84 |         2.55 |
+|  slow_clk_BUFG | FFT/start_struct              | rst_IBUF                            |              150 |            163 |         1.09 |
+|  slow_clk_BUFG | VGA/bar_0_real_reg            |                                     |              591 |           1792 |         3.03 |
+|  slow_clk_BUFG | FFT/bar_0[6]_i_1_n_0          |                                     |              940 |           1806 |         1.92 |
++----------------+-------------------------------+-------------------------------------+------------------+----------------+--------------+
+
+

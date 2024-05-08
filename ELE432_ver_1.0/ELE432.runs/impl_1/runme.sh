@@ -43,6 +43,6 @@ EAStep()
 
 # pre-commands:
 /bin/touch .init_design.begin.rst
-EAStep vivado -log VGA_Controller_test.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source VGA_Controller_test.tcl -notrace
+EAStep vivado -log ELE_432_Top_Module.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source ELE_432_Top_Module.tcl -notrace
 
 

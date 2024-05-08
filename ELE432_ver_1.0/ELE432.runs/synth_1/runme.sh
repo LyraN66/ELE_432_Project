@@ -41,4 +41,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log VGA_Controller_test.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source VGA_Controller_test.tcl
+EAStep vivado -log ELE_432_Top_Module.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ELE_432_Top_Module.tcl

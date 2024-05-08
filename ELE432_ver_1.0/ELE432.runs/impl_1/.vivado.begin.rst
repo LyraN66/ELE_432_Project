@@ -1,35 +1,15 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ethem" Host="DESKTOP-T0BPI3M" Pid="1264" HostCore="8" HostMemory="034222997504">
+    <Process Command="vivado.bat" Owner="ethem" Host="DESKTOP-T0BPI3M" Pid="13968" HostCore="8" HostMemory="034222997504">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ethem" Host="DESKTOP-T0BPI3M" Pid="7132" HostCore="8" HostMemory="034222997504">
+    <Process Command="vivado.bat" Owner="ethem" Host="DESKTOP-T0BPI3M" Pid="9000" HostCore="8" HostMemory="034222997504">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ethem" Host="DESKTOP-T0BPI3M" Pid="12996" HostCore="8" HostMemory="034222997504">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ethem" Host="DESKTOP-T0BPI3M" Pid="11044" HostCore="8" HostMemory="034222997504">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ethem" Host="DESKTOP-T0BPI3M" Pid="7856" HostCore="8" HostMemory="034222997504">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ethem" Host="DESKTOP-T0BPI3M" Pid="10056" HostCore="8" HostMemory="034222997504">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ethem" Host="DESKTOP-T0BPI3M" Pid="10764" HostCore="8" HostMemory="034222997504">
+    <Process Command="vivado.bat" Owner="ethem" Host="DESKTOP-T0BPI3M" Pid="2972" HostCore="8" HostMemory="034222997504">
     </Process>
 </ProcessHandle>
