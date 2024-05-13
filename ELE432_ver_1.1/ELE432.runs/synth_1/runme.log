@@ -1,0 +1,738 @@
+
+*** Running vivado
+    with args -log ELE_432_Top_Module.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ELE_432_Top_Module.tcl
+
+
+ECHO is off.
+ECHO is off.
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source ELE_432_Top_Module.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 512.359 ; gain = 216.598
+Command: read_checkpoint -auto_incremental -incremental C:/Users/ethem/ELE432/ELE432.srcs/utils_1/imports/synth_1/VGA_Controller_test.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/ethem/ELE432/ELE432.srcs/utils_1/imports/synth_1/VGA_Controller_test.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top ELE_432_Top_Module -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 10844
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1359.445 ; gain = 438.711
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ELE_432_Top_Module' [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/ELE_432_Top_Module.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Divided_Clock' [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/Divided_Clock.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Divided_Clock' (0#1) [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/Divided_Clock.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Microphone' [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/new/Microphone.v:1]
+INFO: [Synth 8-6157] synthesizing module 'pdm_clk_gen' [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/new/pdm_clk_gen.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'pdm_clk_gen' (0#1) [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/new/pdm_clk_gen.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Microphone' (0#1) [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/new/Microphone.v:1]
+INFO: [Synth 8-6157] synthesizing module 'VGA_Controller' [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/VGA_Controller.v:1]
+INFO: [Synth 8-3876] $readmem data file 'font_1.mem' is read successfully [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/VGA_Controller.v:120]
+INFO: [Synth 8-6157] synthesizing module 'horizantal_counter' [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/horizantal_counter.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'horizantal_counter' (0#1) [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/horizantal_counter.v:1]
+INFO: [Synth 8-6157] synthesizing module 'vertical_counter' [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/vertical_counter.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'vertical_counter' (0#1) [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/vertical_counter.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/VGA_Controller.v:223]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/VGA_Controller.v:267]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_Controller' (0#1) [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/VGA_Controller.v:1]
+INFO: [Synth 8-6157] synthesizing module 'FFT_Module' [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/FFT_Module.v:1]
+INFO: [Synth 8-3876] $readmem data file 'real1.mem' is read successfully [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/FFT_Module.v:171]
+INFO: [Synth 8-3876] $readmem data file 'real2.mem' is read successfully [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/FFT_Module.v:172]
+INFO: [Synth 8-6157] synthesizing module 'Twiddle' [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/new/twiddle.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Twiddle' (0#1) [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/new/twiddle.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/FFT_Module.v:242]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_Module' (0#1) [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/FFT_Module.v:1]
+WARNING: [Synth 8-689] width (16) of port connection 'realpart' does not match port width (10) of module 'FFT_Module' [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/ELE_432_Top_Module.v:134]
+WARNING: [Synth 8-689] width (16) of port connection 'imagpart' does not match port width (10) of module 'FFT_Module' [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/ELE_432_Top_Module.v:135]
+INFO: [Synth 8-6155] done synthesizing module 'ELE_432_Top_Module' (0#1) [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/ELE_432_Top_Module.v:1]
+WARNING: [Synth 8-6014] Unused sequential element index0_MultiplyReg_reg was removed.  [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/FFT_Module.v:184]
+WARNING: [Synth 8-6014] Unused sequential element index0_regN_reg was removed.  [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/FFT_Module.v:185]
+WARNING: [Synth 8-6014] Unused sequential element first_ok_reg was removed.  [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/FFT_Module.v:186]
+WARNING: [Synth 8-6014] Unused sequential element second_first_reg was removed.  [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/FFT_Module.v:186]
+WARNING: [Synth 8-6014] Unused sequential element ready_reg was removed.  [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/FFT_Module.v:188]
+WARNING: [Synth 8-3848] Net real_part_fft in module/entity ELE_432_Top_Module does not have driver. [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/ELE_432_Top_Module.v:128]
+WARNING: [Synth 8-3848] Net imag_part_fft in module/entity ELE_432_Top_Module does not have driver. [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/ELE_432_Top_Module.v:129]
+WARNING: [Synth 8-7129] Port rst in module Divided_Clock is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1838.195 ; gain = 917.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1838.195 ; gain = 917.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1838.195 ; gain = 917.461
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.609 . Memory (MB): peak = 1838.195 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc]
+WARNING: [Vivado 12-584] No ports matched 'one[6]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'one[5]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'one[4]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'one[3]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'one[2]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'one[1]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'one[0]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'one[6]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'one[5]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'one[4]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'one[3]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'one[2]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'one[1]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'one[0]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'second[6]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'second[5]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'second[4]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'second[3]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'second[2]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'second[1]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'second[0]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'second[6]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'second[5]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'second[4]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'second[3]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'second[2]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'second[1]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'second[0]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ELE_432_Top_Module_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ELE_432_Top_Module_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1969.836 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+The system cannot find the path specified.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.149 . Memory (MB): peak = 1969.836 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1969.836 ; gain = 1049.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1969.836 ; gain = 1049.102
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6702] IncrSynth : Design change found in an area of the design that prevents previous synthesis information being used, Reverting to default synthesis
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 1969.836 ; gain = 1049.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 1969.836 ; gain = 1049.102
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'FFT_Module'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                             0000
+            first_dragon |                              001 |                             0010
+           second_dragon |                              010 |                             0100
+            third_dragon |                              011 |                             0110
+                  fourth |                              100 |                             1000
+                  finish |                              101 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'FFT_Module'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:19 ; elapsed = 00:01:23 . Memory (MB): peak = 2654.359 ; gain = 1733.625
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: no
+
+   Reason for not running incremental synthesis : Design change found in an area of the design that prevents previous synthesis information being used
+
+
+INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 2     
+	   4 Input   16 Bit       Adders := 2     
+	   5 Input   16 Bit       Adders := 6     
+	   2 Input   10 Bit       Adders := 3     
+	   2 Input    8 Bit       Adders := 10    
+	   3 Input    8 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 1044  
+	               10 Bit    Registers := 4     
+	                8 Bit    Registers := 18    
+	                7 Bit    Registers := 512   
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 4     
+	                1 Bit    Registers := 11    
++---ROMs : 
+	                    ROMs := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 1     
+	   6 Input   16 Bit        Muxes := 512   
+	   2 Input   16 Bit        Muxes := 1024  
+	 129 Input    8 Bit        Muxes := 2     
+	   6 Input    8 Bit        Muxes := 3     
+	   2 Input    8 Bit        Muxes := 23    
+	   2 Input    4 Bit        Muxes := 7     
+	 129 Input    4 Bit        Muxes := 5     
+	   4 Input    4 Bit        Muxes := 1     
+	   6 Input    4 Bit        Muxes := 2     
+	   6 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 794   
+	 129 Input    1 Bit        Muxes := 1     
+	   6 Input    1 Bit        Muxes := 270   
+	   4 Input    1 Bit        Muxes := 256   
+	   8 Input    1 Bit        Muxes := 2     
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "Green" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Green" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'Temp_Real4_reg[15:0]' into 'Temp_Real4_reg[15:0]' [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/FFT_Module.v:104]
+INFO: [Synth 8-4471] merging register 'Temp_Imag4_reg[15:0]' into 'Temp_Imag4_reg[15:0]' [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/FFT_Module.v:104]
+INFO: [Synth 8-4471] merging register 'Temp_Real3_reg[15:0]' into 'Temp_Real3_reg[15:0]' [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/FFT_Module.v:101]
+INFO: [Synth 8-4471] merging register 'Temp_Imag3_reg[15:0]' into 'Temp_Imag3_reg[15:0]' [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/FFT_Module.v:101]
+INFO: [Synth 8-4471] merging register 'Temp_Real2_reg[15:0]' into 'Temp_Real2_reg[15:0]' [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/FFT_Module.v:98]
+INFO: [Synth 8-4471] merging register 'Temp_Imag2_reg[15:0]' into 'Temp_Imag2_reg[15:0]' [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/FFT_Module.v:98]
+DSP Report: Generating DSP p_0_out, operation Mode is: A2*B.
+DSP Report: register Temp_Real4_reg is absorbed into DSP p_0_out.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_1_out, operation Mode is: C+A2*B.
+DSP Report: register Temp_Imag4_reg is absorbed into DSP p_1_out.
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A2*B.
+DSP Report: register Temp_Real3_reg is absorbed into DSP p_0_out.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_1_out, operation Mode is: C+A2*B.
+DSP Report: register Temp_Imag3_reg is absorbed into DSP p_1_out.
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A2*B.
+DSP Report: register Temp_Real2_reg is absorbed into DSP p_0_out.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_1_out, operation Mode is: C+A2*B.
+DSP Report: register Temp_Imag2_reg is absorbed into DSP p_1_out.
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A2*B.
+DSP Report: register Temp_Real2_reg is absorbed into DSP p_0_out.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_1_out, operation Mode is: C-A2*B.
+DSP Report: register Temp_Imag2_reg is absorbed into DSP p_1_out.
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A2*B.
+DSP Report: register Temp_Real3_reg is absorbed into DSP p_0_out.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_1_out, operation Mode is: C-A2*B.
+DSP Report: register Temp_Imag3_reg is absorbed into DSP p_1_out.
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A2*B.
+DSP Report: register Temp_Real4_reg is absorbed into DSP p_0_out.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_1_out, operation Mode is: C-A2*B.
+DSP Report: register Temp_Imag4_reg is absorbed into DSP p_1_out.
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+INFO: [Synth 8-3886] merging instance 'stage_reg[3]' (FDRE) to 'stage_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\stage_reg[0] )
+INFO: [Synth 8-3886] merging instance 'index1_MultiplyReg_reg[1]' (FDRE) to 'index2_MultiplyReg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'index1_MultiplyReg_reg[3]' (FDRE) to 'index2_MultiplyReg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'index1_MultiplyReg_reg[0]' (FDRE) to 'index2_MultiplyReg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'index1_MultiplyReg_reg[2]' (FDRE) to 'index2_MultiplyReg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'index1_MultiplyReg_reg[4]' (FDRE) to 'index2_MultiplyReg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'index1_MultiplyReg_reg[5]' (FDRE) to 'index2_MultiplyReg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'index1_MultiplyReg_reg[6]' (FDRE) to 'index3_MultiplyReg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'index2_MultiplyReg_reg[1]' (FDRE) to 'index3_MultiplyReg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'index2_MultiplyReg_reg[3]' (FDRE) to 'index3_MultiplyReg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'index2_MultiplyReg_reg[0]' (FDRE) to 'index3_MultiplyReg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'index2_MultiplyReg_reg[2]' (FDRE) to 'index3_MultiplyReg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'index2_MultiplyReg_reg[4]' (FDRE) to 'index3_MultiplyReg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'index2_MultiplyReg_reg[5]' (FDRE) to 'index3_MultiplyReg_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[54][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[54][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[54][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[54][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[54][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[54][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[54][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[54][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[54][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[54][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[54][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[54][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[54][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[54][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[54][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[54][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputReal_Shift_reg[235][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputReal_Shift_reg[235][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputReal_Shift_reg[235][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputReal_Shift_reg[235][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputReal_Shift_reg[235][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputReal_Shift_reg[235][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputReal_Shift_reg[235][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputReal_Shift_reg[235][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputReal_Shift_reg[235][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputReal_Shift_reg[235][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputReal_Shift_reg[235][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputReal_Shift_reg[235][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputReal_Shift_reg[235][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputReal_Shift_reg[235][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputReal_Shift_reg[235][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputReal_Shift_reg[235][15] )
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[234][0]' (FDE) to 'InputImag_Shift_reg[53][0]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[234][1]' (FDE) to 'InputImag_Shift_reg[53][0]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[234][2]' (FDE) to 'InputImag_Shift_reg[53][0]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[234][3]' (FDE) to 'InputImag_Shift_reg[53][0]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[234][4]' (FDE) to 'InputImag_Shift_reg[53][0]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[234][5]' (FDE) to 'InputImag_Shift_reg[53][0]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[234][6]' (FDE) to 'InputImag_Shift_reg[53][0]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[234][7]' (FDE) to 'InputImag_Shift_reg[53][0]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[234][8]' (FDE) to 'InputImag_Shift_reg[53][0]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[234][9]' (FDE) to 'InputImag_Shift_reg[53][0]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[234][10]' (FDE) to 'InputImag_Shift_reg[53][0]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[234][11]' (FDE) to 'InputImag_Shift_reg[53][0]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[234][12]' (FDE) to 'InputImag_Shift_reg[53][0]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[234][13]' (FDE) to 'InputImag_Shift_reg[53][0]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[234][14]' (FDE) to 'InputImag_Shift_reg[53][0]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[234][15]' (FDE) to 'InputImag_Shift_reg[53][0]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[233][0]' (FDE) to 'InputReal_Shift_reg[233][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[233][1]' (FDE) to 'InputReal_Shift_reg[233][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[233][2]' (FDE) to 'InputReal_Shift_reg[233][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[233][3]' (FDE) to 'InputReal_Shift_reg[233][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[233][4]' (FDE) to 'InputReal_Shift_reg[233][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[233][5]' (FDE) to 'InputReal_Shift_reg[233][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[233][6]' (FDE) to 'InputReal_Shift_reg[233][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[233][7]' (FDE) to 'InputReal_Shift_reg[233][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[233][8]' (FDE) to 'InputReal_Shift_reg[233][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[233][9]' (FDE) to 'InputReal_Shift_reg[233][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[233][10]' (FDE) to 'InputReal_Shift_reg[233][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[233][11]' (FDE) to 'InputReal_Shift_reg[233][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[233][12]' (FDE) to 'InputReal_Shift_reg[233][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[233][13]' (FDE) to 'InputReal_Shift_reg[233][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[233][14]' (FDE) to 'InputReal_Shift_reg[233][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[233][15]' (FDE) to 'InputImag_Shift_reg[52][0]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[232][0]' (FDE) to 'InputReal_Shift_reg[232][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[232][1]' (FDE) to 'InputReal_Shift_reg[232][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[232][2]' (FDE) to 'InputReal_Shift_reg[232][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[232][3]' (FDE) to 'InputReal_Shift_reg[232][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[232][4]' (FDE) to 'InputReal_Shift_reg[232][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[232][5]' (FDE) to 'InputReal_Shift_reg[232][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[232][6]' (FDE) to 'InputReal_Shift_reg[232][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[232][7]' (FDE) to 'InputReal_Shift_reg[232][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[232][8]' (FDE) to 'InputReal_Shift_reg[232][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[232][9]' (FDE) to 'InputReal_Shift_reg[232][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[232][10]' (FDE) to 'InputReal_Shift_reg[232][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[232][11]' (FDE) to 'InputReal_Shift_reg[232][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[232][12]' (FDE) to 'InputReal_Shift_reg[232][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[232][13]' (FDE) to 'InputReal_Shift_reg[232][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[232][14]' (FDE) to 'InputReal_Shift_reg[232][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[232][15]' (FDE) to 'InputImag_Shift_reg[51][0]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[231][0]' (FDE) to 'InputReal_Shift_reg[231][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[231][1]' (FDE) to 'InputReal_Shift_reg[231][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[231][2]' (FDE) to 'InputReal_Shift_reg[231][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[231][3]' (FDE) to 'InputReal_Shift_reg[231][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[231][4]' (FDE) to 'InputReal_Shift_reg[231][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[231][5]' (FDE) to 'InputReal_Shift_reg[231][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[231][6]' (FDE) to 'InputReal_Shift_reg[231][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[231][7]' (FDE) to 'InputReal_Shift_reg[231][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[231][8]' (FDE) to 'InputReal_Shift_reg[231][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[231][9]' (FDE) to 'InputReal_Shift_reg[231][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[231][10]' (FDE) to 'InputReal_Shift_reg[231][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[231][11]' (FDE) to 'InputReal_Shift_reg[231][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[231][12]' (FDE) to 'InputReal_Shift_reg[231][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[231][13]' (FDE) to 'InputReal_Shift_reg[231][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[231][14]' (FDE) to 'InputReal_Shift_reg[231][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[231][15]' (FDE) to 'InputImag_Shift_reg[50][0]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[230][0]' (FDE) to 'InputReal_Shift_reg[230][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[230][1]' (FDE) to 'InputReal_Shift_reg[230][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[230][2]' (FDE) to 'InputReal_Shift_reg[230][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[230][3]' (FDE) to 'InputReal_Shift_reg[230][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[230][4]' (FDE) to 'InputReal_Shift_reg[230][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[230][5]' (FDE) to 'InputReal_Shift_reg[230][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[230][6]' (FDE) to 'InputReal_Shift_reg[230][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[230][7]' (FDE) to 'InputReal_Shift_reg[230][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[230][8]' (FDE) to 'InputReal_Shift_reg[230][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[230][9]' (FDE) to 'InputReal_Shift_reg[230][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[230][10]' (FDE) to 'InputReal_Shift_reg[230][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[230][11]' (FDE) to 'InputReal_Shift_reg[230][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[230][12]' (FDE) to 'InputReal_Shift_reg[230][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[230][13]' (FDE) to 'InputReal_Shift_reg[230][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[230][14]' (FDE) to 'InputReal_Shift_reg[230][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[230][15]' (FDE) to 'InputImag_Shift_reg[49][0]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[229][0]' (FDE) to 'InputReal_Shift_reg[229][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[229][1]' (FDE) to 'InputReal_Shift_reg[229][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[229][2]' (FDE) to 'InputReal_Shift_reg[229][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[229][3]' (FDE) to 'InputReal_Shift_reg[229][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[229][4]' (FDE) to 'InputReal_Shift_reg[229][15]'
+INFO: [Synth 8-3886] merging instance 'InputReal_Shift_reg[229][5]' (FDE) to 'InputReal_Shift_reg[229][15]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[213][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[213][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[213][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[213][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[213][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[213][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[213][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[213][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[213][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[213][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[213][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[213][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[213][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[213][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[213][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[213][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[214][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[214][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[214][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[214][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[214][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[214][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[214][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[214][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[214][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[214][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[214][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[214][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[214][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[214][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[214][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[214][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[215][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[215][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[215][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[215][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[215][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[215][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[215][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[215][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[215][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[215][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[215][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[215][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[215][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[215][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[215][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[215][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[216][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[216][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[216][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[216][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[216][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[216][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[216][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[216][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[216][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[216][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[216][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[216][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[216][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[216][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[216][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[216][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[217][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[217][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InputImag_Shift_reg[217][2] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-4471] merging register 'offset_reg[7:0]' into 'offset_reg[7:0]' [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/FFT_Module.v:41]
+INFO: [Synth 8-4471] merging register 'offset_reg[7:0]' into 'offset_reg[7:0]' [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/FFT_Module.v:41]
+INFO: [Synth 8-4471] merging register 'counter_reg[7:0]' into 'counter_reg[7:0]' [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/FFT_Module.v:41]
+INFO: [Synth 8-4471] merging register 'counter_reg[7:0]' into 'counter_reg[7:0]' [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/FFT_Module.v:41]
+INFO: [Synth 8-4471] merging register 'add_to_reg[7:0]' into 'add_to_reg[7:0]' [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/FFT_Module.v:42]
+INFO: [Synth 8-4471] merging register 'add_to_reg[7:0]' into 'add_to_reg[7:0]' [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/FFT_Module.v:42]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:08 ; elapsed = 00:02:18 . Memory (MB): peak = 2654.359 ; gain = 1733.625
+---------------------------------------------------------------------------------
+ Sort Area is FFT_Module__GCB0 p_1_out_9 : 0 0 : 1531 1531 : Used 1 time 0
+ Sort Area is FFT_Module__GCB0 p_1_out_c : 0 0 : 1531 1531 : Used 1 time 0
+ Sort Area is FFT_Module__GCB0 p_1_out_e : 0 0 : 1531 1531 : Used 1 time 0
+ Sort Area is FFT_Module__GCB0 p_1_out_2 : 0 0 : 1428 1428 : Used 1 time 0
+ Sort Area is FFT_Module__GCB0 p_1_out_5 : 0 0 : 1428 1428 : Used 1 time 0
+ Sort Area is FFT_Module__GCB0 p_1_out_7 : 0 0 : 1428 1428 : Used 1 time 0
+ Sort Area is FFT_Module__GCB0 p_0_out_0 : 0 0 : 1351 1351 : Used 1 time 0
+ Sort Area is FFT_Module__GCB0 p_0_out_4 : 0 0 : 1351 1351 : Used 1 time 0
+ Sort Area is FFT_Module__GCB0 p_0_out_6 : 0 0 : 1351 1351 : Used 1 time 0
+ Sort Area is FFT_Module__GCB0 p_0_out_8 : 0 0 : 1351 1351 : Used 1 time 0
+ Sort Area is FFT_Module__GCB0 p_0_out_b : 0 0 : 1351 1351 : Used 1 time 0
+ Sort Area is FFT_Module__GCB0 p_0_out_d : 0 0 : 1351 1351 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+---------------+---------------+----------------+
+|Module Name | RTL Object    | Depth x Width | Implemented As | 
++------------+---------------+---------------+----------------+
+|Twiddle     | Exponent_real | 256x12        | LUT            | 
+|Twiddle     | Exponent_Imag | 256x11        | LUT            | 
+|Twiddle     | Exponent_real | 256x12        | LUT            | 
+|Twiddle     | Exponent_Imag | 256x11        | LUT            | 
+|Twiddle     | Exponent_real | 256x12        | LUT            | 
+|Twiddle     | Exponent_Imag | 256x11        | LUT            | 
++------------+---------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|FFT_Module  | A2*B        | 16     | 12     | -      | -      | 28     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|FFT_Module  | C+A2*B      | 16     | 12     | 26     | -      | 26     | 1    | 0    | 0    | -    | -     | 0    | 0    | 
+|FFT_Module  | A2*B        | 16     | 12     | -      | -      | 28     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|FFT_Module  | C+A2*B      | 16     | 12     | 26     | -      | 26     | 1    | 0    | 0    | -    | -     | 0    | 0    | 
+|FFT_Module  | A2*B        | 16     | 12     | -      | -      | 28     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|FFT_Module  | C+A2*B      | 16     | 12     | 26     | -      | 26     | 1    | 0    | 0    | -    | -     | 0    | 0    | 
+|FFT_Module  | A2*B        | 16     | 12     | -      | -      | 28     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|FFT_Module  | C-A2*B      | 16     | 12     | 26     | -      | 26     | 1    | 0    | 0    | -    | -     | 0    | 0    | 
+|FFT_Module  | A2*B        | 16     | 12     | -      | -      | 28     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|FFT_Module  | C-A2*B      | 16     | 12     | 26     | -      | 26     | 1    | 0    | 0    | -    | -     | 0    | 0    | 
+|FFT_Module  | A2*B        | 16     | 12     | -      | -      | 28     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|FFT_Module  | C-A2*B      | 16     | 12     | 26     | -      | 26     | 1    | 0    | 0    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:22 ; elapsed = 00:02:33 . Memory (MB): peak = 2654.359 ; gain = 1733.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:42 ; elapsed = 00:02:52 . Memory (MB): peak = 2654.359 ; gain = 1733.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance VGAi_2/font_counter_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:03:05 ; elapsed = 00:03:25 . Memory (MB): peak = 2654.359 ; gain = 1733.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance VGA/font_counter_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:03:17 ; elapsed = 00:03:37 . Memory (MB): peak = 2654.359 ; gain = 1733.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:18 ; elapsed = 00:03:38 . Memory (MB): peak = 2654.359 ; gain = 1733.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:20 ; elapsed = 00:03:40 . Memory (MB): peak = 2654.359 ; gain = 1733.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:20 ; elapsed = 00:03:40 . Memory (MB): peak = 2654.359 ; gain = 1733.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:36 ; elapsed = 00:03:56 . Memory (MB): peak = 2654.359 ; gain = 1733.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:36 ; elapsed = 00:03:56 . Memory (MB): peak = 2654.359 ; gain = 1733.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|FFT_Module  | A'*B        | 30     | 18     | -      | -      | 28     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|FFT_Module  | C+A'*B      | 30     | 18     | 48     | -      | 26     | 1    | 0    | 0    | -    | -     | 0    | 0    | 
+|FFT_Module  | A'*B        | 30     | 18     | -      | -      | 28     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|FFT_Module  | C+A'*B      | 30     | 18     | 48     | -      | 26     | 1    | 0    | 0    | -    | -     | 0    | 0    | 
+|FFT_Module  | A'*B        | 30     | 18     | -      | -      | 28     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|FFT_Module  | C+A'*B      | 30     | 18     | 48     | -      | 26     | 1    | 0    | 0    | -    | -     | 0    | 0    | 
+|FFT_Module  | A'*B        | 30     | 18     | -      | -      | 28     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|FFT_Module  | C-(A'*B)    | 30     | 18     | 48     | -      | 26     | 1    | 0    | 0    | -    | -     | 0    | 0    | 
+|FFT_Module  | A'*B        | 30     | 18     | -      | -      | 28     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|FFT_Module  | C-(A'*B)    | 30     | 18     | 48     | -      | 26     | 1    | 0    | 0    | -    | -     | 0    | 0    | 
+|FFT_Module  | A'*B        | 30     | 18     | -      | -      | 28     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|FFT_Module  | C-(A'*B)    | 30     | 18     | 48     | -      | 26     | 1    | 0    | 0    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     2|
+|2     |CARRY4   |   563|
+|3     |DSP48E1  |    12|
+|5     |LUT1     |    15|
+|6     |LUT2     |   352|
+|7     |LUT3     |  2379|
+|8     |LUT4     |  1632|
+|9     |LUT5     | 26276|
+|10    |LUT6     | 18516|
+|11    |MUXF7    |  4937|
+|12    |MUXF8    |  2417|
+|13    |RAMB36E1 |     1|
+|14    |FDRE     | 12177|
+|15    |IBUF     |     4|
+|16    |OBUF     |    24|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:36 ; elapsed = 00:03:57 . Memory (MB): peak = 2654.359 ; gain = 1733.625
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:04 ; elapsed = 00:03:49 . Memory (MB): peak = 2654.359 ; gain = 1601.984
+Synthesis Optimization Complete : Time (s): cpu = 00:03:37 ; elapsed = 00:03:58 . Memory (MB): peak = 2654.359 ; gain = 1733.625
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.785 . Memory (MB): peak = 2654.359 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 7930 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'ELE_432_Top_Module' is not ideal for floorplanning, since the cellview 'FFT_Module' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 2654.359 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+The system cannot find the path specified.
+Synth Design complete | Checksum: 7ec95787
+INFO: [Common 17-83] Releasing license: Synthesis
+265 Infos, 40 Warnings, 28 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:03:52 ; elapsed = 00:04:15 . Memory (MB): peak = 2654.359 ; gain = 2140.012
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.077 . Memory (MB): peak = 2654.359 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ethem/ELE432/ELE432.runs/synth_1/ELE_432_Top_Module.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 2654.359 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file ELE_432_Top_Module_utilization_synth.rpt -pb ELE_432_Top_Module_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon May 13 14:15:32 2024...

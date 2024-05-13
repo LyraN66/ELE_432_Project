@@ -1,0 +1,11 @@
+srcscan starts
+INFO: analyzing module Divided_Clock (VERI-9002)
+INFO: analyzing module FFT_Module (VERI-9002)
+INFO: analyzing module Microphone (VERI-9002)
+INFO: analyzing module VGA_Controller (VERI-9002)
+INFO: analyzing module horizantal_counter (VERI-9002)
+INFO: analyzing module Twiddle (VERI-9002)
+INFO: analyzing module vertical_counter (VERI-9002)
+INFO: analyzing module ELE_432_Top_Module (VERI-9002)
+INFO: analyzing module VGA_Controller_test (VERI-9002)
+srcscan exits with return value 0
