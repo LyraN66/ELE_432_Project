@@ -13,3 +13,4 @@
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/ethem/ELE_432_Project/ELE432_ver_1.1/ELE432.xpr
+update_compile_order -fileset sources_1
