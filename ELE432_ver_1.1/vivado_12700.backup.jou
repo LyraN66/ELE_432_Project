@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon May 13 18:44:16 2024
+# Process ID: 12700
+# Current directory: C:/Users/ethem/ELE_432_Project/ELE432_ver_1.1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16932 C:\Users\ethem\ELE_432_Project\ELE432_ver_1.1\ELE432.xpr
+# Log file: C:/Users/ethem/ELE_432_Project/ELE432_ver_1.1/vivado.log
+# Journal file: C:/Users/ethem/ELE_432_Project/ELE432_ver_1.1\vivado.jou
+# Running On: DESKTOP-T0BPI3M, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 4, Host memory: 34222 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ethem/ELE_432_Project/ELE432_ver_1.1/ELE432.xpr

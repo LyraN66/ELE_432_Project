@@ -3,18 +3,18 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Mon May 13 14:10:52 2024
-# Process ID: 9912
-# Current directory: C:/Users/ethem/ELE432/ELE432.runs/synth_1
+# Start of session at: Tue May 14 16:16:04 2024
+# Process ID: 7160
+# Current directory: C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.runs/synth_1
 # Command line: vivado.exe -log ELE_432_Top_Module.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ELE_432_Top_Module.tcl
-# Log file: C:/Users/ethem/ELE432/ELE432.runs/synth_1/ELE_432_Top_Module.vds
-# Journal file: C:/Users/ethem/ELE432/ELE432.runs/synth_1\vivado.jou
-# Running On: DESKTOP-T0BPI3M, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 4, Host memory: 34222 MB
+# Log file: C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.runs/synth_1/ELE_432_Top_Module.vds
+# Journal file: C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.runs/synth_1\vivado.jou
+# Running On: DESKTOP-N21QB96, OS: Windows, CPU Frequency: 2808 MHz, CPU Physical cores: 4, Host memory: 16804 MB
 #-----------------------------------------------------------
 source ELE_432_Top_Module.tcl -notrace
-create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 512.359 ; gain = 216.598
-Command: read_checkpoint -auto_incremental -incremental C:/Users/ethem/ELE432/ELE432.srcs/utils_1/imports/synth_1/VGA_Controller_test.dcp
-INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/ethem/ELE432/ELE432.srcs/utils_1/imports/synth_1/VGA_Controller_test.dcp for incremental synthesis
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 495.648 ; gain = 217.148
+Command: read_checkpoint -auto_incremental -incremental C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/utils_1/imports/synth_1/VGA_Controller_test.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/utils_1/imports/synth_1/VGA_Controller_test.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top ELE_432_Top_Module -part xc7a100tcsg324-1
 Starting synth_design
@@ -23,183 +23,183 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 10844
+INFO: [Synth 8-7075] Helper process launched with PID 420
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1359.445 ; gain = 438.711
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1345.762 ; gain = 438.500
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'ELE_432_Top_Module' [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/ELE_432_Top_Module.v:1]
-INFO: [Synth 8-6157] synthesizing module 'Divided_Clock' [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/Divided_Clock.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'Divided_Clock' (0#1) [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/Divided_Clock.v:1]
-INFO: [Synth 8-6157] synthesizing module 'Microphone' [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/new/Microphone.v:1]
-INFO: [Synth 8-6157] synthesizing module 'pdm_clk_gen' [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/new/pdm_clk_gen.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'pdm_clk_gen' (0#1) [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/new/pdm_clk_gen.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'Microphone' (0#1) [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/new/Microphone.v:1]
-INFO: [Synth 8-6157] synthesizing module 'VGA_Controller' [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/VGA_Controller.v:1]
-INFO: [Synth 8-3876] $readmem data file 'font_1.mem' is read successfully [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/VGA_Controller.v:120]
-INFO: [Synth 8-6157] synthesizing module 'horizantal_counter' [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/horizantal_counter.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'horizantal_counter' (0#1) [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/horizantal_counter.v:1]
-INFO: [Synth 8-6157] synthesizing module 'vertical_counter' [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/vertical_counter.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'vertical_counter' (0#1) [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/vertical_counter.v:1]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/VGA_Controller.v:223]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/VGA_Controller.v:267]
-INFO: [Synth 8-6155] done synthesizing module 'VGA_Controller' (0#1) [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/VGA_Controller.v:1]
-INFO: [Synth 8-6157] synthesizing module 'FFT_Module' [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/FFT_Module.v:1]
-INFO: [Synth 8-3876] $readmem data file 'real1.mem' is read successfully [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/FFT_Module.v:171]
-INFO: [Synth 8-3876] $readmem data file 'real2.mem' is read successfully [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/FFT_Module.v:172]
-INFO: [Synth 8-6157] synthesizing module 'Twiddle' [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/new/twiddle.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'Twiddle' (0#1) [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/new/twiddle.v:1]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/FFT_Module.v:242]
-INFO: [Synth 8-6155] done synthesizing module 'FFT_Module' (0#1) [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/FFT_Module.v:1]
-WARNING: [Synth 8-689] width (16) of port connection 'realpart' does not match port width (10) of module 'FFT_Module' [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/ELE_432_Top_Module.v:134]
-WARNING: [Synth 8-689] width (16) of port connection 'imagpart' does not match port width (10) of module 'FFT_Module' [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/ELE_432_Top_Module.v:135]
-INFO: [Synth 8-6155] done synthesizing module 'ELE_432_Top_Module' (0#1) [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/ELE_432_Top_Module.v:1]
-WARNING: [Synth 8-6014] Unused sequential element index0_MultiplyReg_reg was removed.  [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/FFT_Module.v:184]
-WARNING: [Synth 8-6014] Unused sequential element index0_regN_reg was removed.  [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/FFT_Module.v:185]
-WARNING: [Synth 8-6014] Unused sequential element first_ok_reg was removed.  [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/FFT_Module.v:186]
-WARNING: [Synth 8-6014] Unused sequential element second_first_reg was removed.  [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/FFT_Module.v:186]
-WARNING: [Synth 8-6014] Unused sequential element ready_reg was removed.  [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/FFT_Module.v:188]
-WARNING: [Synth 8-3848] Net real_part_fft in module/entity ELE_432_Top_Module does not have driver. [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/ELE_432_Top_Module.v:128]
-WARNING: [Synth 8-3848] Net imag_part_fft in module/entity ELE_432_Top_Module does not have driver. [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/ELE_432_Top_Module.v:129]
+WARNING: [Synth 8-6901] identifier 'valid_mic' is used before its declaration [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/sources_1/imports/new/ELE_432_Top_Module.v:21]
+INFO: [Synth 8-6157] synthesizing module 'ELE_432_Top_Module' [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/sources_1/imports/new/ELE_432_Top_Module.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Divided_Clock' [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/sources_1/imports/new/Divided_Clock.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Divided_Clock' (0#1) [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/sources_1/imports/new/Divided_Clock.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Microphone' [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/sources_1/new/Microphone.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Microphone' (0#1) [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/sources_1/new/Microphone.v:1]
+WARNING: [Synth 8-7071] port 'm_clk_en' of module 'Microphone' is unconnected for instance 'Mic' [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/sources_1/imports/new/ELE_432_Top_Module.v:68]
+WARNING: [Synth 8-7023] instance 'Mic' of module 'Microphone' has 8 connections declared, but only 7 given [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/sources_1/imports/new/ELE_432_Top_Module.v:68]
+INFO: [Synth 8-6157] synthesizing module 'VGA_Controller' [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/sources_1/imports/new/VGA_Controller.v:1]
+INFO: [Synth 8-3876] $readmem data file 'font_1.mem' is read successfully [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/sources_1/imports/new/VGA_Controller.v:120]
+INFO: [Synth 8-6157] synthesizing module 'horizantal_counter' [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/sources_1/imports/new/horizantal_counter.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'horizantal_counter' (0#1) [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/sources_1/imports/new/horizantal_counter.v:1]
+INFO: [Synth 8-6157] synthesizing module 'vertical_counter' [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/sources_1/imports/new/vertical_counter.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'vertical_counter' (0#1) [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/sources_1/imports/new/vertical_counter.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/sources_1/imports/new/VGA_Controller.v:223]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/sources_1/imports/new/VGA_Controller.v:267]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_Controller' (0#1) [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/sources_1/imports/new/VGA_Controller.v:1]
+INFO: [Synth 8-6157] synthesizing module 'FFT_Module' [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/sources_1/imports/new/FFT_Module.v:1]
+INFO: [Synth 8-3876] $readmem data file 'real1.mem' is read successfully [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/sources_1/imports/new/FFT_Module.v:171]
+INFO: [Synth 8-3876] $readmem data file 'real2.mem' is read successfully [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/sources_1/imports/new/FFT_Module.v:172]
+INFO: [Synth 8-6157] synthesizing module 'Twiddle' [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/sources_1/new/twiddle.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Twiddle' (0#1) [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/sources_1/new/twiddle.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/sources_1/imports/new/FFT_Module.v:242]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_Module' (0#1) [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/sources_1/imports/new/FFT_Module.v:1]
+WARNING: [Synth 8-689] width (16) of port connection 'realpart' does not match port width (10) of module 'FFT_Module' [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/sources_1/imports/new/ELE_432_Top_Module.v:134]
+WARNING: [Synth 8-689] width (16) of port connection 'imagpart' does not match port width (10) of module 'FFT_Module' [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/sources_1/imports/new/ELE_432_Top_Module.v:135]
+INFO: [Synth 8-6155] done synthesizing module 'ELE_432_Top_Module' (0#1) [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/sources_1/imports/new/ELE_432_Top_Module.v:1]
+WARNING: [Synth 8-6014] Unused sequential element index0_MultiplyReg_reg was removed.  [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/sources_1/imports/new/FFT_Module.v:184]
+WARNING: [Synth 8-6014] Unused sequential element index0_regN_reg was removed.  [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/sources_1/imports/new/FFT_Module.v:185]
+WARNING: [Synth 8-6014] Unused sequential element first_ok_reg was removed.  [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/sources_1/imports/new/FFT_Module.v:186]
+WARNING: [Synth 8-6014] Unused sequential element second_first_reg was removed.  [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/sources_1/imports/new/FFT_Module.v:186]
+WARNING: [Synth 8-6014] Unused sequential element ready_reg was removed.  [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/sources_1/imports/new/FFT_Module.v:188]
+WARNING: [Synth 8-3848] Net real_part_fft in module/entity ELE_432_Top_Module does not have driver. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/sources_1/imports/new/ELE_432_Top_Module.v:128]
+WARNING: [Synth 8-3848] Net imag_part_fft in module/entity ELE_432_Top_Module does not have driver. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/sources_1/imports/new/ELE_432_Top_Module.v:129]
 WARNING: [Synth 8-7129] Port rst in module Divided_Clock is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1838.195 ; gain = 917.461
+Finished RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1824.594 ; gain = 917.332
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1838.195 ; gain = 917.461
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1824.594 ; gain = 917.332
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1838.195 ; gain = 917.461
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1824.594 ; gain = 917.332
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.609 . Memory (MB): peak = 1838.195 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.690 . Memory (MB): peak = 1824.594 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc]
-WARNING: [Vivado 12-584] No ports matched 'one[6]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:37]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:37]
+Parsing XDC File [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc]
+WARNING: [Vivado 12-584] No ports matched 'one[6]'. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:37]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'one[5]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:38]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'one[5]'. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:38]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'one[4]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:39]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'one[4]'. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:39]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'one[3]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:40]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:40]
+WARNING: [Vivado 12-584] No ports matched 'one[3]'. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:40]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'one[2]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:41]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:41]
+WARNING: [Vivado 12-584] No ports matched 'one[2]'. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:41]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'one[1]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:42]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'one[1]'. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:42]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'one[0]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:43]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:43]
+WARNING: [Vivado 12-584] No ports matched 'one[0]'. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:43]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'one[6]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:44]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'one[6]'. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:44]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'one[5]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:45]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'one[5]'. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:45]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'one[4]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:46]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:46]
+WARNING: [Vivado 12-584] No ports matched 'one[4]'. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:46]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'one[3]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:47]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'one[3]'. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:47]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'one[2]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:48]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:48]
+WARNING: [Vivado 12-584] No ports matched 'one[2]'. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:48]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'one[1]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:49]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:49]
+WARNING: [Vivado 12-584] No ports matched 'one[1]'. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:49]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'one[0]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:50]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'one[0]'. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:50]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'second[6]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:52]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:52]
+WARNING: [Vivado 12-584] No ports matched 'second[6]'. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:52]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'second[5]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:53]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'second[5]'. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:53]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'second[4]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:54]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'second[4]'. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:54]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'second[3]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:55]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'second[3]'. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:55]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'second[2]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:56]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'second[2]'. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:56]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'second[1]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:57]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'second[1]'. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:57]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'second[0]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:58]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'second[0]'. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:58]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'second[6]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:59]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'second[6]'. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:59]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'second[5]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:60]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'second[5]'. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:60]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'second[4]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:61]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'second[4]'. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:61]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'second[3]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:62]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:62]
+WARNING: [Vivado 12-584] No ports matched 'second[3]'. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:62]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'second[2]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:63]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:63]
+WARNING: [Vivado 12-584] No ports matched 'second[2]'. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:63]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'second[1]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:64]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:64]
+WARNING: [Vivado 12-584] No ports matched 'second[1]'. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:64]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'second[0]'. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:65]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc:65]
+WARNING: [Vivado 12-584] No ports matched 'second[0]'. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc:65]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ELE_432_Top_Module_propImpl.xdc].
+Finished Parsing XDC File [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ELE_432_Top_Module_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/ELE_432_Top_Module_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1969.836 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1956.789 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.149 . Memory (MB): peak = 1969.836 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.224 . Memory (MB): peak = 1956.789 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1969.836 ; gain = 1049.102
+Finished Constraint Validation : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1956.789 ; gain = 1049.527
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1969.836 ; gain = 1049.102
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1956.789 ; gain = 1049.527
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1969.836 ; gain = 1049.102
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1956.789 ; gain = 1049.527
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Preparing Guide Design
 ---------------------------------------------------------------------------------
 got a mismatch Microphone
-Is not a child genome
 WARNING: [Synth 8-6702] IncrSynth : Design change found in an area of the design that prevents previous synthesis information being used, Reverting to default synthesis
 ---------------------------------------------------------------------------------
-Finished Doing Graph Differ : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 1969.836 ; gain = 1049.102
+Finished Doing Graph Differ : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1956.789 ; gain = 1049.527
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Preparing Guide Design : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 1969.836 ; gain = 1049.102
+Finished Preparing Guide Design : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1956.789 ; gain = 1049.527
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'FFT_Module'
 ---------------------------------------------------------------------------------------------------
@@ -214,7 +214,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'FFT_M
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'FFT_Module'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:19 ; elapsed = 00:01:23 . Memory (MB): peak = 2654.359 ; gain = 1733.625
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:26 ; elapsed = 00:01:29 . Memory (MB): peak = 2648.109 ; gain = 1740.848
 ---------------------------------------------------------------------------------
 
 
@@ -235,19 +235,20 @@ Detailed RTL Component Info :
 	   2 Input   16 Bit       Adders := 2     
 	   4 Input   16 Bit       Adders := 2     
 	   5 Input   16 Bit       Adders := 6     
-	   2 Input   10 Bit       Adders := 3     
-	   2 Input    8 Bit       Adders := 10    
+	   2 Input   10 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 14    
 	   3 Input    8 Bit       Adders := 1     
-	   2 Input    5 Bit       Adders := 2     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 1     
 +---Registers : 
 	               32 Bit    Registers := 2     
 	               16 Bit    Registers := 1044  
-	               10 Bit    Registers := 4     
-	                8 Bit    Registers := 18    
-	                7 Bit    Registers := 512   
-	                5 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 22    
+	                7 Bit    Registers := 513   
+	                5 Bit    Registers := 1     
 	                4 Bit    Registers := 4     
-	                1 Bit    Registers := 11    
+	                1 Bit    Registers := 10    
 +---ROMs : 
 	                    ROMs := 1     
 +---Muxes : 
@@ -256,18 +257,17 @@ Detailed RTL Component Info :
 	   2 Input   16 Bit        Muxes := 1024  
 	 129 Input    8 Bit        Muxes := 2     
 	   6 Input    8 Bit        Muxes := 3     
-	   2 Input    8 Bit        Muxes := 23    
+	   2 Input    8 Bit        Muxes := 25    
 	   2 Input    4 Bit        Muxes := 7     
 	 129 Input    4 Bit        Muxes := 5     
 	   4 Input    4 Bit        Muxes := 1     
 	   6 Input    4 Bit        Muxes := 2     
 	   6 Input    3 Bit        Muxes := 1     
-	   2 Input    1 Bit        Muxes := 794   
+	   2 Input    1 Bit        Muxes := 801   
 	 129 Input    1 Bit        Muxes := 1     
 	   6 Input    1 Bit        Muxes := 270   
 	   4 Input    1 Bit        Muxes := 256   
 	   8 Input    1 Bit        Muxes := 2     
-	   3 Input    1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -545,7 +545,7 @@ INFO: [Synth 8-4471] merging register 'counter_reg[7:0]' into 'counter_reg[7:0]'
 INFO: [Synth 8-4471] merging register 'add_to_reg[7:0]' into 'add_to_reg[7:0]' [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/FFT_Module.v:42]
 INFO: [Synth 8-4471] merging register 'add_to_reg[7:0]' into 'add_to_reg[7:0]' [C:/Users/ethem/ELE432/ELE432.srcs/sources_1/imports/new/FFT_Module.v:42]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:08 ; elapsed = 00:02:18 . Memory (MB): peak = 2654.359 ; gain = 1733.625
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:26 ; elapsed = 00:02:37 . Memory (MB): peak = 2648.109 ; gain = 1740.848
 ---------------------------------------------------------------------------------
  Sort Area is FFT_Module__GCB0 p_1_out_9 : 0 0 : 1531 1531 : Used 1 time 0
  Sort Area is FFT_Module__GCB0 p_1_out_c : 0 0 : 1531 1531 : Used 1 time 0
@@ -602,20 +602,20 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:22 ; elapsed = 00:02:33 . Memory (MB): peak = 2654.359 ; gain = 1733.625
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:43 ; elapsed = 00:02:54 . Memory (MB): peak = 2648.109 ; gain = 1740.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:42 ; elapsed = 00:02:52 . Memory (MB): peak = 2654.359 ; gain = 1733.625
+Finished Timing Optimization : Time (s): cpu = 00:03:06 ; elapsed = 00:03:17 . Memory (MB): peak = 2648.109 ; gain = 1740.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-7052] The timing for the instance VGAi_2/font_counter_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:03:05 ; elapsed = 00:03:25 . Memory (MB): peak = 2654.359 ; gain = 1733.625
+Finished Technology Mapping : Time (s): cpu = 00:03:35 ; elapsed = 00:03:58 . Memory (MB): peak = 2648.109 ; gain = 1740.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -634,37 +634,37 @@ INFO: [Synth 8-7052] The timing for the instance VGA/font_counter_reg_rep (imple
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:03:17 ; elapsed = 00:03:37 . Memory (MB): peak = 2654.359 ; gain = 1733.625
+Finished IO Insertion : Time (s): cpu = 00:03:49 ; elapsed = 00:04:12 . Memory (MB): peak = 2648.109 ; gain = 1740.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:03:18 ; elapsed = 00:03:38 . Memory (MB): peak = 2654.359 ; gain = 1733.625
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:50 ; elapsed = 00:04:12 . Memory (MB): peak = 2648.109 ; gain = 1740.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:20 ; elapsed = 00:03:40 . Memory (MB): peak = 2654.359 ; gain = 1733.625
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:52 ; elapsed = 00:04:15 . Memory (MB): peak = 2648.109 ; gain = 1740.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:03:20 ; elapsed = 00:03:40 . Memory (MB): peak = 2654.359 ; gain = 1733.625
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:52 ; elapsed = 00:04:15 . Memory (MB): peak = 2648.109 ; gain = 1740.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:03:36 ; elapsed = 00:03:56 . Memory (MB): peak = 2654.359 ; gain = 1733.625
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:12 ; elapsed = 00:04:35 . Memory (MB): peak = 2648.109 ; gain = 1740.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:03:36 ; elapsed = 00:03:56 . Memory (MB): peak = 2654.359 ; gain = 1733.625
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:12 ; elapsed = 00:04:35 . Memory (MB): peak = 2648.109 ; gain = 1740.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -702,44 +702,44 @@ Report Cell Usage:
 |1     |BUFG     |     2|
 |2     |CARRY4   |   563|
 |3     |DSP48E1  |    12|
-|5     |LUT1     |    15|
-|6     |LUT2     |   352|
-|7     |LUT3     |  2379|
-|8     |LUT4     |  1632|
-|9     |LUT5     | 26276|
-|10    |LUT6     | 18516|
+|5     |LUT1     |    16|
+|6     |LUT2     |   353|
+|7     |LUT3     |  2383|
+|8     |LUT4     |  1640|
+|9     |LUT5     | 26284|
+|10    |LUT6     | 18524|
 |11    |MUXF7    |  4937|
 |12    |MUXF8    |  2417|
 |13    |RAMB36E1 |     1|
-|14    |FDRE     | 12177|
+|14    |FDRE     | 12191|
 |15    |IBUF     |     4|
 |16    |OBUF     |    24|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:03:36 ; elapsed = 00:03:57 . Memory (MB): peak = 2654.359 ; gain = 1733.625
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:12 ; elapsed = 00:04:35 . Memory (MB): peak = 2648.109 ; gain = 1740.848
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:03:04 ; elapsed = 00:03:49 . Memory (MB): peak = 2654.359 ; gain = 1601.984
-Synthesis Optimization Complete : Time (s): cpu = 00:03:37 ; elapsed = 00:03:58 . Memory (MB): peak = 2654.359 ; gain = 1733.625
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:41 ; elapsed = 00:04:27 . Memory (MB): peak = 2648.109 ; gain = 1608.652
+Synthesis Optimization Complete : Time (s): cpu = 00:04:13 ; elapsed = 00:04:37 . Memory (MB): peak = 2648.109 ; gain = 1740.848
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.785 . Memory (MB): peak = 2654.359 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.949 . Memory (MB): peak = 2648.109 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 7930 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 WARNING: [Netlist 29-101] Netlist 'ELE_432_Top_Module' is not ideal for floorplanning, since the cellview 'FFT_Module' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 2654.359 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 2648.109 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 7ec95787
+Synth Design complete | Checksum: ce20a2e7
 INFO: [Common 17-83] Releasing license: Synthesis
-265 Infos, 40 Warnings, 28 Critical Warnings and 0 Errors encountered.
+263 Infos, 43 Warnings, 28 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:03:52 ; elapsed = 00:04:15 . Memory (MB): peak = 2654.359 ; gain = 2140.012
+synth_design: Time (s): cpu = 00:04:30 ; elapsed = 00:04:56 . Memory (MB): peak = 2648.109 ; gain = 2149.504
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.077 . Memory (MB): peak = 2654.359 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/ethem/ELE432/ELE432.runs/synth_1/ELE_432_Top_Module.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 2654.359 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.086 . Memory (MB): peak = 2648.109 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.runs/synth_1/ELE_432_Top_Module.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 2648.109 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file ELE_432_Top_Module_utilization_synth.rpt -pb ELE_432_Top_Module_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon May 13 14:15:32 2024...
+INFO: [Common 17-206] Exiting Vivado at Tue May 14 16:21:27 2024...

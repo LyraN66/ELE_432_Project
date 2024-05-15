@@ -15,10 +15,10 @@ module ELE_432_Top_Module(
     output [3:0] Blue
     );
     
-    wire [9:0] data_out_mic;
+    wire [6:0] data_out_mic;
     
-    assign mic_output = data_out_mic[9:2];
-    
+    assign mic_output[7:1] = data_out_mic;
+    assign mic_output[0] = valid_mic;
     
     wire start_vga;
     wire busy_vga;
@@ -69,10 +69,10 @@ module ELE_432_Top_Module(
         . clk(clk),        // Clock input
         . rst(rst),
         . m_data(mic_data),     // Microphone data input
-        . valid(valid_mic),
-        . data_out(data_out_mic), // 10-bit microphone data output
-        . M_CLK(mic_clock),
-        . M_LRSEL(LR_sel)
+        . amplitude_valid(valid_mic),
+        . amplitude(data_out_mic), // 10-bit microphone data output
+        . m_clk(mic_clock),
+        . lr_sel(LR_sel)
     );
     
     VGA_Controller VGA(

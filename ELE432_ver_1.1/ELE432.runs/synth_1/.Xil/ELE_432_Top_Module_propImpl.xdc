@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/ethem/ELE432/ELE432.srcs/constrs_1/new/vga_pin.xdc rfile:../../../ELE432.srcs/constrs_1/new/vga_pin.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.srcs/constrs_1/new/vga_pin.xdc rfile:../../../ELE432.srcs/constrs_1/new/vga_pin.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN E3 [get_ports clk]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
