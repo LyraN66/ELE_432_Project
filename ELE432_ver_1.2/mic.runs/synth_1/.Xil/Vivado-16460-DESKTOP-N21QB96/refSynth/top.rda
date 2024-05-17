@@ -1,0 +1,418 @@
+Data_For_RDAFlowver5.0
+	top levelÿ«
+ELE_432_Top_Module;
+LinkDesign_Blackboxes"
+Mic/cic_compilercic_compiler_0©
+synthFileNamesJ
+10DD:/xilinx/Vivado/2023.2/data/vhdl/src/unimacro/BRAM_SINGLE_MACRO.vhdG
+11AD:/xilinx/Vivado/2023.2/data/vhdl/src/unimacro/BRAM_TDP_MACRO.vhdK
+12ED:/xilinx/Vivado/2023.2/data/vhdl/src/unimacro/COUNTER_LOAD_MACRO.vhdI
+13CD:/xilinx/Vivado/2023.2/data/vhdl/src/unimacro/COUNTER_TC_MACRO.vhdI
+14CD:/xilinx/Vivado/2023.2/data/vhdl/src/unimacro/EQ_COMPARE_MACRO.vhdF
+20@D:/xilinx/Vivado/2023.2/data/verilog/src/unimacro/ADDSUB_MACRO.vM
+15GD:/xilinx/Vivado/2023.2/data/vhdl/src/unimacro/FIFO_DUALCLOCK_MACRO.vhdH
+21BD:/xilinx/Vivado/2023.2/data/verilog/src/unimacro/BRAM_SDP_MACRO.vH
+16BD:/xilinx/Vivado/2023.2/data/vhdl/src/unimacro/FIFO_SYNC_MACRO.vhdK
+22ED:/xilinx/Vivado/2023.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.vC
+17=D:/xilinx/Vivado/2023.2/data/vhdl/src/unimacro/MACC_MACRO.vhdC
+18=D:/xilinx/Vivado/2023.2/data/vhdl/src/unimacro/MULT_MACRO.vhdH
+23BD:/xilinx/Vivado/2023.2/data/verilog/src/unimacro/BRAM_TDP_MACRO.vG
+19AD:/xilinx/Vivado/2023.2/data/verilog/src/unimacro/ADDMACC_MACRO.vL
+24FD:/xilinx/Vivado/2023.2/data/verilog/src/unimacro/COUNTER_LOAD_MACRO.vJ
+25DD:/xilinx/Vivado/2023.2/data/verilog/src/unimacro/COUNTER_TC_MACRO.vD
+30>D:/xilinx/Vivado/2023.2/data/verilog/src/unimacro/MULT_MACRO.v
+NumFileNames55J
+26DD:/xilinx/Vivado/2023.2/data/verilog/src/unimacro/EQ_COMPARE_MACRO.vJ
+31DD:/xilinx/Vivado/2023.2/data/vhdl/src/unisims/retarget/MULT18X18.vhd=
+18D:/xilinx/Vivado/2023.2/scripts/rt/data/unisim_VCOMP.vhdN
+27HD:/xilinx/Vivado/2023.2/data/verilog/src/unimacro/FIFO_DUALCLOCK_MACRO.vK
+32ED:/xilinx/Vivado/2023.2/data/vhdl/src/unisims/retarget/MULT18X18S.vhd<
+27D:/xilinx/Vivado/2023.2/scripts/rt/data/unisim_VPKG.vhdI
+28CD:/xilinx/Vivado/2023.2/data/verilog/src/unimacro/FIFO_SYNC_MACRO.v?
+339C:/Users/samil/mic/mic.srcs/sources_1/new/pdm_clok_gen.sv:
+35D:/xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.vD
+29>D:/xilinx/Vivado/2023.2/data/verilog/src/unimacro/MACC_MACRO.vA
+34;C:/Users/samil/mic/mic.srcs/sources_1/new/pdm_microphone.sv=
+48D:/xilinx/Vivado/2023.2/scripts/rt/data/internal_cells.vj
+35dC:/Users/samil/mic/mic.runs/synth_1/.Xil/Vivado-15804-DESKTOP-N21QB96/realtime/cic_compiler_0_stub.v:
+404C:/Users/samil/mic/mic.srcs/sources_1/new/inverter.v3
+5.D:/xilinx/Vivado/2023.2/scripts/rt/data/BUFT.v9
+363C:/Users/samil/mic/mic.srcs/sources_1/new/div_clk.v5
+41/C:/Users/samil/mic/mic.srcs/sources_1/new/rom.vF
+6AD:/xilinx/Vivado/2023.2/data/vhdl/src/unimacro/unimacro_VCOMP.vhd5
+37/C:/Users/samil/mic/mic.srcs/sources_1/new/fft.v:
+424C:/Users/samil/mic/mic.srcs/sources_1/new/vertical.vE
+7@D:/xilinx/Vivado/2023.2/data/vhdl/src/unimacro/ADDMACC_MACRO.vhd<
+386C:/Users/samil/mic/mic.srcs/sources_1/new/horizantal.v5
+43/C:/Users/samil/mic/mic.srcs/sources_1/new/vga.vD
+8?D:/xilinx/Vivado/2023.2/data/vhdl/src/unimacro/ADDSUB_MACRO.vhd7
+391C:/Users/samil/mic/mic.srcs/sources_1/new/input.v<
+446C:/Users/samil/mic/mic.srcs/sources_1/new/Top_Module.v?
+509C:/Users/samil/mic/mic.runs/synth_1/1993/src/timing_b.vhdF
+9AD:/xilinx/Vivado/2023.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd?
+459C:/Users/samil/mic/mic.runs/synth_1/1993/src/std_1164.vhd?
+519C:/Users/samil/mic/mic.runs/synth_1/1993/src/prmtvs_p.vhd?
+469C:/Users/samil/mic/mic.runs/synth_1/1993/src/standard.vhd?
+529C:/Users/samil/mic/mic.runs/synth_1/1993/src/prmtvs_b.vhdB
+47<C:/Users/samil/mic/mic.runs/synth_1/1993/src/numeric_std.vhd?
+539C:/Users/samil/mic/mic.runs/synth_1/1993/src/syn_arit.vhd=
+487C:/Users/samil/mic/mic.runs/synth_1/1993/src/textio.vhd?
+549C:/Users/samil/mic/mic.runs/synth_1/1993/src/syn_unsi.vhd?
+499C:/Users/samil/mic/mic.runs/synth_1/1993/src/timing_p.vhd”
+
+synthStatsL
+caseNotFullNoDefault
+L223
+Mnullname
+F43
+Oh_counter_topL
+caseNotFullNoDefault
+L267
+Mnullname
+F43
+Oh_counter_topD
+caseNotFullNoDefault
+L245
+Mnullname
+F37
+
+OstateS
+BRAMNoOutReg
+L114
+Mnullname
+F43!
+OVGA/i_1/font_counter_reg_repO
+BRAMNoOutReg
+L114
+Mnullname
+F43
+OVGA/font_counter_reg_repÚ…
+ElaboratedNamesForRQS¿…
+DSP_RAM 
+471045 {inv/bar_68_real0_i}  
+901125 {inv/bar_44_imag0_i}  
+516101 {inv/bar_79_real0_i}  
+958469 {inv/bar_58_imag0_i}  
+348165 {inv/bar_38_real0_i} 
+733189 {inv/bar_3_imag0_i}  
+860165 {inv/bar_34_imag0_i}  
+475141 {inv/bar_69_real0_i}  
+905221 {inv/bar_45_imag0_i} "
+1142789 {inv/bar_103_imag0_i} 
+737285 {inv/bar_4_imag0_i}  
+864261 {inv/bar_35_imag0_i} "
+1146885 {inv/bar_104_imag0_i}  
+479237 {inv/bar_70_real0_i}  
+909317 {inv/bar_46_imag0_i} 
+2412554 {FFT/offset0_i__0}  
+991237 {inv/bar_66_imag0_i}  
+811013 {inv/bar_22_imag0_i} ±Ž
+868362¥Ž {FFT/InputImag_Shift_reg[0]_i__2} {FFT/InputImag_Shift_reg[100]_i__2} {FFT/InputImag_Shift_reg[101]_i__2} {FFT/InputImag_Shift_reg[102]_i__2} {FFT/InputImag_Shift_reg[103]_i__2} {FFT/InputImag_Shift_reg[104]_i__2} {FFT/InputImag_Shift_reg[105]_i__2} {FFT/InputImag_Shift_reg[106]_i__2} {FFT/InputImag_Shift_reg[107]_i__2} {FFT/InputImag_Shift_reg[108]_i__2} {FFT/InputImag_Shift_reg[109]_i__2} {FFT/InputImag_Shift_reg[10]_i__2} {FFT/InputImag_Shift_reg[110]_i__2} {FFT/InputImag_Shift_reg[111]_i__2} {FFT/InputImag_Shift_reg[112]_i__2} {FFT/InputImag_Shift_reg[113]_i__2} {FFT/InputImag_Shift_reg[114]_i__2} {FFT/InputImag_Shift_reg[115]_i__2} {FFT/InputImag_Shift_reg[116]_i__2} {FFT/InputImag_Shift_reg[117]_i__2} {FFT/InputImag_Shift_reg[118]_i__2} {FFT/InputImag_Shift_reg[119]_i__2} {FFT/InputImag_Shift_reg[11]_i__2} {FFT/InputImag_Shift_reg[120]_i__2} {FFT/InputImag_Shift_reg[121]_i__2} {FFT/InputImag_Shift_reg[122]_i__2} {FFT/InputImag_Shift_reg[123]_i__2} {FFT/InputImag_Shift_reg[124]_i__2} {FFT/InputImag_Shift_reg[125]_i__2} {FFT/InputImag_Shift_reg[126]_i__2} {FFT/InputImag_Shift_reg[127]_i__2} {FFT/InputImag_Shift_reg[128]_i__2} {FFT/InputImag_Shift_reg[129]_i__2} {FFT/InputImag_Shift_reg[12]_i__2} {FFT/InputImag_Shift_reg[130]_i__2} {FFT/InputImag_Shift_reg[131]_i__2} {FFT/InputImag_Shift_reg[132]_i__2} {FFT/InputImag_Shift_reg[133]_i__2} {FFT/InputImag_Shift_reg[134]_i__2} {FFT/InputImag_Shift_reg[135]_i__2} {FFT/InputImag_Shift_reg[136]_i__2} {FFT/InputImag_Shift_reg[137]_i__2} {FFT/InputImag_Shift_reg[138]_i__2} {FFT/InputImag_Shift_reg[139]_i__2} {FFT/InputImag_Shift_reg[13]_i__2} {FFT/InputImag_Shift_reg[140]_i__2} {FFT/InputImag_Shift_reg[141]_i__2} {FFT/InputImag_Shift_reg[142]_i__2} {FFT/InputImag_Shift_reg[143]_i__2} {FFT/InputImag_Shift_reg[144]_i__2} {FFT/InputImag_Shift_reg[145]_i__2} {FFT/InputImag_Shift_reg[146]_i__2} {FFT/InputImag_Shift_reg[147]_i__2} {FFT/InputImag_Shift_reg[148]_i__2} {FFT/InputImag_Shift_reg[149]_i__2} {FFT/InputImag_Shift_reg[14]_i__2} {FFT/InputImag_Shift_reg[150]_i__2} {FFT/InputImag_Shift_reg[151]_i__2} {FFT/InputImag_Shift_reg[152]_i__2} {FFT/InputImag_Shift_reg[153]_i__2} {FFT/InputImag_Shift_reg[154]_i__2} {FFT/InputImag_Shift_reg[155]_i__2} {FFT/InputImag_Shift_reg[156]_i__2} {FFT/InputImag_Shift_reg[157]_i__2} {FFT/InputImag_Shift_reg[158]_i__2} {FFT/InputImag_Shift_reg[159]_i__2} {FFT/InputImag_Shift_reg[15]_i__2} {FFT/InputImag_Shift_reg[160]_i__2} {FFT/InputImag_Shift_reg[161]_i__2} {FFT/InputImag_Shift_reg[162]_i__2} {FFT/InputImag_Shift_reg[163]_i__2} {FFT/InputImag_Shift_reg[164]_i__2} {FFT/InputImag_Shift_reg[165]_i__2} {FFT/InputImag_Shift_reg[166]_i__2} {FFT/InputImag_Shift_reg[167]_i__2} {FFT/InputImag_Shift_reg[168]_i__2} {FFT/InputImag_Shift_reg[169]_i__2} {FFT/InputImag_Shift_reg[16]_i__2} {FFT/InputImag_Shift_reg[170]_i__2} {FFT/InputImag_Shift_reg[171]_i__2} {FFT/InputImag_Shift_reg[172]_i__2} {FFT/InputImag_Shift_reg[173]_i__2} {FFT/InputImag_Shift_reg[174]_i__2} {FFT/InputImag_Shift_reg[175]_i__2} {FFT/InputImag_Shift_reg[176]_i__2} {FFT/InputImag_Shift_reg[177]_i__2} {FFT/InputImag_Shift_reg[178]_i__2} {FFT/InputImag_Shift_reg[179]_i__2} {FFT/InputImag_Shift_reg[17]_i__2} {FFT/InputImag_Shift_reg[180]_i__2} {FFT/InputImag_Shift_reg[181]_i__2} {FFT/InputImag_Shift_reg[182]_i__2} {FFT/InputImag_Shift_reg[183]_i__2} {FFT/InputImag_Shift_reg[184]_i__2} {FFT/InputImag_Shift_reg[185]_i__2} {FFT/InputImag_Shift_reg[186]_i__2} {FFT/InputImag_Shift_reg[187]_i__2} {FFT/InputImag_Shift_reg[188]_i__2} {FFT/InputImag_Shift_reg[189]_i__2} {FFT/InputImag_Shift_reg[18]_i__2} {FFT/InputImag_Shift_reg[190]_i__2} {FFT/InputImag_Shift_reg[191]_i__2} {FFT/InputImag_Shift_reg[192]_i__2} {FFT/InputImag_Shift_reg[193]_i__2} {FFT/InputImag_Shift_reg[194]_i__2} {FFT/InputImag_Shift_reg[195]_i__2} {FFT/InputImag_Shift_reg[196]_i__2} {FFT/InputImag_Shift_reg[197]_i__2} {FFT/InputImag_Shift_reg[198]_i__2} {FFT/InputImag_Shift_reg[199]_i__2} {FFT/InputImag_Shift_reg[19]_i__2} {FFT/InputImag_Shift_reg[1]_i__2} {FFT/InputImag_Shift_reg[200]_i__2} {FFT/InputImag_Shift_reg[201]_i__2} {FFT/InputImag_Shift_reg[202]_i__2} {FFT/InputImag_Shift_reg[203]_i__2} {FFT/InputImag_Shift_reg[204]_i__2} {FFT/InputImag_Shift_reg[205]_i__2} {FFT/InputImag_Shift_reg[206]_i__2} {FFT/InputImag_Shift_reg[207]_i__2} {FFT/InputImag_Shift_reg[208]_i__2} {FFT/InputImag_Shift_reg[209]_i__2} {FFT/InputImag_Shift_reg[20]_i__2} {FFT/InputImag_Shift_reg[210]_i__2} {FFT/InputImag_Shift_reg[211]_i__2} {FFT/InputImag_Shift_reg[212]_i__2} {FFT/InputImag_Shift_reg[213]_i__2} {FFT/InputImag_Shift_reg[214]_i__2} {FFT/InputImag_Shift_reg[215]_i__2} {FFT/InputImag_Shift_reg[216]_i__2} {FFT/InputImag_Shift_reg[217]_i__2} {FFT/InputImag_Shift_reg[218]_i__2} {FFT/InputImag_Shift_reg[219]_i__2} {FFT/InputImag_Shift_reg[21]_i__2} {FFT/InputImag_Shift_reg[220]_i__2} {FFT/InputImag_Shift_reg[221]_i__2} {FFT/InputImag_Shift_reg[222]_i__2} {FFT/InputImag_Shift_reg[223]_i__2} {FFT/InputImag_Shift_reg[224]_i__2} {FFT/InputImag_Shift_reg[225]_i__2} {FFT/InputImag_Shift_reg[226]_i__2} {FFT/InputImag_Shift_reg[227]_i__2} {FFT/InputImag_Shift_reg[228]_i__2} {FFT/InputImag_Shift_reg[229]_i__2} {FFT/InputImag_Shift_reg[22]_i__2} {FFT/InputImag_Shift_reg[230]_i__2} {FFT/InputImag_Shift_reg[231]_i__2} {FFT/InputImag_Shift_reg[232]_i__2} {FFT/InputImag_Shift_reg[233]_i__2} {FFT/InputImag_Shift_reg[234]_i__2} {FFT/InputImag_Shift_reg[235]_i__2} {FFT/InputImag_Shift_reg[236]_i__2} {FFT/InputImag_Shift_reg[237]_i__2} {FFT/InputImag_Shift_reg[238]_i__2} {FFT/InputImag_Shift_reg[239]_i__2} {FFT/InputImag_Shift_reg[23]_i__2} {FFT/InputImag_Shift_reg[240]_i__2} {FFT/InputImag_Shift_reg[241]_i__2} {FFT/InputImag_Shift_reg[242]_i__2} {FFT/InputImag_Shift_reg[243]_i__2} {FFT/InputImag_Shift_reg[244]_i__2} {FFT/InputImag_Shift_reg[245]_i__2} {FFT/InputImag_Shift_reg[246]_i__2} {FFT/InputImag_Shift_reg[247]_i__2} {FFT/InputImag_Shift_reg[248]_i__2} {FFT/InputImag_Shift_reg[249]_i__2} {FFT/InputImag_Shift_reg[24]_i__2} {FFT/InputImag_Shift_reg[250]_i__2} {FFT/InputImag_Shift_reg[251]_i__2} {FFT/InputImag_Shift_reg[252]_i__2} {FFT/InputImag_Shift_reg[253]_i__2} {FFT/InputImag_Shift_reg[254]_i__2} {FFT/InputImag_Shift_reg[255]_i__2} {FFT/InputImag_Shift_reg[25]_i__2} {FFT/InputImag_Shift_reg[26]_i__2} {FFT/InputImag_Shift_reg[27]_i__2} {FFT/InputImag_Shift_reg[28]_i__2} {FFT/InputImag_Shift_reg[29]_i__2} {FFT/InputImag_Shift_reg[2]_i__2} {FFT/InputImag_Shift_reg[30]_i__2} {FFT/InputImag_Shift_reg[31]_i__2} {FFT/InputImag_Shift_reg[32]_i__2} {FFT/InputImag_Shift_reg[33]_i__2} {FFT/InputImag_Shift_reg[34]_i__2} {FFT/InputImag_Shift_reg[35]_i__2} {FFT/InputImag_Shift_reg[36]_i__2} {FFT/InputImag_Shift_reg[37]_i__2} {FFT/InputImag_Shift_reg[38]_i__2} {FFT/InputImag_Shift_reg[39]_i__2} {FFT/InputImag_Shift_reg[3]_i__2} {FFT/InputImag_Shift_reg[40]_i__2} {FFT/InputImag_Shift_reg[41]_i__2} {FFT/InputImag_Shift_reg[42]_i__2} {FFT/InputImag_Shift_reg[43]_i__2} {FFT/InputImag_Shift_reg[44]_i__2} {FFT/InputImag_Shift_reg[45]_i__2} {FFT/InputImag_Shift_reg[46]_i__2} {FFT/InputImag_Shift_reg[47]_i__2} {FFT/InputImag_Shift_reg[48]_i__2} {FFT/InputImag_Shift_reg[49]_i__2} {FFT/InputImag_Shift_reg[4]_i__2} {FFT/InputImag_Shift_reg[50]_i__2} {FFT/InputImag_Shift_reg[51]_i__2} {FFT/InputImag_Shift_reg[52]_i__2} {FFT/InputImag_Shift_reg[53]_i__2} {FFT/InputImag_Shift_reg[54]_i__2} {FFT/InputImag_Shift_reg[55]_i__2} {FFT/InputImag_Shift_reg[56]_i__2} {FFT/InputImag_Shift_reg[57]_i__2} {FFT/InputImag_Shift_reg[58]_i__2} {FFT/InputImag_Shift_reg[59]_i__2} {FFT/InputImag_Shift_reg[5]_i__2} {FFT/InputImag_Shift_reg[60]_i__2} {FFT/InputImag_Shift_reg[61]_i__2} {FFT/InputImag_Shift_reg[62]_i__2} {FFT/InputImag_Shift_reg[63]_i__2} {FFT/InputImag_Shift_reg[64]_i__2} {FFT/InputImag_Shift_reg[65]_i__2} {FFT/InputImag_Shift_reg[66]_i__2} {FFT/InputImag_Shift_reg[67]_i__2} {FFT/InputImag_Shift_reg[68]_i__2} {FFT/InputImag_Shift_reg[69]_i__2} {FFT/InputImag_Shift_reg[6]_i__2} {FFT/InputImag_Shift_reg[70]_i__2} {FFT/InputImag_Shift_reg[71]_i__2} {FFT/InputImag_Shift_reg[72]_i__2} {FFT/InputImag_Shift_reg[73]_i__2} {FFT/InputImag_Shift_reg[74]_i__2} {FFT/InputImag_Shift_reg[75]_i__2} {FFT/InputImag_Shift_reg[76]_i__2} {FFT/InputImag_Shift_reg[77]_i__2} {FFT/InputImag_Shift_reg[78]_i__2} {FFT/InputImag_Shift_reg[79]_i__2} {FFT/InputImag_Shift_reg[7]_i__2} {FFT/InputImag_Shift_reg[80]_i__2} {FFT/InputImag_Shift_reg[81]_i__2} {FFT/InputImag_Shift_reg[82]_i__2} {FFT/InputImag_Shift_reg[83]_i__2} {FFT/InputImag_Shift_reg[84]_i__2} {FFT/InputImag_Shift_reg[85]_i__2} {FFT/InputImag_Shift_reg[86]_i__2} {FFT/InputImag_Shift_reg[87]_i__2} {FFT/InputImag_Shift_reg[88]_i__2} {FFT/InputImag_Shift_reg[89]_i__2} {FFT/InputImag_Shift_reg[8]_i__2} {FFT/InputImag_Shift_reg[90]_i__2} {FFT/InputImag_Shift_reg[91]_i__2} {FFT/InputImag_Shift_reg[92]_i__2} {FFT/InputImag_Shift_reg[93]_i__2} {FFT/InputImag_Shift_reg[94]_i__2} {FFT/InputImag_Shift_reg[95]_i__2} {FFT/InputImag_Shift_reg[96]_i__2} {FFT/InputImag_Shift_reg[97]_i__2} {FFT/InputImag_Shift_reg[98]_i__2} {FFT/InputImag_Shift_reg[99]_i__2} {FFT/InputImag_Shift_reg[9]_i__2} {FFT/InputReal_Shift_reg[0]_i__2} {FFT/InputReal_Shift_reg[100]_i__2} {FFT/InputReal_Shift_reg[101]_i__2} {FFT/InputReal_Shift_reg[102]_i__2} {FFT/InputReal_Shift_reg[103]_i__2} {FFT/InputReal_Shift_reg[104]_i__2} {FFT/InputReal_Shift_reg[105]_i__2} {FFT/InputReal_Shift_reg[106]_i__2} {FFT/InputReal_Shift_reg[107]_i__2} {FFT/InputReal_Shift_reg[108]_i__2} {FFT/InputReal_Shift_reg[109]_i__2} {FFT/InputReal_Shift_reg[10]_i__2} {FFT/InputReal_Shift_reg[110]_i__2} {FFT/InputReal_Shift_reg[111]_i__2} {FFT/InputReal_Shift_reg[112]_i__2} {FFT/InputReal_Shift_reg[113]_i__2} {FFT/InputReal_Shift_reg[114]_i__2} {FFT/InputReal_Shift_reg[115]_i__2} {FFT/InputReal_Shift_reg[116]_i__2} {FFT/InputReal_Shift_reg[117]_i__2} {FFT/InputReal_Shift_reg[118]_i__2} {FFT/InputReal_Shift_reg[119]_i__2} {FFT/InputReal_Shift_reg[11]_i__2} {FFT/InputReal_Shift_reg[120]_i__2} {FFT/InputReal_Shift_reg[121]_i__2} {FFT/InputReal_Shift_reg[122]_i__2} {FFT/InputReal_Shift_reg[123]_i__2} {FFT/InputReal_Shift_reg[124]_i__2} {FFT/InputReal_Shift_reg[125]_i__2} {FFT/InputReal_Shift_reg[126]_i__2} {FFT/InputReal_Shift_reg[127]_i__2} {FFT/InputReal_Shift_reg[128]_i__2} {FFT/InputReal_Shift_reg[129]_i__2} {FFT/InputReal_Shift_reg[12]_i__2} {FFT/InputReal_Shift_reg[130]_i__2} {FFT/InputReal_Shift_reg[131]_i__2} {FFT/InputReal_Shift_reg[132]_i__2} {FFT/InputReal_Shift_reg[133]_i__2} {FFT/InputReal_Shift_reg[134]_i__2} {FFT/InputReal_Shift_reg[135]_i__2} {FFT/InputReal_Shift_reg[136]_i__2} {FFT/InputReal_Shift_reg[137]_i__2} {FFT/InputReal_Shift_reg[138]_i__2} {FFT/InputReal_Shift_reg[139]_i__2} {FFT/InputReal_Shift_reg[13]_i__2} {FFT/InputReal_Shift_reg[140]_i__2} {FFT/InputReal_Shift_reg[141]_i__2} {FFT/InputReal_Shift_reg[142]_i__2} {FFT/InputReal_Shift_reg[143]_i__2} {FFT/InputReal_Shift_reg[144]_i__2} {FFT/InputReal_Shift_reg[145]_i__2} {FFT/InputReal_Shift_reg[146]_i__2} {FFT/InputReal_Shift_reg[147]_i__2} {FFT/InputReal_Shift_reg[148]_i__2} {FFT/InputReal_Shift_reg[149]_i__2} {FFT/InputReal_Shift_reg[14]_i__2} {FFT/InputReal_Shift_reg[150]_i__2} {FFT/InputReal_Shift_reg[151]_i__2} {FFT/InputReal_Shift_reg[152]_i__2} {FFT/InputReal_Shift_reg[153]_i__2} {FFT/InputReal_Shift_reg[154]_i__2} {FFT/InputReal_Shift_reg[155]_i__2} {FFT/InputReal_Shift_reg[156]_i__2} {FFT/InputReal_Shift_reg[157]_i__2} {FFT/InputReal_Shift_reg[158]_i__2} {FFT/InputReal_Shift_reg[159]_i__2} {FFT/InputReal_Shift_reg[15]_i__2} {FFT/InputReal_Shift_reg[160]_i__2} {FFT/InputReal_Shift_reg[161]_i__2} {FFT/InputReal_Shift_reg[162]_i__2} {FFT/InputReal_Shift_reg[163]_i__2} {FFT/InputReal_Shift_reg[164]_i__2} {FFT/InputReal_Shift_reg[165]_i__2} {FFT/InputReal_Shift_reg[166]_i__2} {FFT/InputReal_Shift_reg[167]_i__2} {FFT/InputReal_Shift_reg[168]_i__2} {FFT/InputReal_Shift_reg[169]_i__2} {FFT/InputReal_Shift_reg[16]_i__2} {FFT/InputReal_Shift_reg[170]_i__2} {FFT/InputReal_Shift_reg[171]_i__2} {FFT/InputReal_Shift_reg[172]_i__2} {FFT/InputReal_Shift_reg[173]_i__2} {FFT/InputReal_Shift_reg[174]_i__2} {FFT/InputReal_Shift_reg[175]_i__2} {FFT/InputReal_Shift_reg[176]_i__2} {FFT/InputReal_Shift_reg[177]_i__2} {FFT/InputReal_Shift_reg[178]_i__2} {FFT/InputReal_Shift_reg[179]_i__2} {FFT/InputReal_Shift_reg[17]_i__2} {FFT/InputReal_Shift_reg[180]_i__2} {FFT/InputReal_Shift_reg[181]_i__2} {FFT/InputReal_Shift_reg[182]_i__2} {FFT/InputReal_Shift_reg[183]_i__2} {FFT/InputReal_Shift_reg[184]_i__2} {FFT/InputReal_Shift_reg[185]_i__2} {FFT/InputReal_Shift_reg[186]_i__2} {FFT/InputReal_Shift_reg[187]_i__2} {FFT/InputReal_Shift_reg[188]_i__2} {FFT/InputReal_Shift_reg[189]_i__2} {FFT/InputReal_Shift_reg[18]_i__2} {FFT/InputReal_Shift_reg[190]_i__2} {FFT/InputReal_Shift_reg[191]_i__2} {FFT/InputReal_Shift_reg[192]_i__2} {FFT/InputReal_Shift_reg[193]_i__2} {FFT/InputReal_Shift_reg[194]_i__2} {FFT/InputReal_Shift_reg[195]_i__2} {FFT/InputReal_Shift_reg[196]_i__2} {FFT/InputReal_Shift_reg[197]_i__2} {FFT/InputReal_Shift_reg[198]_i__2} {FFT/InputReal_Shift_reg[199]_i__2} {FFT/InputReal_Shift_reg[19]_i__2} {FFT/InputReal_Shift_reg[1]_i__2} {FFT/InputReal_Shift_reg[200]_i__2} {FFT/InputReal_Shift_reg[201]_i__2} {FFT/InputReal_Shift_reg[202]_i__2} {FFT/InputReal_Shift_reg[203]_i__2} {FFT/InputReal_Shift_reg[204]_i__2} {FFT/InputReal_Shift_reg[205]_i__2} {FFT/InputReal_Shift_reg[206]_i__2} {FFT/InputReal_Shift_reg[207]_i__2} {FFT/InputReal_Shift_reg[208]_i__2} {FFT/InputReal_Shift_reg[209]_i__2} {FFT/InputReal_Shift_reg[20]_i__2} {FFT/InputReal_Shift_reg[210]_i__2} {FFT/InputReal_Shift_reg[211]_i__2} {FFT/InputReal_Shift_reg[212]_i__2} {FFT/InputReal_Shift_reg[213]_i__2} {FFT/InputReal_Shift_reg[214]_i__2} {FFT/InputReal_Shift_reg[215]_i__2} {FFT/InputReal_Shift_reg[216]_i__2} {FFT/InputReal_Shift_reg[217]_i__2} {FFT/InputReal_Shift_reg[218]_i__2} {FFT/InputReal_Shift_reg[219]_i__2} {FFT/InputReal_Shift_reg[21]_i__2} {FFT/InputReal_Shift_reg[220]_i__2} {FFT/InputReal_Shift_reg[221]_i__2} {FFT/InputReal_Shift_reg[222]_i__2} {FFT/InputReal_Shift_reg[223]_i__2} {FFT/InputReal_Shift_reg[224]_i__2} {FFT/InputReal_Shift_reg[225]_i__2} {FFT/InputReal_Shift_reg[226]_i__2} {FFT/InputReal_Shift_reg[227]_i__2} {FFT/InputReal_Shift_reg[228]_i__2} {FFT/InputReal_Shift_reg[229]_i__2} {FFT/InputReal_Shift_reg[22]_i__2} {FFT/InputReal_Shift_reg[230]_i__2} {FFT/InputReal_Shift_reg[231]_i__2} {FFT/InputReal_Shift_reg[232]_i__2} {FFT/InputReal_Shift_reg[233]_i__2} {FFT/InputReal_Shift_reg[234]_i__2} {FFT/InputReal_Shift_reg[235]_i__2} {FFT/InputReal_Shift_reg[236]_i__2} {FFT/InputReal_Shift_reg[237]_i__2} {FFT/InputReal_Shift_reg[238]_i__2} {FFT/InputReal_Shift_reg[239]_i__2} {FFT/InputReal_Shift_reg[23]_i__2} {FFT/InputReal_Shift_reg[240]_i__2} {FFT/InputReal_Shift_reg[241]_i__2} {FFT/InputReal_Shift_reg[242]_i__2} {FFT/InputReal_Shift_reg[243]_i__2} {FFT/InputReal_Shift_reg[244]_i__2} {FFT/InputReal_Shift_reg[245]_i__2} {FFT/InputReal_Shift_reg[246]_i__2} {FFT/InputReal_Shift_reg[247]_i__2} {FFT/InputReal_Shift_reg[248]_i__2} {FFT/InputReal_Shift_reg[249]_i__2} {FFT/InputReal_Shift_reg[24]_i__2} {FFT/InputReal_Shift_reg[250]_i__2} {FFT/InputReal_Shift_reg[251]_i__2} {FFT/InputReal_Shift_reg[252]_i__2} {FFT/InputReal_Shift_reg[253]_i__2} {FFT/InputReal_Shift_reg[254]_i__2} {FFT/InputReal_Shift_reg[255]_i__2} {FFT/InputReal_Shift_reg[25]_i__2} {FFT/InputReal_Shift_reg[26]_i__2} {FFT/InputReal_Shift_reg[27]_i__2} {FFT/InputReal_Shift_reg[28]_i__2} {FFT/InputReal_Shift_reg[29]_i__2} {FFT/InputReal_Shift_reg[2]_i__2} {FFT/InputReal_Shift_reg[30]_i__2} {FFT/InputReal_Shift_reg[31]_i__2} {FFT/InputReal_Shift_reg[32]_i__2} {FFT/InputReal_Shift_reg[33]_i__2} {FFT/InputReal_Shift_reg[34]_i__2} {FFT/InputReal_Shift_reg[35]_i__2} {FFT/InputReal_Shift_reg[36]_i__2} {FFT/InputReal_Shift_reg[37]_i__2} {FFT/InputReal_Shift_reg[38]_i__2} {FFT/InputReal_Shift_reg[39]_i__2} {FFT/InputReal_Shift_reg[3]_i__2} {FFT/InputReal_Shift_reg[40]_i__2} {FFT/InputReal_Shift_reg[41]_i__2} {FFT/InputReal_Shift_reg[42]_i__2} {FFT/InputReal_Shift_reg[43]_i__2} {FFT/InputReal_Shift_reg[44]_i__2} {FFT/InputReal_Shift_reg[45]_i__2} {FFT/InputReal_Shift_reg[46]_i__2} {FFT/InputReal_Shift_reg[47]_i__2} {FFT/InputReal_Shift_reg[48]_i__2} {FFT/InputReal_Shift_reg[49]_i__2} {FFT/InputReal_Shift_reg[4]_i__2} {FFT/InputReal_Shift_reg[50]_i__2} {FFT/InputReal_Shift_reg[51]_i__2} {FFT/InputReal_Shift_reg[52]_i__2} {FFT/InputReal_Shift_reg[53]_i__2} {FFT/InputReal_Shift_reg[54]_i__2} {FFT/InputReal_Shift_reg[55]_i__2} {FFT/InputReal_Shift_reg[56]_i__2} {FFT/InputReal_Shift_reg[57]_i__2} {FFT/InputReal_Shift_reg[58]_i__2} {FFT/InputReal_Shift_reg[59]_i__2} {FFT/InputReal_Shift_reg[5]_i__2} {FFT/InputReal_Shift_reg[60]_i__2} {FFT/InputReal_Shift_reg[61]_i__2} {FFT/InputReal_Shift_reg[62]_i__2} {FFT/InputReal_Shift_reg[63]_i__2} {FFT/InputReal_Shift_reg[64]_i__2} {FFT/InputReal_Shift_reg[65]_i__2} {FFT/InputReal_Shift_reg[66]_i__2} {FFT/InputReal_Shift_reg[67]_i__2} {FFT/InputReal_Shift_reg[68]_i__2} {FFT/InputReal_Shift_reg[69]_i__2} {FFT/InputReal_Shift_reg[6]_i__2} {FFT/InputReal_Shift_reg[70]_i__2} {FFT/InputReal_Shift_reg[71]_i__2} {FFT/InputReal_Shift_reg[72]_i__2} {FFT/InputReal_Shift_reg[73]_i__2} {FFT/InputReal_Shift_reg[74]_i__2} {FFT/InputReal_Shift_reg[75]_i__2} {FFT/InputReal_Shift_reg[76]_i__2} {FFT/InputReal_Shift_reg[77]_i__2} {FFT/InputReal_Shift_reg[78]_i__2} {FFT/InputReal_Shift_reg[79]_i__2} {FFT/InputReal_Shift_reg[7]_i__2} {FFT/InputReal_Shift_reg[80]_i__2} {FFT/InputReal_Shift_reg[81]_i__2} {FFT/InputReal_Shift_reg[82]_i__2} {FFT/InputReal_Shift_reg[83]_i__2} {FFT/InputReal_Shift_reg[84]_i__2} {FFT/InputReal_Shift_reg[85]_i__2} {FFT/InputReal_Shift_reg[86]_i__2} {FFT/InputReal_Shift_reg[87]_i__2} {FFT/InputReal_Shift_reg[88]_i__2} {FFT/InputReal_Shift_reg[89]_i__2} {FFT/InputReal_Shift_reg[8]_i__2} {FFT/InputReal_Shift_reg[90]_i__2} {FFT/InputReal_Shift_reg[91]_i__2} {FFT/InputReal_Shift_reg[92]_i__2} {FFT/InputReal_Shift_reg[93]_i__2} {FFT/InputReal_Shift_reg[94]_i__2} {FFT/InputReal_Shift_reg[95]_i__2} {FFT/InputReal_Shift_reg[96]_i__2} {FFT/InputReal_Shift_reg[97]_i__2} {FFT/InputReal_Shift_reg[98]_i__2} {FFT/InputReal_Shift_reg[99]_i__2} {FFT/InputReal_Shift_reg[9]_i__2}  
+868357 {inv/bar_36_imag0_i} "
+1220613 {inv/bar_122_imag0_i}  
+258053 {inv/bar_16_real0_i} !
+643077 {inv/bar_110_real0_i}  
+995333 {inv/bar_67_imag0_i}  
+770053 {inv/bar_12_imag0_i} !
+1052677 {inv/bar_81_imag0_i}  
+385029 {inv/bar_47_real0_i} @
+23756905 {FFT/add_to_i__3} {FFT/stage_i__3} {FFT/state_i__3} !
+647173 {inv/bar_111_real0_i}  
+815109 {inv/bar_23_imag0_i} "
+1224709 {inv/bar_123_imag0_i} !
+1056773 {inv/bar_82_imag0_i}  
+999429 {inv/bar_68_imag0_i}  
+389125 {inv/bar_48_real0_i}  
+774149 {inv/bar_13_imag0_i}  
+819205 {inv/bar_24_imag0_i} 
+2322442 {FFT/offset0_i} "
+1183749 {inv/bar_113_imag0_i} "
+1228805 {inv/bar_124_imag0_i} · 
+1003530«  {FFT/add_to_i} {FFT/bar_0_i} {FFT/bar_100_i} {FFT/bar_101_i} {FFT/bar_102_i} {FFT/bar_103_i} {FFT/bar_104_i} {FFT/bar_105_i} {FFT/bar_106_i} {FFT/bar_107_i} {FFT/bar_108_i} {FFT/bar_109_i} {FFT/bar_10_i} {FFT/bar_110_i} {FFT/bar_111_i} {FFT/bar_112_i} {FFT/bar_113_i} {FFT/bar_114_i} {FFT/bar_115_i} {FFT/bar_116_i} {FFT/bar_117_i} {FFT/bar_118_i} {FFT/bar_119_i} {FFT/bar_11_i} {FFT/bar_120_i} {FFT/bar_121_i} {FFT/bar_122_i} {FFT/bar_123_i} {FFT/bar_124_i} {FFT/bar_125_i} {FFT/bar_126_i} {FFT/bar_127_i} {FFT/bar_12_i} {FFT/bar_13_i} {FFT/bar_14_i} {FFT/bar_15_i} {FFT/bar_16_i} {FFT/bar_17_i} {FFT/bar_18_i} {FFT/bar_19_i} {FFT/bar_1_i} {FFT/bar_20_i} {FFT/bar_21_i} {FFT/bar_22_i} {FFT/bar_23_i} {FFT/bar_24_i} {FFT/bar_25_i} {FFT/bar_26_i} {FFT/bar_27_i} {FFT/bar_28_i} {FFT/bar_29_i} {FFT/bar_2_i} {FFT/bar_30_i} {FFT/bar_31_i} {FFT/bar_32_i} {FFT/bar_33_i} {FFT/bar_34_i} {FFT/bar_35_i} {FFT/bar_36_i} {FFT/bar_37_i} {FFT/bar_38_i} {FFT/bar_39_i} {FFT/bar_3_i} {FFT/bar_40_i} {FFT/bar_41_i} {FFT/bar_42_i} {FFT/bar_43_i} {FFT/bar_44_i} {FFT/bar_45_i} {FFT/bar_46_i} {FFT/bar_47_i} {FFT/bar_48_i} {FFT/bar_49_i} {FFT/bar_4_i} {FFT/bar_50_i} {FFT/bar_51_i} {FFT/bar_52_i} {FFT/bar_53_i} {FFT/bar_54_i} {FFT/bar_55_i} {FFT/bar_56_i} {FFT/bar_57_i} {FFT/bar_58_i} {FFT/bar_59_i} {FFT/bar_5_i} {FFT/bar_60_i} {FFT/bar_61_i} {FFT/bar_62_i} {FFT/bar_63_i} {FFT/bar_64_i} {FFT/bar_65_i} {FFT/bar_66_i} {FFT/bar_67_i} {FFT/bar_68_i} {FFT/bar_69_i} {FFT/bar_6_i} {FFT/bar_70_i} {FFT/bar_71_i} {FFT/bar_72_i} {FFT/bar_73_i} {FFT/bar_74_i} {FFT/bar_75_i} {FFT/bar_76_i} {FFT/bar_77_i} {FFT/bar_78_i} {FFT/bar_79_i} {FFT/bar_7_i} {FFT/bar_80_i} {FFT/bar_81_i} {FFT/bar_82_i} {FFT/bar_83_i} {FFT/bar_84_i} {FFT/bar_85_i} {FFT/bar_86_i} {FFT/bar_87_i} {FFT/bar_88_i} {FFT/bar_89_i} {FFT/bar_8_i} {FFT/bar_90_i} {FFT/bar_91_i} {FFT/bar_92_i} {FFT/bar_93_i} {FFT/bar_94_i} {FFT/bar_95_i} {FFT/bar_96_i} {FFT/bar_97_i} {FFT/bar_98_i} {FFT/bar_99_i} {FFT/bar_9_i} {FFT/finish_reg_i} {FFT/ibar_0_i} {FFT/ibar_100_i} {FFT/ibar_101_i} {FFT/ibar_102_i} {FFT/ibar_103_i} {FFT/ibar_104_i} {FFT/ibar_105_i} {FFT/ibar_106_i} {FFT/ibar_107_i} {FFT/ibar_108_i} {FFT/ibar_109_i} {FFT/ibar_10_i} {FFT/ibar_110_i} {FFT/ibar_111_i} {FFT/ibar_112_i} {FFT/ibar_113_i} {FFT/ibar_114_i} {FFT/ibar_115_i} {FFT/ibar_116_i} {FFT/ibar_117_i} {FFT/ibar_118_i} {FFT/ibar_119_i} {FFT/ibar_11_i} {FFT/ibar_120_i} {FFT/ibar_121_i} {FFT/ibar_122_i} {FFT/ibar_123_i} {FFT/ibar_124_i} {FFT/ibar_125_i} {FFT/ibar_126_i} {FFT/ibar_127_i} {FFT/ibar_12_i} {FFT/ibar_13_i} {FFT/ibar_14_i} {FFT/ibar_15_i} {FFT/ibar_16_i} {FFT/ibar_17_i} {FFT/ibar_18_i} {FFT/ibar_19_i} {FFT/ibar_1_i} {FFT/ibar_20_i} {FFT/ibar_21_i} {FFT/ibar_22_i} {FFT/ibar_23_i} {FFT/ibar_24_i} {FFT/ibar_25_i} {FFT/ibar_26_i} {FFT/ibar_27_i} {FFT/ibar_28_i} {FFT/ibar_29_i} {FFT/ibar_2_i} {FFT/ibar_30_i} {FFT/ibar_31_i} {FFT/ibar_32_i} {FFT/ibar_33_i} {FFT/ibar_34_i} {FFT/ibar_35_i} {FFT/ibar_36_i} {FFT/ibar_37_i} {FFT/ibar_38_i} {FFT/ibar_39_i} {FFT/ibar_3_i} {FFT/ibar_40_i} {FFT/ibar_41_i} {FFT/ibar_42_i} {FFT/ibar_43_i} {FFT/ibar_44_i} {FFT/ibar_45_i} {FFT/ibar_46_i} {FFT/ibar_47_i} {FFT/ibar_48_i} {FFT/ibar_49_i} {FFT/ibar_4_i} {FFT/ibar_50_i} {FFT/ibar_51_i} {FFT/ibar_52_i} {FFT/ibar_53_i} {FFT/ibar_54_i} {FFT/ibar_55_i} {FFT/ibar_56_i} {FFT/ibar_57_i} {FFT/ibar_58_i} {FFT/ibar_59_i} {FFT/ibar_5_i} {FFT/ibar_60_i} {FFT/ibar_61_i} {FFT/ibar_62_i} {FFT/ibar_63_i} {FFT/ibar_64_i} {FFT/ibar_65_i} {FFT/ibar_66_i} {FFT/ibar_67_i} {FFT/ibar_68_i} {FFT/ibar_69_i} {FFT/ibar_6_i} {FFT/ibar_70_i} {FFT/ibar_71_i} {FFT/ibar_72_i} {FFT/ibar_73_i} {FFT/ibar_74_i} {FFT/ibar_75_i} {FFT/ibar_76_i} {FFT/ibar_77_i} {FFT/ibar_78_i} {FFT/ibar_79_i} {FFT/ibar_7_i} {FFT/ibar_80_i} {FFT/ibar_81_i} {FFT/ibar_82_i} {FFT/ibar_83_i} {FFT/ibar_84_i} {FFT/ibar_85_i} {FFT/ibar_86_i} {FFT/ibar_87_i} {FFT/ibar_88_i} {FFT/ibar_89_i} {FFT/ibar_8_i} {FFT/ibar_90_i} {FFT/ibar_91_i} {FFT/ibar_92_i} {FFT/ibar_93_i} {FFT/ibar_94_i} {FFT/ibar_95_i} {FFT/ibar_96_i} {FFT/ibar_97_i} {FFT/ibar_98_i} {FFT/ibar_99_i} {FFT/ibar_9_i} {FFT/stage_i} {FFT/start_mult_i} {FFT/start_mult_i__0} {FFT/state_i} {FFT/valid_i} {FFT/valid_i__0} !
+1003525 {inv/bar_69_imag0_i}  
+778245 {inv/bar_14_imag0_i} "
+1130501 {inv/bar_100_imag0_i} "
+1187845 {inv/bar_114_imag0_i} !
+1007621 {inv/bar_70_imag0_i}  
+942085 {inv/bar_54_imag0_i}  
+557061 {inv/bar_89_real0_i} @
+22855785 {FFT/add_to_i__1} {FFT/stage_i__1} {FFT/state_i__1}  
+299013 {inv/bar_26_real0_i} !
+684037 {inv/bar_120_real0_i}  
+946181 {inv/bar_55_imag0_i} @
+22323305 {FFT/add_to_i__0} {FFT/stage_i__0} {FFT/state_i__0} 
+40961 {Div_Clk/counter0_i} !
+1093637 {inv/bar_91_imag0_i} !
+688133 {inv/bar_121_real0_i} !
+1097733 {inv/bar_92_imag0_i} "
+1134597 {inv/bar_101_imag0_i} 
+212997 {inv/bar_5_real0_i} 
+729093 {inv/bar_2_imag0_i} "
+1138693 {inv/bar_102_imag0_i}  
+856069 {inv/bar_33_imag0_i}  
+983045 {inv/bar_64_imag0_i}  
+598021 {inv/bar_99_real0_i} !
+1040389 {inv/bar_78_imag0_i} "
+1212421 {inv/bar_120_imag0_i}  
+987141 {inv/bar_65_imag0_i} !
+1044485 {inv/bar_79_imag0_i}  
+2490378 {FFT/counter0_i__0} "
+1171461 {inv/bar_110_imag0_i} "
+1216517 {inv/bar_121_imag0_i} !
+1048581 {inv/bar_80_imag0_i} "
+1175557 {inv/bar_111_imag0_i}  
+253957 {inv/bar_15_real0_i} ?
+2539625 {FFT/Imag_Out1_i} {FFT/RTL_ADD__2} {FFT/RTL_ADD__3} 
+2273290 {FFT/counter10_i}  
+380933 {inv/bar_46_real0_i} "
+1179653 {inv/bar_112_imag0_i} !
+1122309 {inv/bar_98_imag0_i}  
+897029 {inv/bar_43_imag0_i} #
+200714 {FFT/index2_multiply_i} 
+200709 {inv/bar_2_real0_i} !
+1081349 {inv/bar_88_imag0_i} !
+1126405 {inv/bar_99_imag0_i}  
+421893 {inv/bar_56_real0_i} #
+204810 {FFT/index3_multiply_i} 
+204805 {inv/bar_3_real0_i} !
+1085445 {inv/bar_89_imag0_i} "
+2449418 {FFT/finish_reg_i__0} @
+4218986 {FFT/RTL_MULT__7} {FFT/RTL_MULT__8} {FFT/RTL_SUB__0} 
+2224138 {FFT/counter0_i} 
+208901 {inv/bar_4_real0_i} "
+425990 {VGA/v_counter_wire_i}  
+290821 {inv/bar_24_real0_i} 
+720901 {inv/bar_0_imag0_i} !
+1089541 {inv/bar_90_imag0_i} @
+4259946 {FFT/RTL_ADD__4} {FFT/RTL_MULT__0} {FFT/RTL_MULT__3}  
+425989 {inv/bar_57_real0_i} C
+2908269 {FFT/Imag_Out40_i} {FFT/Imag_Out41_i} {FFT/Imag_Out4_i}  
+552965 {inv/bar_88_real0_i}  
+294917 {inv/bar_25_real0_i}  
+331781 {inv/bar_34_real0_i} 2
+2359306' {FFT/counter1_i__3} {FFT/offset_i__3} "
+1200133 {inv/bar_117_imag0_i}  
+503813 {inv/bar_76_real0_i} "
+1257478 {VGA/font_counter1_i} !
+1032197 {inv/bar_76_imag0_i} 
+335881 {ic/counter0_i}  
+335877 {inv/bar_35_real0_i}  
+462853 {inv/bar_66_real0_i} "
+1204229 {inv/bar_118_imag0_i} !
+1036293 {inv/bar_77_imag0_i}  
+339973 {inv/bar_36_real0_i}  
+507909 {inv/bar_77_real0_i} 
+724997 {inv/bar_1_imag0_i}  
+851973 {inv/bar_32_imag0_i} "
+1163269 {inv/bar_108_imag0_i} "
+1208325 {inv/bar_119_imag0_i}  
+466949 {inv/bar_67_real0_i}  
+241669 {inv/bar_12_real0_i}  
+593925 {inv/bar_98_real0_i} !
+1110021 {inv/bar_95_imag0_i}  
+413701 {inv/bar_54_real0_i} "
+1167365 {inv/bar_109_imag0_i} @
+4137066 {FFT/RTL_ADD__1} {FFT/RTL_MULT__1} {FFT/RTL_MULT__2}  
+245765 {inv/bar_13_real0_i} !
+630789 {inv/bar_107_real0_i}  
+372741 {inv/bar_44_real0_i}  
+802821 {inv/bar_20_imag0_i} !
+1114117 {inv/bar_96_imag0_i}  
+249861 {inv/bar_14_real0_i} !
+634885 {inv/bar_108_real0_i}  
+761861 {inv/bar_10_imag0_i} <
+2498662 {FFT/RTL_ADD} {FFT/RTL_ADD__0} {FFT/Real_Out1_i} !
+1073157 {inv/bar_86_imag0_i} 2
+2269194' {FFT/counter1_i__2} {FFT/offset_i__2} !
+1118213 {inv/bar_97_imag0_i}  
+376837 {inv/bar_45_real0_i} !
+638981 {inv/bar_109_real0_i}  
+806917 {inv/bar_21_imag0_i} 
+765952 {mic_data0_i} !
+1077253 {inv/bar_87_imag0_i}  
+765957 {inv/bar_11_imag0_i}  
+540677 {inv/bar_85_real0_i}  
+892933 {inv/bar_42_imag0_i} L
+24587C {FFT/rom/out_real2_i} {FFT/rom/out_real3_i} {FFT/rom/out_real4_i}  
+417797 {inv/bar_55_real0_i} "
+1241093 {inv/bar_127_imag0_i} !
+1024005 {inv/bar_74_imag0_i}  
+282629 {inv/bar_22_real0_i}  
+544773 {inv/bar_86_real0_i} !
+712709 {inv/bar_127_real0_i} L
+28683C {FFT/rom/out_imag2_i} {FFT/rom/out_imag3_i} {FFT/rom/out_imag4_i} !
+1028101 {inv/bar_75_imag0_i}  
+286725 {inv/bar_23_real0_i} C
+2867309 {FFT/Real_Out40_i} {FFT/Real_Out41_i} {FFT/Real_Out4_i} !
+671749 {inv/bar_117_real0_i}  
+933893 {inv/bar_52_imag0_i}  
+548869 {inv/bar_87_real0_i}  
+323589 {inv/bar_32_real0_i} !
+675845 {inv/bar_118_real0_i}  
+450565 {inv/bar_63_real0_i}  
+937989 {inv/bar_53_imag0_i}  
+327685 {inv/bar_33_real0_i} !
+679941 {inv/bar_119_real0_i} 
+192517 {inv/bar_0_real0_i} (
+61447 {VGA/horizantal/h_counter0_i}  
+454661 {inv/bar_64_real0_i} &
+61448 {VGA/vertical/v_counter0_i} 
+196613 {inv/bar_1_real0_i}  
+581637 {inv/bar_95_real0_i}  
+843781 {inv/bar_30_imag0_i}  
+401413 {inv/bar_51_real0_i} "
+1155077 {inv/bar_106_imag0_i} #
+196618 {FFT/index1_multiply_i}  
+458757 {inv/bar_65_real0_i} 
+458758 {VGA/font_data0_i}  
+233477 {inv/bar_10_real0_i}  
+970757 {inv/bar_61_imag0_i}  
+585733 {inv/bar_96_real0_i}  
+360453 {inv/bar_41_real0_i} "
+1159173 {inv/bar_107_imag0_i}  
+847877 {inv/bar_31_imag0_i}  
+405509 {inv/bar_52_real0_i}  
+237573 {inv/bar_11_real0_i} !
+622597 {inv/bar_105_real0_i}  
+974853 {inv/bar_62_imag0_i}  
+589829 {inv/bar_97_real0_i}  
+364549 {inv/bar_42_real0_i} =
+4096103 {FFT/RTL_MULT__5} {FFT/RTL_MULT__6} {FFT/RTL_SUB}  
+409605 {inv/bar_53_real0_i} !
+626693 {inv/bar_106_real0_i}  
+491525 {inv/bar_73_real0_i}  
+921605 {inv/bar_49_imag0_i}  
+311301 {inv/bar_29_real0_i}  
+978949 {inv/bar_63_imag0_i}  
+368645 {inv/bar_43_real0_i} 
+753669 {inv/bar_8_imag0_i}  
+880645 {inv/bar_39_imag0_i}  
+495621 {inv/bar_74_real0_i}  
+925701 {inv/bar_50_imag0_i}  
+270341 {inv/bar_19_real0_i} !
+700421 {inv/bar_124_real0_i} !
+1069061 {inv/bar_85_imag0_i} 
+757765 {inv/bar_9_imag0_i}  
+532485 {inv/bar_83_real0_i}  
+884741 {inv/bar_40_imag0_i} "
+1196037 {inv/bar_116_imag0_i}  
+499717 {inv/bar_75_real0_i}  
+274437 {inv/bar_20_real0_i} C
+2744429 {FFT/Real_Out30_i} {FFT/Real_Out31_i} {FFT/Real_Out3_i}  
+536581 {inv/bar_84_real0_i} !
+704517 {inv/bar_125_real0_i}  
+888837 {inv/bar_41_imag0_i}  
+278533 {inv/bar_21_real0_i} !
+663557 {inv/bar_115_real0_i} !
+708613 {inv/bar_126_real0_i}  
+790533 {inv/bar_17_imag0_i} C
+2785389 {FFT/Imag_Out30_i} {FFT/Imag_Out31_i} {FFT/Imag_Out3_i}  
+315397 {inv/bar_30_real0_i} !
+667653 {inv/bar_116_real0_i} *
+180234  {FFT/index10_i} {FFT/index1_i}  
+442373 {inv/bar_61_real0_i} !
+610309 {inv/bar_102_real0_i}  
+929797 {inv/bar_51_imag0_i}  
+319493 {inv/bar_31_real0_i}  
+794629 {inv/bar_18_imag0_i} :
+1843300 {FFT/index20_i} {FFT/index21_i} {FFT/index2_i} !
+614405 {inv/bar_103_real0_i}  
+831493 {inv/bar_27_imag0_i}  
+446469 {inv/bar_62_real0_i}  
+798725 {inv/bar_19_imag0_i} 
+221189 {inv/bar_7_real0_i}  
+573445 {inv/bar_93_real0_i} !
+618501 {inv/bar_104_real0_i} :
+1884260 {FFT/index30_i} {FFT/index31_i} {FFT/index3_i}  
+835589 {inv/bar_28_imag0_i} 
+225285 {inv/bar_8_real0_i}  
+962565 {inv/bar_59_imag0_i}  
+577541 {inv/bar_94_real0_i}  
+352261 {inv/bar_39_real0_i} 
+352265 {ic/start_fft_i}  
+839685 {inv/bar_29_imag0_i} 
+229381 {inv/bar_9_real0_i}  
+966661 {inv/bar_60_imag0_i} 
+741381 {inv/bar_5_imag0_i} "
+1150981 {inv/bar_105_imag0_i}  
+356357 {inv/bar_40_real0_i}  
+483333 {inv/bar_71_real0_i}  
+913413 {inv/bar_47_imag0_i} 
+745477 {inv/bar_6_imag0_i}  
+303109 {inv/bar_27_real0_i}  
+520197 {inv/bar_80_real0_i}  
+872453 {inv/bar_37_imag0_i}  
+487429 {inv/bar_72_real0_i}  
+917509 {inv/bar_48_imag0_i} .
+307203$ {Mic/pdm_clk_gen_i/clk_counter0_i} 
+749573 {inv/bar_7_imag0_i}  
+262149 {inv/bar_17_real0_i} C
+2621549 {FFT/Real_Out20_i} {FFT/Real_Out21_i} {FFT/Real_Out2_i}  
+307205 {inv/bar_28_real0_i}  
+524293 {inv/bar_81_real0_i} !
+1101829 {inv/bar_93_imag0_i}  
+876549 {inv/bar_38_imag0_i}  
+266245 {inv/bar_18_real0_i} C
+2662509 {FFT/Imag_Out20_i} {FFT/Imag_Out21_i} {FFT/Imag_Out2_i} !
+651269 {inv/bar_112_real0_i}  
+393221 {inv/bar_49_real0_i}  
+823301 {inv/bar_25_imag0_i} !
+1060869 {inv/bar_83_imag0_i} !
+1105925 {inv/bar_94_imag0_i}  
+528389 {inv/bar_82_real0_i} "
+1232901 {inv/bar_125_imag0_i} !
+655365 {inv/bar_113_real0_i}  
+430085 {inv/bar_58_real0_i}  
+782341 {inv/bar_15_imag0_i} !
+1064965 {inv/bar_84_imag0_i} "
+1191941 {inv/bar_115_imag0_i}  
+397317 {inv/bar_50_real0_i} !
+659461 {inv/bar_114_real0_i}  
+434181 {inv/bar_59_real0_i} !
+602117 {inv/bar_100_real0_i} $
+434182 {VGA/v_counter_wire_1_i} !
+1011717 {inv/bar_71_imag0_i} A
+4341867 {FFT/RTL_MULT__10} {FFT/RTL_MULT__9} {FFT/RTL_SUB__1}  
+786437 {inv/bar_16_imag0_i}  
+561157 {inv/bar_90_real0_i} !
+606213 {inv/bar_101_real0_i} 
+176138 {FFT/index0_i} !
+1015813 {inv/bar_72_imag0_i} =
+4382823 {FFT/RTL_ADD__5} {FFT/RTL_MULT} {FFT/RTL_MULT__4}  
+438277 {inv/bar_60_real0_i}  
+950277 {inv/bar_56_imag0_i}  
+565253 {inv/bar_91_real0_i}  
+827397 {inv/bar_26_imag0_i} 
+217093 {inv/bar_6_real0_i} !
+692229 {inv/bar_122_real0_i}  
+954373 {inv/bar_57_imag0_i} "
+1236997 {inv/bar_126_imag0_i} !
+1019909 {inv/bar_73_imag0_i}  
+512005 {inv/bar_78_real0_i}  
+569349 {inv/bar_92_real0_i}  
+344069 {inv/bar_37_real0_i} !
+696325 {inv/bar_123_real0_i} 2
+blackBoxInfo"
+Mic/cic_compilercic_compiler_0Ö
+synth_design
+isIncremental0
+Runtime5
+Threads used2ª
+args¡-define default::[not_specified] -verilog_define default::[not_specified] -vhdl_define default::[not_specified] -top  ELE_432_Top_Module -part  xc7a100tcsg324-1 
+resynthPerc0.00
+Cputime5
+blackBoxPercinf
+	directive œ
+synth_design_metrics$
+mismatchedAddSubOperatorWidths-1
+lowMaxFanout-1
+NumUnregisteredPorts0
+caseNotFullNoDefault3
+	smallSrls-1
+srlsWithResetLogic-1
+shallowRAMWithAttribute-1
+hierMFO0
+bigRAMs-1
+NetsWithMixedFanouts-1
+DSPsWithKeep0
+RQS_Results

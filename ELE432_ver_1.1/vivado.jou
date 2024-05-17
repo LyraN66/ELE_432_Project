@@ -3,10 +3,10 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Tue May 14 13:12:16 2024
-# Process ID: 12976
+# Start of session at: Thu May 16 11:34:39 2024
+# Process ID: 9296
 # Current directory: C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3976 C:\Users\samil\Desktop\ELE_432_Project\ELE432_ver_1.1\ELE432.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12548 C:\Users\samil\Desktop\ELE_432_Project\ELE432_ver_1.1\ELE432.xpr
 # Log file: C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/vivado.log
 # Journal file: C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1\vivado.jou
 # Running On: DESKTOP-N21QB96, OS: Windows, CPU Frequency: 2808 MHz, CPU Physical cores: 4, Host memory: 16804 MB
@@ -14,41 +14,3 @@
 start_gui
 open_project C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.xpr
 update_compile_order -fileset sources_1
-open_hw_manager
-connect_hw_server -allow_non_jtag
-open_hw_target
-set_property PROGRAM.FILE {C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.runs/impl_1/ELE_432_Top_Module.bit} [get_hw_devices xc7a100t_0]
-current_hw_device [get_hw_devices xc7a100t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
-synth_design -rtl -rtl_skip_mlo -name rtl_1
-synth_design -rtl -rtl_skip_mlo -name rtl_1
-synth_design -rtl -rtl_skip_mlo -name rtl_1
-synth_design -rtl -rtl_skip_mlo -name rtl_1
-open_run synth_1 -name synth_1
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.runs/impl_1/ELE_432_Top_Module.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.runs/impl_1/ELE_432_Top_Module.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-disconnect_hw_server localhost:3121
-connect_hw_server -allow_non_jtag
-open_hw_target
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.runs/impl_1/ELE_432_Top_Module.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-synth_design -rtl -rtl_skip_mlo -name rtl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1/ELE432.runs/impl_1/ELE_432_Top_Module.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]

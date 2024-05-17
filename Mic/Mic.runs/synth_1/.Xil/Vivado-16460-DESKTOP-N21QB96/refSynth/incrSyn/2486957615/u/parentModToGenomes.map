@@ -1,0 +1,3 @@
+ELE_432_Top_Module: VGA_Controller__GB1, FFT_Module__GB3, ELE_432_Top_Module__GC0, FFT_Module__GB1, FFT_Module__GB5, FFT_Module__GB0, FFT_Module__GB2, FFT_Module__GB4, FFT_Module__GB6, VGA_Controller__GB0, 
+logic__4654: FFT_Module__GB6, FFT_Module__GB5, FFT_Module__GB4, FFT_Module__GB3, FFT_Module__GB2, FFT_Module__GB1, FFT_Module__GB0, 
+logic__3982: VGA_Controller__GB1, VGA_Controller__GB0, 
