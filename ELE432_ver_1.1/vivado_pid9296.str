@@ -152,3 +152,542 @@ Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // Tcl Message: Scanning sources... Finished scanning sources 
 // Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx/Vivado/2023.2/data/ip'. 
 // [Engine Memory]: 1,172 MB (+9427kb) [00:00:32]
+// Tcl Message: open_project: Time (s): cpu = 00:00:41 ; elapsed = 00:00:18 . Memory (MB): peak = 1534.410 ; gain = 414.867 
+// Project name: ELE432; location: C:/Users/samil/Desktop/ELE_432_Project/ELE432_ver_1.1; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bq (Open Project Progress)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,179 MB. GUI used memory: 73 MB. Current time: 5/16/24, 11:35:19 AM TRT
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (ELE_432_Top_Module.v) elapsed time: 0.2s
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELE_432_Top_Module (ELE_432_Top_Module.v)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELE_432_Top_Module (ELE_432_Top_Module.v)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELE_432_Top_Module (ELE_432_Top_Module.v)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELE_432_Top_Module (ELE_432_Top_Module.v), VGA : VGA_Controller (VGA_Controller.v)]", 4, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELE_432_Top_Module (ELE_432_Top_Module.v), VGA : VGA_Controller (VGA_Controller.v)]", 4, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectCodeEditor("VGA_Controller.v", 298, 192); // ad (VGA_Controller.v)
+typeControlKey((HResource) null, "VGA_Controller.v", 'c'); // ad (VGA_Controller.v)
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELE_432_Top_Module (ELE_432_Top_Module.v), FFT : FFT_Module (FFT_Module.v)]", 7, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELE_432_Top_Module (ELE_432_Top_Module.v), FFT : FFT_Module (FFT_Module.v)]", 7, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectCodeEditor("FFT_Module.v", 191, 158); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'c'); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 238, 159); // ad (FFT_Module.v)
+// [GUI Memory]: 148 MB (+10479kb) [00:07:08]
+// Elapsed time: 889 seconds
+selectCodeEditor("FFT_Module.v", 86, 80); // ad (FFT_Module.v)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("FFT_Module.v", 232, 83); // ad (FFT_Module.v)
+// Elapsed time: 341 seconds
+selectCodeEditor("FFT_Module.v", 180, 95); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 234, 87); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 212, 94); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 85, 80); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 186, 78); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'v'); // ad (FFT_Module.v)
+typeControlKey(null, null, 'z');
+// Elapsed time: 134 seconds
+typeControlKey((HResource) null, "FFT_Module.v", 'v'); // ad (FFT_Module.v)
+typeControlKey(null, null, 'z');
+// Elapsed time: 115 seconds
+selectCodeEditor("FFT_Module.v", 193, 77); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'v'); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 31, 195); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 9, 158); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 23, 126); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 48, 90); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 807, 524); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 303, 182); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 394, 103); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 383, 96); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 1046, 151); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 346, 112); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 698, 149); // ad (FFT_Module.v)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,181 MB. GUI used memory: 77 MB. Current time: 5/16/24, 12:05:19 PM TRT
+// Elapsed time: 445 seconds
+selectCodeEditor("FFT_Module.v", 221, 194); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'c'); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 251, 214); // ad (FFT_Module.v)
+// Elapsed time: 606 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELE_432_Top_Module (ELE_432_Top_Module.v), Div_Clk : Divided_Clock (Divided_Clock.v)]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELE_432_Top_Module (ELE_432_Top_Module.v), Div_Clk : Divided_Clock (Divided_Clock.v)]", 2, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectCodeEditor("Divided_Clock.v", 152, 180); // ad (Divided_Clock.v)
+typeControlKey((HResource) null, "Divided_Clock.v", 'c'); // ad (Divided_Clock.v)
+selectCodeEditor("Divided_Clock.v", 232, 216); // ad (Divided_Clock.v)
+// Elapsed time: 176 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELE_432_Top_Module (ELE_432_Top_Module.v), FFT : FFT_Module (FFT_Module.v)]", 7, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELE_432_Top_Module (ELE_432_Top_Module.v), FFT : FFT_Module (FFT_Module.v), rom : Twiddle (twiddle.v)]", 8, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELE_432_Top_Module (ELE_432_Top_Module.v), FFT : FFT_Module (FFT_Module.v), rom : Twiddle (twiddle.v)]", 8, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELE_432_Top_Module (ELE_432_Top_Module.v), FFT : FFT_Module (FFT_Module.v), rom : Twiddle (twiddle.v)]", 8, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectCodeEditor("twiddle.v", 306, 248); // ad (twiddle.v)
+typeControlKey((HResource) null, "twiddle.v", 'c'); // ad (twiddle.v)
+selectCodeEditor("twiddle.v", 598, 265); // ad (twiddle.v)
+// [GUI Memory]: 156 MB (+383kb) [00:52:45]
+// Elapsed time: 339 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FFT_Module.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("FFT_Module.v", 440, 192); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 1053, 40); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 1038, 40); // ad (FFT_Module.v)
+// Elapsed time: 52 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELE_432_Top_Module (ELE_432_Top_Module.v), FFT : FFT_Module (FFT_Module.v), rom : Twiddle (twiddle.v)]", 8, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELE_432_Top_Module (ELE_432_Top_Module.v), FFT : FFT_Module (FFT_Module.v)]", 7, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELE_432_Top_Module (ELE_432_Top_Module.v), FFT : FFT_Module (FFT_Module.v)]", 7, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+// Elapsed time: 87 seconds
+selectButton(PAResourceEtoH.ExploreAheadView_SHOW_PERCENTAGE, (String) null); // v (PAResourceEtoH.ExploreAheadView_SHOW_PERCENTAGE): TRUE
+selectButton(PAResourceEtoH.ExploreAheadView_SHOW_PERCENTAGE, (String) null); // v (PAResourceEtoH.ExploreAheadView_SHOW_PERCENTAGE): FALSE
+selectButton(PAResourceEtoH.ExploreAheadView_SHOW_PERCENTAGE, (String) null); // v (PAResourceEtoH.ExploreAheadView_SHOW_PERCENTAGE): TRUE
+selectButton(PAResourceEtoH.ExploreAheadView_SHOW_PERCENTAGE, (String) null); // v (PAResourceEtoH.ExploreAheadView_SHOW_PERCENTAGE): FALSE
+selectCodeEditor("FFT_Module.v", 107, 225); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 92, 260); // ad (FFT_Module.v)
+// Elapsed time: 33 seconds
+selectCodeEditor("FFT_Module.v", 249, 413); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 248, 413, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+// Elapsed time: 90 seconds
+selectCodeEditor("FFT_Module.v", 343, 412); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 337, 416); // ad (FFT_Module.v)
+// Elapsed time: 27 seconds
+selectCodeEditor("FFT_Module.v", 299, 261); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 299, 261, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+selectCodeEditor("FFT_Module.v", 208, 258); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 208, 258, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+selectCodeEditor("FFT_Module.v", 295, 256); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 295, 256, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+// Elapsed time: 41 seconds
+selectCodeEditor("FFT_Module.v", 375, 202); // ad (FFT_Module.v)
+// Elapsed time: 10 seconds
+selectCodeEditor("FFT_Module.v", 248, 415); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 248, 415, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+// Elapsed time: 21 seconds
+selectCodeEditor("FFT_Module.v", 140, 302); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 136, 309); // ad (FFT_Module.v)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,181 MB. GUI used memory: 78 MB. Current time: 5/16/24, 12:35:20 PM TRT
+// Elapsed time: 238 seconds
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 22); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 22); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 23, false); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,181 MB. GUI used memory: 60 MB. Current time: 5/16/24, 1:05:20 PM TRT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,181 MB. GUI used memory: 60 MB. Current time: 5/16/24, 1:35:21 PM TRT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,181 MB. GUI used memory: 59 MB. Current time: 5/16/24, 2:05:21 PM TRT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,181 MB. GUI used memory: 59 MB. Current time: 5/16/24, 2:35:22 PM TRT
+// Elapsed time: 8359 seconds
+selectCodeEditor("FFT_Module.v", 347, 349); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 350, 331); // ad (FFT_Module.v)
+// Elapsed time: 28 seconds
+selectCodeEditor("FFT_Module.v", 180, 200); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 180, 200, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+typeControlKey((HResource) null, "FFT_Module.v", 'c'); // ad (FFT_Module.v)
+// Elapsed time: 168 seconds
+selectCodeEditor("FFT_Module.v", 1053, 234); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 162, 79); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'c'); // ad (FFT_Module.v)
+// Elapsed time: 45 seconds
+selectCodeEditor("FFT_Module.v", 447, 320); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 171, 392); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 345, 216); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 201, 131); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'v'); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 255, 245); // ad (FFT_Module.v)
+typeControlKey(null, null, 'z');
+// HMemoryUtils.trashcanNow. Engine heap size: 1,181 MB. GUI used memory: 59 MB. Current time: 5/16/24, 3:05:22 PM TRT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,181 MB. GUI used memory: 59 MB. Current time: 5/16/24, 3:35:22 PM TRT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,181 MB. GUI used memory: 59 MB. Current time: 5/16/24, 4:05:23 PM TRT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,181 MB. GUI used memory: 59 MB. Current time: 5/16/24, 4:35:23 PM TRT
+// Elapsed time: 6701 seconds
+typeControlKey((HResource) null, "FFT_Module.v", 'v'); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 290, 337); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 273, 349); // ad (FFT_Module.v)
+// Elapsed time: 27 seconds
+selectCodeEditor("FFT_Module.v", 369, 152); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 324, 61); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 324, 61, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+// Elapsed time: 129 seconds
+selectCodeEditor("FFT_Module.v", 367, 77); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 367, 76, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+typeControlKey((HResource) null, "FFT_Module.v", 'c'); // ad (FFT_Module.v)
+// Elapsed time: 21 seconds
+selectCodeEditor("FFT_Module.v", 445, 143); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 445, 129); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 489, 126, false, true, false, false, false); // ad (FFT_Module.v) - Control Key
+selectCodeEditor("FFT_Module.v", 513, 128, false, true, false, false, false); // ad (FFT_Module.v) - Control Key
+typeControlKey((HResource) null, "FFT_Module.v", 'v'); // ad (FFT_Module.v)
+// WARNING: HEventQueue.dispatchEvent() is taking  1510 ms.
+selectCodeEditor("FFT_Module.v", 790, 226); // ad (FFT_Module.v)
+// WARNING: HEventQueue.dispatchEvent() is taking  2548 ms.
+selectCodeEditor("FFT_Module.v", 748, 242); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 715, 201); // ad (FFT_Module.v)
+// Elapsed time: 33 seconds
+selectCodeEditor("FFT_Module.v", 720, 431, false, true, false, false, false); // ad (FFT_Module.v) - Control Key
+selectCodeEditor("FFT_Module.v", 693, 319); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 643, 369); // ad (FFT_Module.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 05h:22m:48s
+// Elapsed Time for: 'L.f': 05h:22m:50s
+// Elapsed time: 20 seconds
+selectCodeEditor("FFT_Module.v", 249, 85); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 249, 85, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+// Elapsed time: 49 seconds
+selectCodeEditor("FFT_Module.v", 412, 299); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 588, 252); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 603, 263); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 628, 264); // ad (FFT_Module.v)
+// Elapsed time: 20 seconds
+selectCodeEditor("FFT_Module.v", 205, 354); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 205, 354, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+// Elapsed time: 12 seconds
+selectCodeEditor("FFT_Module.v", 223, 331); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 223, 331, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+selectButton(RDIResource.HCodeView_FIND_TEXT_IN_FILE, (String) null); // v (RDIResource.HCodeView_FIND_TEXT_IN_FILE): FALSE
+selectButton(RDIResource.HCodeView_FIND_TEXT_IN_FILE, (String) null); // v (RDIResource.HCodeView_FIND_TEXT_IN_FILE): TRUE
+// Elapsed time: 15 seconds
+selectCodeEditor("FFT_Module.v", 193, 106); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 193, 106, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+typeControlKey((HResource) null, "FFT_Module.v", 'c'); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 2, 131, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+selectCodeEditor("FFT_Module.v", 195, 14); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 195, 14, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+typeControlKey((HResource) null, "FFT_Module.v", 'c'); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'v'); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'v'); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'v'); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'v'); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'v'); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'v'); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'v'); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'v'); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'v'); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'v'); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'v'); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'v'); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 309, 26); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 309, 26, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+selectCodeEditor("FFT_Module.v", 326, 10); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 326, 10, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+typeControlKey((HResource) null, "FFT_Module.v", 'c'); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'v'); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'v'); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'v'); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'v'); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'v'); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'v'); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'v'); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'v'); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'v'); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'v'); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'v'); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'v'); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 478, 64); // ad (FFT_Module.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 05h:25m:46s
+// Elapsed Time for: 'L.f': 05h:25m:48s
+// Elapsed time: 15 seconds
+selectCodeEditor("FFT_Module.v", 91, 73); // ad (FFT_Module.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 05h:26m:02s
+// Elapsed Time for: 'L.f': 05h:26m:04s
+// Elapsed time: 19 seconds
+selectCodeEditor("FFT_Module.v", 154, 75); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 154, 75, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+// Elapsed time: 48 seconds
+selectCodeEditor("FFT_Module.v", 98, 230); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 166, 225); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 166, 225, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+// Elapsed time: 72 seconds
+selectCodeEditor("FFT_Module.v", 98, 329); // ad (FFT_Module.v)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("FFT_Module.v", 99, 162); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 109, 177); // ad (FFT_Module.v)
+// Elapsed time: 12 seconds
+selectCodeEditor("FFT_Module.v", 186, 183); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 186, 183, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 1,181 MB. GUI used memory: 61 MB. Current time: 5/16/24, 5:05:24 PM TRT
+// Elapsed time: 155 seconds
+selectCodeEditor("FFT_Module.v", 515, 171); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 521, 194); // ad (FFT_Module.v)
+// Elapsed time: 427 seconds
+selectCodeEditor("FFT_Module.v", 585, 346); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 81, 80); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 81, 79, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+selectCodeEditor("FFT_Module.v", 130, 79); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 130, 79, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+selectCodeEditor("FFT_Module.v", 159, 186); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 159, 186, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+selectCodeEditor("FFT_Module.v", 50, 253); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 48, 298); // ad (FFT_Module.v)
+// Elapsed time: 28 seconds
+selectCodeEditor("FFT_Module.v", 104, 226); // ad (FFT_Module.v)
+// Elapsed time: 121 seconds
+selectCodeEditor("FFT_Module.v", 144, 225); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 144, 225, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+// Elapsed time: 28 seconds
+selectCodeEditor("FFT_Module.v", 372, 266); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 363, 268); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 359, 252); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 359, 252, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+selectCodeEditor("FFT_Module.v", 365, 260); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 365, 260, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+selectCodeEditor("FFT_Module.v", 167, 218); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 167, 218, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+selectCodeEditor("FFT_Module.v", 374, 112); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 374, 112, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+selectCodeEditor("FFT_Module.v", 447, 347); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 447, 347, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+selectCodeEditor("FFT_Module.v", 255, 232); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 255, 232, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+selectCodeEditor("FFT_Module.v", 255, 244); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 255, 244, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+selectCodeEditor("FFT_Module.v", 254, 263); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 254, 263, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+selectCodeEditor("FFT_Module.v", 158, 233); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 158, 233, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+selectCodeEditor("FFT_Module.v", 97, 183); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 100, 191); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 142, 178); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 142, 178, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+selectCodeEditor("FFT_Module.v", 293, 311); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 293, 311, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+// Elapsed time: 154 seconds
+selectCodeEditor("FFT_Module.v", 101, 132); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 101, 132, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+selectCodeEditor("FFT_Module.v", 185, 125); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 185, 125, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+selectCodeEditor("FFT_Module.v", 392, 310); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 433, 313); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 426, 332); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 431, 314); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'c'); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 275, 332); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'v'); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 273, 348); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'v'); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 271, 367); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'v'); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 272, 365); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'v'); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 272, 386); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'v'); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 273, 397); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'v'); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 374, 415); // ad (FFT_Module.v)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,181 MB. GUI used memory: 61 MB. Current time: 5/16/24, 5:35:24 PM TRT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,181 MB. GUI used memory: 60 MB. Current time: 5/16/24, 6:05:25 PM TRT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,181 MB. GUI used memory: 60 MB. Current time: 5/16/24, 6:35:25 PM TRT
+// Elapsed time: 6247 seconds
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // L (PAResourceOtoP.PAViews_BASE_WORKSPACE, PlanAheadTabBaseWorkspace)
+selectButton(RDIResource.HCodeEditor_CLOSE, (String) null); // j (RDIResource.HCodeEditor_CLOSE)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,181 MB. GUI used memory: 60 MB. Current time: 5/16/24, 7:05:25 PM TRT
+// Elapsed time: 131 seconds
+selectCodeEditor("FFT_Module.v", 145, 318); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 145, 318, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+// Elapsed time: 19 seconds
+selectCodeEditor("FFT_Module.v", 313, 337); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 332, 334); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 314, 332); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'c'); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 389, 315); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'v'); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 481, 327); // ad (FFT_Module.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 07h:32m:10s
+// Elapsed Time for: 'L.f': 07h:32m:12s
+// Elapsed time: 43 seconds
+selectCodeEditor("FFT_Module.v", 167, 232); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 167, 232, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+// Elapsed time: 19 seconds
+selectCodeEditor("FFT_Module.v", 106, 386); // ad (FFT_Module.v)
+// Elapsed time: 42 seconds
+selectCodeEditor("FFT_Module.v", 156, 403); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 156, 403, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+selectCodeEditor("FFT_Module.v", 167, 402); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 167, 402, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+selectCodeEditor("FFT_Module.v", 108, 403); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 467, 359); // ad (FFT_Module.v)
+// Elapsed time: 17 seconds
+selectCodeEditor("FFT_Module.v", 170, 73); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 170, 73, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // R (PAResourceOtoP.PAViews_SOURCES, Sources)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELE_432_Top_Module (ELE_432_Top_Module.v), FFT : FFT_Module (FFT_Module.v)]", 7); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELE_432_Top_Module (ELE_432_Top_Module.v), FFT : FFT_Module (FFT_Module.v), rom : Twiddle (twiddle.v)]", 8, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELE_432_Top_Module (ELE_432_Top_Module.v), FFT : FFT_Module (FFT_Module.v), rom : Twiddle (twiddle.v)]", 8, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// Elapsed time: 24 seconds
+selectCodeEditor("twiddle.v", 95, 95); // ad (twiddle.v)
+selectCodeEditor("twiddle.v", 100, 122); // ad (twiddle.v)
+selectCodeEditor("twiddle.v", 94, 107); // ad (twiddle.v)
+selectCodeEditor("twiddle.v", 103, 109); // ad (twiddle.v)
+selectCodeEditor("twiddle.v", 96, 107); // ad (twiddle.v)
+selectCodeEditor("twiddle.v", 120, 43); // ad (twiddle.v)
+selectCodeEditor("twiddle.v", 640, 174); // ad (twiddle.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 07h:35m:10s
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FFT_Module.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("FFT_Module.v", 102, 121); // ad (FFT_Module.v)
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error ERROR: [Common 17-180] Spawn failed: No error 
+// Elapsed Time for: 'L.f': 07h:35m:12s
+// Elapsed time: 32 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "twiddle.v", 4); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("twiddle.v", 373, 74); // ad (twiddle.v)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("twiddle.v", 371, 84); // ad (twiddle.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 07h:35m:52s
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FFT_Module.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("FFT_Module.v", 158, 137); // ad (FFT_Module.v)
+// Elapsed Time for: 'L.f': 07h:35m:54s
+// Elapsed time: 15 seconds
+selectCodeEditor("FFT_Module.v", 101, 485); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 175, 447); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 175, 437); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 175, 437, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+selectCodeEditor("FFT_Module.v", 308, 643); // ad (FFT_Module.v)
+// Elapsed time: 68 seconds
+selectCodeEditor("FFT_Module.v", 106, 432); // ad (FFT_Module.v)
+// Elapsed time: 59 seconds
+selectCodeEditor("FFT_Module.v", 311, 640); // ad (FFT_Module.v)
+// Elapsed time: 52 seconds
+selectCodeEditor("FFT_Module.v", 409, 488); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 409, 488, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+selectCodeEditor("FFT_Module.v", 509, 488); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 509, 487, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+selectCodeEditor("FFT_Module.v", 425, 486); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 425, 486, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+// Elapsed time: 73 seconds
+selectCodeEditor("FFT_Module.v", 411, 498); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 411, 498, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+selectCodeEditor("FFT_Module.v", 412, 487); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 412, 487, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+// Elapsed time: 12 seconds
+selectCodeEditor("FFT_Module.v", 310, 634); // ad (FFT_Module.v)
+// Elapsed time: 29 seconds
+selectCodeEditor("FFT_Module.v", 322, 640); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 307, 635); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 314, 640); // ad (FFT_Module.v)
+// Elapsed time: 19 seconds
+selectCodeEditor("FFT_Module.v", 323, 635); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 324, 641); // ad (FFT_Module.v)
+// Elapsed time: 18 seconds
+selectCodeEditor("FFT_Module.v", 321, 640); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'c'); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 321, 649); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'v'); // ad (FFT_Module.v)
+// Elapsed time: 68 seconds
+selectCodeEditor("FFT_Module.v", 322, 633); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'c'); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 683, 635); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'v'); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 684, 654); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'v'); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 498, 638); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'v'); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 501, 655); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'v'); // ad (FFT_Module.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 07h:43m:37s
+// Elapsed Time for: 'L.f': 07h:43m:38s
+// Elapsed time: 13 seconds
+selectCodeEditor("FFT_Module.v", 3, 277); // ad (FFT_Module.v)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // B (RDIResourceCommand.RDICommands_LINE_COMMENT)
+selectCodeEditor("FFT_Module.v", 339, 300); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 277, 264); // ad (FFT_Module.v)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Memory File]", 10); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Memory File, real1.mem]", 12, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Memory File, real1.mem]", 12, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 14, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 14, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Memory File, real2.mem]", 13, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Memory File, real2.mem]", 13, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELE_432_Top_Module (ELE_432_Top_Module.v), FFT : FFT_Module (FFT_Module.v)]", 7, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELE_432_Top_Module (ELE_432_Top_Module.v), FFT : FFT_Module (FFT_Module.v)]", 7, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+// Elapsed time: 47 seconds
+selectCodeEditor("FFT_Module.v", 266, 215); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 266, 215, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+// Elapsed time: 20 seconds
+selectCodeEditor("FFT_Module.v", 84, 418); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 84, 418, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+// Elapsed time: 170 seconds
+selectCodeEditor("FFT_Module.v", 394, 454); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 394, 454, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+selectCodeEditor("FFT_Module.v", 375, 146); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 375, 146, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+selectCodeEditor("FFT_Module.v", 435, 146); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'c'); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'v'); // ad (FFT_Module.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 07h:48m:22s
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+// Elapsed Time for: 'L.f': 07h:48m:24s
+// Elapsed time: 68 seconds
+selectCodeEditor("FFT_Module.v", 372, 139); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 372, 139, false, false, false, false, true); // ad (FFT_Module.v) - Double Click
+// Elapsed time: 70 seconds
+selectCodeEditor("FFT_Module.v", 328, 453, false, true, false, false, false); // ad (FFT_Module.v) - Control Key
+selectCodeEditor("FFT_Module.v", 364, 423); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 405, 450); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'c'); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 403, 437); // ad (FFT_Module.v)
+// Elapsed time: 81 seconds
+selectCodeEditor("FFT_Module.v", 383, 605, false, true, false, false, false); // ad (FFT_Module.v) - Control Key
+selectCodeEditor("FFT_Module.v", 506, 200); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 138, 245, false, true, false, false, false); // ad (FFT_Module.v) - Control Key
+typeControlKey((HResource) null, "FFT_Module.v", 'v'); // ad (FFT_Module.v)
+// WARNING: HEventQueue.dispatchEvent() is taking  1076 ms.
+// Elapsed time: 14 seconds
+selectCodeEditor("FFT_Module.v", 301, 205); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 304, 191, false, true, false, false, false); // ad (FFT_Module.v) - Control Key
+selectCodeEditor("FFT_Module.v", 364, 251); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 315, 193, false, true, false, false, false); // ad (FFT_Module.v) - Control Key
+// Elapsed time: 10 seconds
+selectCodeEditor("FFT_Module.v", 431, 321); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 329, 328, false, true, false, false, false); // ad (FFT_Module.v) - Control Key
+typeControlKey((HResource) null, "FFT_Module.v", 'c'); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 337, 93, false, true, false, false, false); // ad (FFT_Module.v) - Control Key
+typeControlKey((HResource) null, "FFT_Module.v", 'v'); // ad (FFT_Module.v)
+// WARNING: HEventQueue.dispatchEvent() is taking  2140 ms.
+// Elapsed time: 150 seconds
+selectCodeEditor("FFT_Module.v", 327, 441); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 359, 440); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 361, 443); // ad (FFT_Module.v)
+// WARNING: HEventQueue.dispatchEvent() is taking  13752 ms.
+// Elapsed time: 13 seconds
+selectCodeEditor("FFT_Module.v", 264, 413); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 676, 190); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 344, 307); // ad (FFT_Module.v)
+typeControlKey(null, null, 'z');
+// WARNING: HEventQueue.dispatchEvent() is taking  6562 ms.
+selectCodeEditor("FFT_Module.v", 1124, 598); // ad (FFT_Module.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 07h:56m:09s
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+// Elapsed Time for: 'L.f': 07h:56m:11s
+selectCodeEditor("FFT_Module.v", 470, 447); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 449, 448); // ad (FFT_Module.v)
+selectCodeEditor("FFT_Module.v", 447, 516); // ad (FFT_Module.v)
+typeControlKey((HResource) null, "FFT_Module.v", 'c'); // ad (FFT_Module.v)
+// Elapsed time: 109 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELE_432_Top_Module (ELE_432_Top_Module.v), VGA : VGA_Controller (VGA_Controller.v), horizantal : horizantal_counter (horizantal_counter.v)]", 5, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELE_432_Top_Module (ELE_432_Top_Module.v), VGA : VGA_Controller (VGA_Controller.v), horizantal : horizantal_counter (horizantal_counter.v)]", 5, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectCodeEditor("horizantal_counter.v", 471, 317); // ad (horizantal_counter.v)
+typeControlKey((HResource) null, "horizantal_counter.v", 'c'); // ad (horizantal_counter.v)
+// Elapsed time: 32 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELE_432_Top_Module (ELE_432_Top_Module.v), VGA : VGA_Controller (VGA_Controller.v), vertical : vertical_counter (vertical_counter.v)]", 6, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELE_432_Top_Module (ELE_432_Top_Module.v), VGA : VGA_Controller (VGA_Controller.v), vertical : vertical_counter (vertical_counter.v)]", 6, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectCodeEditor("vertical_counter.v", 386, 294); // ad (vertical_counter.v)
+typeControlKey((HResource) null, "vertical_counter.v", 'c'); // ad (vertical_counter.v)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,181 MB. GUI used memory: 63 MB. Current time: 5/16/24, 7:35:26 PM TRT
