@@ -110,14 +110,20 @@ module VGA_Controller(
     parameter White = 4'b1111;
     
     reg [0:0] font [0:20447];
+    reg [0:0] font_2 [0:683];
+    reg [0:0] font_3 [0:1315];
     reg [31:0] font_counter;
     wire font_data = font[font_counter][0];
+    wire font_data_2 = font_2[font_counter][0];
+    wire font_data_3 = font_3[font_counter][0];
     
     assign H_sync = (h_counter_top < 96) ? (1'b1) : (1'b0);
     assign V_sync = (v_counter_top < 2) ? (1'b1) : (1'b0);
     
     initial begin
         $readmemb("font_1.mem",font);
+        $readmemb("font_2.mem",font_2);
+        $readmemb("font_3.mem",font_3);
     end
     
     always @(posedge clk)begin 
@@ -212,7 +218,7 @@ module VGA_Controller(
                 ////////////////////////////////////////////////////////////////////
                 //  Draw bars by using input values , bars width are 3 pixel
                 ////////////////////////////////////////////////////////////////////
-                if ((v_counter_top < 460 && v_counter_top > 360))begin
+                if ((v_counter_top < 480 && v_counter_top > 380))begin
 //                    if ((remainder == 1) || (remainder == 2) || (remainder == 3))begin // inside of bar colours
 //                        Red <= White; Green <= White; Blue <= White;
 //                    end
@@ -300,12 +306,46 @@ module VGA_Controller(
                     endcase
                 end
                 ////////////////////////////////////////////////////////////////////
-                //  To print font to the screen but don't work -_-
+                //  To print font_1 (name and title) to the screen
                 ////////////////////////////////////////////////////////////////////
                 else if ((v_counter_top >= 50 && v_counter_top <= 193) )begin
                     if ((h_counter_top >= 400 && h_counter_top <= 541))begin
                         font_counter <= (font_counter == 32'd20447) ? (32'b0) : (font_counter + 1 );
                         if (font_data)begin
+                            Red <= Black; Green <= White; Blue <= Black;
+                        end
+                        else begin
+                            Red <= Black; Green <= Black; Blue <= Black;
+                        end
+                    end
+                    else begin
+                        Red <= Black; Green <= Black; Blue <= Black;
+                    end
+                end
+                ////////////////////////////////////////////////////////////////////
+                //  To print font_2 (Imaginary Part) to the screen
+                ////////////////////////////////////////////////////////////////////
+                else if ((v_counter_top >= 359 && v_counter_top <= 370) )begin
+                    if ((h_counter_top >= 400 && h_counter_top <= 456))begin
+                        font_counter <= (font_counter == 32'd683) ? (32'b0) : (font_counter + 1 );
+                        if (font_data_2)begin
+                            Red <= Black; Green <= White; Blue <= Black;
+                        end
+                        else begin
+                            Red <= Black; Green <= Black; Blue <= Black;
+                        end
+                    end
+                    else begin
+                        Red <= Black; Green <= Black; Blue <= Black;
+                    end
+                end
+                ////////////////////////////////////////////////////////////////////
+                //  To print font_2 (Imaginary Part) to the screen
+                ////////////////////////////////////////////////////////////////////
+                else if ((v_counter_top >= 217 && v_counter_top <= 230) )begin
+                    if ((h_counter_top >= 400 && h_counter_top <= 493))begin
+                        font_counter <= (font_counter == 32'd1315) ? (32'b0) : (font_counter + 1 );
+                        if (font_data_3)begin
                             Red <= Black; Green <= White; Blue <= Black;
                         end
                         else begin
