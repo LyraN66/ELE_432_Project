@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date             : Sat May 18 00:56:28 2024
-| Host             : DESKTOP-N21QB96 running 64-bit major release  (build 9200)
+| Date             : Sun May 19 18:58:28 2024
+| Host             : DESKTOP-T0BPI3M running 64-bit major release  (build 9200)
 | Command          : report_power -file ELE_432_Top_Module_power_routed.rpt -pb ELE_432_Top_Module_power_summary_routed.pb -rpx ELE_432_Top_Module_power_routed.rpx
 | Design           : ELE_432_Top_Module
 | Device           : xc7a100tcsg324-1
@@ -30,11 +30,11 @@ Table of Contents
 ----------
 
 +--------------------------+-----------------------------------+
-| Total On-Chip Power (W)  | 740.575 (Junction temp exceeded!) |
+| Total On-Chip Power (W)  | 748.935 (Junction temp exceeded!) |
 | Design Power Budget (W)  | Unspecified*                      |
 | Power Budget Margin (W)  | NA                                |
-| Dynamic (W)              | 739.778                           |
-| Device Static (W)        | 0.797                             |
+| Dynamic (W)              | 748.137                           |
+| Device Static (W)        | 0.798                             |
 | Effective TJA (C/W)      | 4.6                               |
 | Max Ambient (C)          | 0.0                               |
 | Junction Temperature (C) | 125.0                             |
@@ -52,19 +52,20 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Slice Logic             |   296.249 |    68113 |       --- |             --- |
-|   LUT as Logic          |   287.801 |    42706 |     63400 |           67.36 |
-|   F7/F8 Muxes           |     5.595 |     5621 |     63400 |            8.87 |
-|   Register              |     1.807 |    14985 |    126800 |           11.82 |
-|   CARRY4                |     0.931 |     1583 |     15850 |            9.99 |
+| Slice Logic             |   295.183 |    68448 |       --- |             --- |
+|   LUT as Logic          |   286.853 |    42721 |     63400 |           67.38 |
+|   F7/F8 Muxes           |     5.426 |     5500 |     63400 |            8.68 |
+|   Register              |     1.816 |    15086 |    126800 |           11.90 |
+|   CARRY4                |     0.972 |     1863 |     15850 |           11.75 |
 |   LUT as Shift Register |     0.103 |       37 |     19000 |            0.19 |
 |   BUFG                  |     0.012 |        2 |        32 |            6.25 |
 |   Others                |     0.000 |       50 |       --- |             --- |
-| Signals                 |   428.724 |    45186 |       --- |             --- |
+| Signals                 |   437.083 |    45744 |       --- |             --- |
+| Block RAM               |    <0.001 |      1.5 |       135 |            1.11 |
 | DSPs                    |    13.471 |       14 |       240 |            5.83 |
-| I/O                     |     1.334 |       19 |       210 |            9.05 |
-| Static Power            |     0.797 |          |           |                 |
-| Total                   |   740.575 |          |           |                 |
+| I/O                     |     2.399 |       19 |       210 |            9.05 |
+| Static Power            |     0.798 |          |           |                 |
+| Total                   |   748.935 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,9 +75,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |   739.015 |     738.452 |      0.563 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.141 |       0.049 |      0.093 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.379 |       0.375 |      0.004 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |   746.309 |     745.746 |      0.563 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.180 |       0.088 |      0.093 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.681 |       0.677 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -141,18 +142,18 @@ Table of Contents
 +--------------------+-----------+
 | Name               | Power (W) |
 +--------------------+-----------+
-| ELE_432_Top_Module |   739.778 |
-|   Div_Clk          |     1.278 |
-|   FFT              |   699.742 |
-|     rom            |     1.256 |
-|   Mic              |     2.029 |
-|     cic_compiler   |     1.945 |
-|       U0           |     1.945 |
-|     pdm_clk_gen_i  |     0.071 |
-|   VGA              |    28.456 |
-|     horizantal     |    10.526 |
-|     vertical       |    17.911 |
-|   ic               |     0.526 |
+| ELE_432_Top_Module |   748.137 |
+|   Div_Clk          |     1.302 |
+|   FFT              |   703.994 |
+|     rom            |     1.380 |
+|   Mic              |     2.058 |
+|     cic_compiler   |     1.972 |
+|       U0           |     1.972 |
+|     pdm_clk_gen_i  |     0.072 |
+|   VGA              |    31.458 |
+|     horizantal     |    20.995 |
+|     vertical       |     9.878 |
+|   ic               |     0.536 |
 +--------------------+-----------+
 
 

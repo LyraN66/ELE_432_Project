@@ -101,7 +101,7 @@ module VGA_Controller(
     
     wire [3:0] remainder = h_counter_top % 5;
 //    wire [15:0] v_counter_wire = v_counter_top - 360;
-    wire [15:0] v_counter_wire = 460 - v_counter_top;
+    wire [15:0] v_counter_wire = 480 - v_counter_top;
 //    wire [15:0] v_counter_wire_1 = v_counter_top - 240;
     wire [15:0] v_counter_wire_1 = 340 - v_counter_top;
     parameter Screen_Colour = 4'b0101;
@@ -109,13 +109,21 @@ module VGA_Controller(
     parameter Black = 4'b0000;
     parameter White = 4'b1111;
     
-    reg [0:0] font [0:20447];
+    reg [0:0] font   [0:20447];
     reg [0:0] font_2 [0:683];
     reg [0:0] font_3 [0:1315];
+    reg [0:0] font_4 [0:431];
+    reg [0:0] font_5 [0:527];
     reg [31:0] font_counter;
+    reg [31:0] font_counter_2;
+    reg [31:0] font_counter_3;
+    reg [31:0] font_counter_4;
+    reg [31:0] font_counter_5;
     wire font_data = font[font_counter][0];
-    wire font_data_2 = font_2[font_counter][0];
-    wire font_data_3 = font_3[font_counter][0];
+    wire font_data_2 = font_2[font_counter_2][0];
+    wire font_data_3 = font_3[font_counter_3][0];
+    wire font_data_4 = font_4[font_counter_4][0];
+    wire font_data_5 = font_5[font_counter_5][0];
     
     assign H_sync = (h_counter_top < 96) ? (1'b1) : (1'b0);
     assign V_sync = (v_counter_top < 2) ? (1'b1) : (1'b0);
@@ -124,12 +132,18 @@ module VGA_Controller(
         $readmemb("font_1.mem",font);
         $readmemb("font_2.mem",font_2);
         $readmemb("font_3.mem",font_3);
+        $readmemb("font_4.mem",font_4);
+        $readmemb("font_5.mem",font_5);
     end
     
     always @(posedge clk)begin 
         if(rst)begin
             Red <= Black; Green <= Black; Blue <= Black;
             font_counter <= 32'b0;
+            font_counter_2 <= 32'b0;
+            font_counter_3 <= 32'b0;
+            font_counter_4 <= 32'b0;
+            font_counter_5 <= 32'b0;
             ready <= 1'b0;
         end
         else begin
@@ -227,39 +241,39 @@ module VGA_Controller(
                         Red <= Black; Green <= Black; Blue <= Black;
                     end
                     case (h_counter_top)
-                        146, 147, 148: assign_bars(bar_0_real_reg); 151, 152, 153: assign_bars(bar_1_real_reg); 156, 157, 158: assign_bars(bar_2_real_reg); 161, 162, 163: assign_bars(bar_3_real_reg);
-                        166, 167, 168: assign_bars(bar_4_real_reg); 171, 172, 173: assign_bars(bar_5_real_reg); 176, 177, 178: assign_bars(bar_6_real_reg); 181, 182, 183: assign_bars(bar_7_real_reg);
-                        186, 187, 188: assign_bars(bar_8_real_reg); 191, 192, 193: assign_bars(bar_9_real_reg); 196, 197, 198: assign_bars(bar_10_real_reg); 201, 202, 203: assign_bars(bar_11_real_reg);
-                        206, 207, 208: assign_bars(bar_12_real_reg); 211, 212, 213: assign_bars(bar_13_real_reg); 216, 217, 218: assign_bars(bar_14_real_reg); 221, 222, 223: assign_bars(bar_15_real_reg);
-                        226, 227, 228: assign_bars(bar_16_real_reg); 231, 232, 233: assign_bars(bar_17_real_reg); 236, 237, 238: assign_bars(bar_18_real_reg); 241, 242, 243: assign_bars(bar_19_real_reg);
-                        246, 247, 248: assign_bars(bar_20_real_reg); 251, 252, 253: assign_bars(bar_21_real_reg); 256, 257, 258: assign_bars(bar_22_real_reg); 261, 262, 263: assign_bars(bar_23_real_reg);
-                        266, 267, 268: assign_bars(bar_24_real_reg); 271, 272, 273: assign_bars(bar_25_real_reg); 276, 277, 278: assign_bars(bar_26_real_reg); 281, 282, 283: assign_bars(bar_27_real_reg);
-                        286, 287, 288: assign_bars(bar_28_real_reg); 291, 292, 293: assign_bars(bar_29_real_reg); 296, 297, 298: assign_bars(bar_30_real_reg); 301, 302, 303: assign_bars(bar_31_real_reg);
-                        306, 307, 308: assign_bars(bar_32_real_reg); 311, 312, 313: assign_bars(bar_33_real_reg); 316, 317, 318: assign_bars(bar_34_real_reg); 321, 322, 323: assign_bars(bar_35_real_reg);
-                        326, 327, 328: assign_bars(bar_36_real_reg); 331, 332, 333: assign_bars(bar_37_real_reg); 336, 337, 338: assign_bars(bar_38_real_reg); 341, 342, 343: assign_bars(bar_39_real_reg);
-                        346, 347, 348: assign_bars(bar_40_real_reg); 351, 352, 353: assign_bars(bar_41_real_reg); 356, 357, 358: assign_bars(bar_42_real_reg); 361, 362, 363: assign_bars(bar_43_real_reg);
-                        366, 367, 368: assign_bars(bar_44_real_reg); 371, 372, 373: assign_bars(bar_45_real_reg); 376, 377, 378: assign_bars(bar_46_real_reg); 381, 382, 383: assign_bars(bar_47_real_reg);
-                        386, 387, 388: assign_bars(bar_48_real_reg); 391, 392, 393: assign_bars(bar_49_real_reg); 396, 397, 398: assign_bars(bar_50_real_reg); 401, 402, 403: assign_bars(bar_51_real_reg);
-                        406, 407, 408: assign_bars(bar_52_real_reg); 411, 412, 413: assign_bars(bar_53_real_reg); 416, 417, 418: assign_bars(bar_54_real_reg); 421, 422, 423: assign_bars(bar_55_real_reg);
-                        426, 427, 428: assign_bars(bar_56_real_reg); 431, 432, 433: assign_bars(bar_57_real_reg); 436, 437, 438: assign_bars(bar_58_real_reg); 441, 442, 443: assign_bars(bar_59_real_reg);
-                        446, 447, 448: assign_bars(bar_60_real_reg); 451, 452, 453: assign_bars(bar_61_real_reg); 456, 457, 458: assign_bars(bar_62_real_reg); 461, 462, 463: assign_bars(bar_63_real_reg);
-                        466, 467, 468: assign_bars(bar_64_real_reg); 471, 472, 473: assign_bars(bar_65_real_reg); 476, 477, 478: assign_bars(bar_66_real_reg); 481, 482, 483: assign_bars(bar_67_real_reg);
-                        486, 487, 488: assign_bars(bar_68_real_reg); 491, 492, 493: assign_bars(bar_69_real_reg); 496, 497, 498: assign_bars(bar_70_real_reg); 501, 502, 503: assign_bars(bar_71_real_reg);
-                        506, 507, 508: assign_bars(bar_72_real_reg); 511, 512, 513: assign_bars(bar_73_real_reg); 516, 517, 518: assign_bars(bar_74_real_reg); 521, 522, 523: assign_bars(bar_75_real_reg);
-                        526, 527, 528: assign_bars(bar_76_real_reg); 531, 532, 533: assign_bars(bar_77_real_reg); 536, 537, 538: assign_bars(bar_78_real_reg); 541, 542, 543: assign_bars(bar_79_real_reg);
-                        546, 547, 548: assign_bars(bar_80_real_reg); 551, 552, 553: assign_bars(bar_81_real_reg); 556, 557, 558: assign_bars(bar_82_real_reg); 561, 562, 563: assign_bars(bar_83_real_reg);
-                        566, 567, 568: assign_bars(bar_84_real_reg); 571, 572, 573: assign_bars(bar_85_real_reg); 576, 577, 578: assign_bars(bar_86_real_reg); 581, 582, 583: assign_bars(bar_87_real_reg);
-                        586, 587, 588: assign_bars(bar_88_real_reg); 591, 592, 593: assign_bars(bar_89_real_reg); 596, 597, 598: assign_bars(bar_90_real_reg); 601, 602, 603: assign_bars(bar_91_real_reg);
-                        606, 607, 608: assign_bars(bar_92_real_reg); 611, 612, 613: assign_bars(bar_93_real_reg); 616, 617, 618: assign_bars(bar_94_real_reg); 621, 622, 623: assign_bars(bar_95_real_reg);
-                        626, 627, 628: assign_bars(bar_96_real_reg); 631, 632, 633: assign_bars(bar_97_real_reg); 636, 637, 638: assign_bars(bar_98_real_reg); 641, 642, 643: assign_bars(bar_99_real_reg);
-                        646, 647, 648: assign_bars(bar_100_real_reg); 651, 652, 653: assign_bars(bar_101_real_reg); 656, 657, 658: assign_bars(bar_102_real_reg); 661, 662, 663: assign_bars(bar_103_real_reg);
-                        666, 667, 668: assign_bars(bar_104_real_reg); 671, 672, 673: assign_bars(bar_105_real_reg); 676, 677, 678: assign_bars(bar_106_real_reg); 681, 682, 683: assign_bars(bar_107_real_reg);
-                        686, 687, 688: assign_bars(bar_108_real_reg); 691, 692, 693: assign_bars(bar_109_real_reg); 696, 697, 698: assign_bars(bar_110_real_reg); 701, 702, 703: assign_bars(bar_111_real_reg);
-                        706, 707, 708: assign_bars(bar_112_real_reg); 711, 712, 713: assign_bars(bar_113_real_reg); 716, 717, 718: assign_bars(bar_114_real_reg); 721, 722, 723: assign_bars(bar_115_real_reg);
-                        726, 727, 728: assign_bars(bar_116_real_reg); 731, 732, 733: assign_bars(bar_117_real_reg); 736, 737, 738: assign_bars(bar_118_real_reg); 741, 742, 743: assign_bars(bar_119_real_reg);
-                        746, 747, 748: assign_bars(bar_120_real_reg); 751, 752, 753: assign_bars(bar_121_real_reg); 756, 757, 758: assign_bars(bar_122_real_reg); 761, 762, 763: assign_bars(bar_123_real_reg);
-                        766, 767, 768: assign_bars(bar_124_real_reg); 771, 772, 773: assign_bars(bar_125_real_reg); 776, 777, 778: assign_bars(bar_126_real_reg); 781, 782, 783: assign_bars(bar_127_real_reg);
-                        
+                        146, 147, 148: assign_bars(bar_0_real_reg,12'd30); 151, 152, 153: assign_bars(bar_1_real_reg,12'd60); 156, 157, 158: assign_bars(bar_2_real_reg,12'd90); 161, 162, 163: assign_bars(bar_3_real_reg,12'd120); 
+                        166, 167, 168: assign_bars(bar_4_real_reg,12'd150); 171, 172, 173: assign_bars(bar_5_real_reg,12'd180); 176, 177, 178: assign_bars(bar_6_real_reg,12'd210); 181, 182, 183: assign_bars(bar_7_real_reg,12'd240); 
+                        186, 187, 188: assign_bars(bar_8_real_reg,12'd270); 191, 192, 193: assign_bars(bar_9_real_reg,12'd300); 196, 197, 198: assign_bars(bar_10_real_reg,12'd330); 201, 202, 203: assign_bars(bar_11_real_reg,12'd360); 
+                        206, 207, 208: assign_bars(bar_12_real_reg,12'd390); 211, 212, 213: assign_bars(bar_13_real_reg,12'd420); 216, 217, 218: assign_bars(bar_14_real_reg,12'd450); 221, 222, 223: assign_bars(bar_15_real_reg,12'd480); 
+                        226, 227, 228: assign_bars(bar_16_real_reg,12'd510); 231, 232, 233: assign_bars(bar_17_real_reg,12'd540); 236, 237, 238: assign_bars(bar_18_real_reg,12'd570); 241, 242, 243: assign_bars(bar_19_real_reg,12'd600); 
+                        246, 247, 248: assign_bars(bar_20_real_reg,12'd630); 251, 252, 253: assign_bars(bar_21_real_reg,12'd660); 256, 257, 258: assign_bars(bar_22_real_reg,12'd690); 261, 262, 263: assign_bars(bar_23_real_reg,12'd720); 
+                        266, 267, 268: assign_bars(bar_24_real_reg,12'd750); 271, 272, 273: assign_bars(bar_25_real_reg,12'd780); 276, 277, 278: assign_bars(bar_26_real_reg,12'd810); 281, 282, 283: assign_bars(bar_27_real_reg,12'd840); 
+                        286, 287, 288: assign_bars(bar_28_real_reg,12'd870); 291, 292, 293: assign_bars(bar_29_real_reg,12'd900); 296, 297, 298: assign_bars(bar_30_real_reg,12'd930); 301, 302, 303: assign_bars(bar_31_real_reg,12'd960); 
+                        306, 307, 308: assign_bars(bar_32_real_reg,12'd990); 311, 312, 313: assign_bars(bar_33_real_reg,12'd1020); 316, 317, 318: assign_bars(bar_34_real_reg,12'd1050); 321, 322, 323: assign_bars(bar_35_real_reg,12'd1080); 
+                        326, 327, 328: assign_bars(bar_36_real_reg,12'd1110); 331, 332, 333: assign_bars(bar_37_real_reg,12'd1140); 336, 337, 338: assign_bars(bar_38_real_reg,12'd1170); 341, 342, 343: assign_bars(bar_39_real_reg,12'd1200); 
+                        346, 347, 348: assign_bars(bar_40_real_reg,12'd1230); 351, 352, 353: assign_bars(bar_41_real_reg,12'd1260); 356, 357, 358: assign_bars(bar_42_real_reg,12'd1290); 361, 362, 363: assign_bars(bar_43_real_reg,12'd1320); 
+                        366, 367, 368: assign_bars(bar_44_real_reg,12'd1350); 371, 372, 373: assign_bars(bar_45_real_reg,12'd1380); 376, 377, 378: assign_bars(bar_46_real_reg,12'd1410); 381, 382, 383: assign_bars(bar_47_real_reg,12'd1440); 
+                        386, 387, 388: assign_bars(bar_48_real_reg,12'd1470); 391, 392, 393: assign_bars(bar_49_real_reg,12'd1500); 396, 397, 398: assign_bars(bar_50_real_reg,12'd1530); 401, 402, 403: assign_bars(bar_51_real_reg,12'd1560); 
+                        406, 407, 408: assign_bars(bar_52_real_reg,12'd1590); 411, 412, 413: assign_bars(bar_53_real_reg,12'd1620); 416, 417, 418: assign_bars(bar_54_real_reg,12'd1650); 421, 422, 423: assign_bars(bar_55_real_reg,12'd1680); 
+                        426, 427, 428: assign_bars(bar_56_real_reg,12'd1710); 431, 432, 433: assign_bars(bar_57_real_reg,12'd1740); 436, 437, 438: assign_bars(bar_58_real_reg,12'd1770); 441, 442, 443: assign_bars(bar_59_real_reg,12'd1800); 
+                        446, 447, 448: assign_bars(bar_60_real_reg,12'd1830); 451, 452, 453: assign_bars(bar_61_real_reg,12'd1860); 456, 457, 458: assign_bars(bar_62_real_reg,12'd1890); 461, 462, 463: assign_bars(bar_63_real_reg,12'd1920); 
+                        466, 467, 468: assign_bars(bar_64_real_reg,12'd1950); 471, 472, 473: assign_bars(bar_65_real_reg,12'd1980); 476, 477, 478: assign_bars(bar_66_real_reg,12'd2010); 481, 482, 483: assign_bars(bar_67_real_reg,12'd2040); 
+                        486, 487, 488: assign_bars(bar_68_real_reg,12'd2070); 491, 492, 493: assign_bars(bar_69_real_reg,12'd2100); 496, 497, 498: assign_bars(bar_70_real_reg,12'd2130); 501, 502, 503: assign_bars(bar_71_real_reg,12'd2160); 
+                        506, 507, 508: assign_bars(bar_72_real_reg,12'd2190); 511, 512, 513: assign_bars(bar_73_real_reg,12'd2220); 516, 517, 518: assign_bars(bar_74_real_reg,12'd2250); 521, 522, 523: assign_bars(bar_75_real_reg,12'd2280); 
+                        526, 527, 528: assign_bars(bar_76_real_reg,12'd2310); 531, 532, 533: assign_bars(bar_77_real_reg,12'd2340); 536, 537, 538: assign_bars(bar_78_real_reg,12'd2370); 541, 542, 543: assign_bars(bar_79_real_reg,12'd2400); 
+                        546, 547, 548: assign_bars(bar_80_real_reg,12'd2430); 551, 552, 553: assign_bars(bar_81_real_reg,12'd2460); 556, 557, 558: assign_bars(bar_82_real_reg,12'd2490); 561, 562, 563: assign_bars(bar_83_real_reg,12'd2520); 
+                        566, 567, 568: assign_bars(bar_84_real_reg,12'd2550); 571, 572, 573: assign_bars(bar_85_real_reg,12'd2580); 576, 577, 578: assign_bars(bar_86_real_reg,12'd2610); 581, 582, 583: assign_bars(bar_87_real_reg,12'd2640); 
+                        586, 587, 588: assign_bars(bar_88_real_reg,12'd2670); 591, 592, 593: assign_bars(bar_89_real_reg,12'd2700); 596, 597, 598: assign_bars(bar_90_real_reg,12'd2730); 601, 602, 603: assign_bars(bar_91_real_reg,12'd2760); 
+                        606, 607, 608: assign_bars(bar_92_real_reg,12'd2790); 611, 612, 613: assign_bars(bar_93_real_reg,12'd2820); 616, 617, 618: assign_bars(bar_94_real_reg,12'd2850); 621, 622, 623: assign_bars(bar_95_real_reg,12'd2880); 
+                        626, 627, 628: assign_bars(bar_96_real_reg,12'd2910); 631, 632, 633: assign_bars(bar_97_real_reg,12'd2940); 636, 637, 638: assign_bars(bar_98_real_reg,12'd2970); 641, 642, 643: assign_bars(bar_99_real_reg,12'd3000); 
+                        646, 647, 648: assign_bars(bar_100_real_reg,12'd3030); 651, 652, 653: assign_bars(bar_101_real_reg,12'd3060); 656, 657, 658: assign_bars(bar_102_real_reg,12'd3090); 661, 662, 663: assign_bars(bar_103_real_reg,12'd3120); 
+                        666, 667, 668: assign_bars(bar_104_real_reg,12'd3150); 671, 672, 673: assign_bars(bar_105_real_reg,12'd3180); 676, 677, 678: assign_bars(bar_106_real_reg,12'd3210); 681, 682, 683: assign_bars(bar_107_real_reg,12'd3240); 
+                        686, 687, 688: assign_bars(bar_108_real_reg,12'd3270); 691, 692, 693: assign_bars(bar_109_real_reg,12'd3300); 696, 697, 698: assign_bars(bar_110_real_reg,12'd3330); 701, 702, 703: assign_bars(bar_111_real_reg,12'd3360); 
+                        706, 707, 708: assign_bars(bar_112_real_reg,12'd3390); 711, 712, 713: assign_bars(bar_113_real_reg,12'd3420); 716, 717, 718: assign_bars(bar_114_real_reg,12'd3450); 721, 722, 723: assign_bars(bar_115_real_reg,12'd3480); 
+                        726, 727, 728: assign_bars(bar_116_real_reg,12'd3510); 731, 732, 733: assign_bars(bar_117_real_reg,12'd3540); 736, 737, 738: assign_bars(bar_118_real_reg,12'd3570); 741, 742, 743: assign_bars(bar_119_real_reg,12'd3600); 
+                        746, 747, 748: assign_bars(bar_120_real_reg,12'd3630); 751, 752, 753: assign_bars(bar_121_real_reg,12'd3660); 756, 757, 758: assign_bars(bar_122_real_reg,12'd3690); 761, 762, 763: assign_bars(bar_123_real_reg,12'd3720); 
+                        766, 767, 768: assign_bars(bar_124_real_reg,12'd3750); 771, 772, 773: assign_bars(bar_125_real_reg,12'd3780); 776, 777, 778: assign_bars(bar_126_real_reg,12'd3810); 781, 782, 783: assign_bars(bar_127_real_reg,12'd3840); 
+                         
                     endcase
                 end
                 else if ((v_counter_top < 340 && v_counter_top > 240))begin
@@ -271,38 +285,40 @@ module VGA_Controller(
                         Red <= Black; Green <= Black; Blue <= Black;
                     end
                     case (h_counter_top)
-                        146, 147, 148: assign_bars_1(bar_0_imag_reg); 151, 152, 153: assign_bars_1(bar_1_imag_reg); 156, 157, 158: assign_bars_1(bar_2_imag_reg); 161, 162, 163: assign_bars_1(bar_3_imag_reg);
-                        166, 167, 168: assign_bars_1(bar_4_imag_reg); 171, 172, 173: assign_bars_1(bar_5_imag_reg); 176, 177, 178: assign_bars_1(bar_6_imag_reg); 181, 182, 183: assign_bars_1(bar_7_imag_reg);
-                        186, 187, 188: assign_bars_1(bar_8_imag_reg); 191, 192, 193: assign_bars_1(bar_9_imag_reg); 196, 197, 198: assign_bars_1(bar_10_imag_reg); 201, 202, 203: assign_bars_1(bar_11_imag_reg);
-                        206, 207, 208: assign_bars_1(bar_12_imag_reg); 211, 212, 213: assign_bars_1(bar_13_imag_reg); 216, 217, 218: assign_bars_1(bar_14_imag_reg); 221, 222, 223: assign_bars_1(bar_15_imag_reg);
-                        226, 227, 228: assign_bars_1(bar_16_imag_reg); 231, 232, 233: assign_bars_1(bar_17_imag_reg); 236, 237, 238: assign_bars_1(bar_18_imag_reg); 241, 242, 243: assign_bars_1(bar_19_imag_reg);
-                        246, 247, 248: assign_bars_1(bar_20_imag_reg); 251, 252, 253: assign_bars_1(bar_21_imag_reg); 256, 257, 258: assign_bars_1(bar_22_imag_reg); 261, 262, 263: assign_bars_1(bar_23_imag_reg);
-                        266, 267, 268: assign_bars_1(bar_24_imag_reg); 271, 272, 273: assign_bars_1(bar_25_imag_reg); 276, 277, 278: assign_bars_1(bar_26_imag_reg); 281, 282, 283: assign_bars_1(bar_27_imag_reg);
-                        286, 287, 288: assign_bars_1(bar_28_imag_reg); 291, 292, 293: assign_bars_1(bar_29_imag_reg); 296, 297, 298: assign_bars_1(bar_30_imag_reg); 301, 302, 303: assign_bars_1(bar_31_imag_reg);
-                        306, 307, 308: assign_bars_1(bar_32_imag_reg); 311, 312, 313: assign_bars_1(bar_33_imag_reg); 316, 317, 318: assign_bars_1(bar_34_imag_reg); 321, 322, 323: assign_bars_1(bar_35_imag_reg);
-                        326, 327, 328: assign_bars_1(bar_36_imag_reg); 331, 332, 333: assign_bars_1(bar_37_imag_reg); 336, 337, 338: assign_bars_1(bar_38_imag_reg); 341, 342, 343: assign_bars_1(bar_39_imag_reg);
-                        346, 347, 348: assign_bars_1(bar_40_imag_reg); 351, 352, 353: assign_bars_1(bar_41_imag_reg); 356, 357, 358: assign_bars_1(bar_42_imag_reg); 361, 362, 363: assign_bars_1(bar_43_imag_reg);
-                        366, 367, 368: assign_bars_1(bar_44_imag_reg); 371, 372, 373: assign_bars_1(bar_45_imag_reg); 376, 377, 378: assign_bars_1(bar_46_imag_reg); 381, 382, 383: assign_bars_1(bar_47_imag_reg);
-                        386, 387, 388: assign_bars_1(bar_48_imag_reg); 391, 392, 393: assign_bars_1(bar_49_imag_reg); 396, 397, 398: assign_bars_1(bar_50_imag_reg); 401, 402, 403: assign_bars_1(bar_51_imag_reg);
-                        406, 407, 408: assign_bars_1(bar_52_imag_reg); 411, 412, 413: assign_bars_1(bar_53_imag_reg); 416, 417, 418: assign_bars_1(bar_54_imag_reg); 421, 422, 423: assign_bars_1(bar_55_imag_reg);
-                        426, 427, 428: assign_bars_1(bar_56_imag_reg); 431, 432, 433: assign_bars_1(bar_57_imag_reg); 436, 437, 438: assign_bars_1(bar_58_imag_reg); 441, 442, 443: assign_bars_1(bar_59_imag_reg);
-                        446, 447, 448: assign_bars_1(bar_60_imag_reg); 451, 452, 453: assign_bars_1(bar_61_imag_reg); 456, 457, 458: assign_bars_1(bar_62_imag_reg); 461, 462, 463: assign_bars_1(bar_63_imag_reg);
-                        466, 467, 468: assign_bars_1(bar_64_imag_reg); 471, 472, 473: assign_bars_1(bar_65_imag_reg); 476, 477, 478: assign_bars_1(bar_66_imag_reg); 481, 482, 483: assign_bars_1(bar_67_imag_reg);
-                        486, 487, 488: assign_bars_1(bar_68_imag_reg); 491, 492, 493: assign_bars_1(bar_69_imag_reg); 496, 497, 498: assign_bars_1(bar_70_imag_reg); 501, 502, 503: assign_bars_1(bar_71_imag_reg);
-                        506, 507, 508: assign_bars_1(bar_72_imag_reg); 511, 512, 513: assign_bars_1(bar_73_imag_reg); 516, 517, 518: assign_bars_1(bar_74_imag_reg); 521, 522, 523: assign_bars_1(bar_75_imag_reg);
-                        526, 527, 528: assign_bars_1(bar_76_imag_reg); 531, 532, 533: assign_bars_1(bar_77_imag_reg); 536, 537, 538: assign_bars_1(bar_78_imag_reg); 541, 542, 543: assign_bars_1(bar_79_imag_reg);
-                        546, 547, 548: assign_bars_1(bar_80_imag_reg); 551, 552, 553: assign_bars_1(bar_81_imag_reg); 556, 557, 558: assign_bars_1(bar_82_imag_reg); 561, 562, 563: assign_bars_1(bar_83_imag_reg);
-                        566, 567, 568: assign_bars_1(bar_84_imag_reg); 571, 572, 573: assign_bars_1(bar_85_imag_reg); 576, 577, 578: assign_bars_1(bar_86_imag_reg); 581, 582, 583: assign_bars_1(bar_87_imag_reg);
-                        586, 587, 588: assign_bars_1(bar_88_imag_reg); 591, 592, 593: assign_bars_1(bar_89_imag_reg); 596, 597, 598: assign_bars_1(bar_90_imag_reg); 601, 602, 603: assign_bars_1(bar_91_imag_reg);
-                        606, 607, 608: assign_bars_1(bar_92_imag_reg); 611, 612, 613: assign_bars_1(bar_93_imag_reg); 616, 617, 618: assign_bars_1(bar_94_imag_reg); 621, 622, 623: assign_bars_1(bar_95_imag_reg);
-                        626, 627, 628: assign_bars_1(bar_96_imag_reg); 631, 632, 633: assign_bars_1(bar_97_imag_reg); 636, 637, 638: assign_bars_1(bar_98_imag_reg); 641, 642, 643: assign_bars_1(bar_99_imag_reg);
-                        646, 647, 648: assign_bars_1(bar_100_imag_reg); 651, 652, 653: assign_bars_1(bar_101_imag_reg); 656, 657, 658: assign_bars_1(bar_102_imag_reg); 661, 662, 663: assign_bars_1(bar_103_imag_reg);
-                        666, 667, 668: assign_bars_1(bar_104_imag_reg); 671, 672, 673: assign_bars_1(bar_105_imag_reg); 676, 677, 678: assign_bars_1(bar_106_imag_reg); 681, 682, 683: assign_bars_1(bar_107_imag_reg);
-                        686, 687, 688: assign_bars_1(bar_108_imag_reg); 691, 692, 693: assign_bars_1(bar_109_imag_reg); 696, 697, 698: assign_bars_1(bar_110_imag_reg); 701, 702, 703: assign_bars_1(bar_111_imag_reg);
-                        706, 707, 708: assign_bars_1(bar_112_imag_reg); 711, 712, 713: assign_bars_1(bar_113_imag_reg); 716, 717, 718: assign_bars_1(bar_114_imag_reg); 721, 722, 723: assign_bars_1(bar_115_imag_reg);
-                        726, 727, 728: assign_bars_1(bar_116_imag_reg); 731, 732, 733: assign_bars_1(bar_117_imag_reg); 736, 737, 738: assign_bars_1(bar_118_imag_reg); 741, 742, 743: assign_bars_1(bar_119_imag_reg);
-                        746, 747, 748: assign_bars_1(bar_120_imag_reg); 751, 752, 753: assign_bars_1(bar_121_imag_reg); 756, 757, 758: assign_bars_1(bar_122_imag_reg); 761, 762, 763: assign_bars_1(bar_123_imag_reg);
-                        766, 767, 768: assign_bars_1(bar_124_imag_reg); 771, 772, 773: assign_bars_1(bar_125_imag_reg); 776, 777, 778: assign_bars_1(bar_126_imag_reg); 781, 782, 783: assign_bars_1(bar_127_imag_reg);
+                        146, 147, 148: assign_bars_1(bar_0_imag_reg,12'd30); 151, 152, 153: assign_bars_1(bar_1_imag_reg,12'd60); 156, 157, 158: assign_bars_1(bar_2_imag_reg,12'd90); 161, 162, 163: assign_bars_1(bar_3_imag_reg,12'd120); 
+                        166, 167, 168: assign_bars_1(bar_4_imag_reg,12'd150); 171, 172, 173: assign_bars_1(bar_5_imag_reg,12'd180); 176, 177, 178: assign_bars_1(bar_6_imag_reg,12'd210); 181, 182, 183: assign_bars_1(bar_7_imag_reg,12'd240); 
+                        186, 187, 188: assign_bars_1(bar_8_imag_reg,12'd270); 191, 192, 193: assign_bars_1(bar_9_imag_reg,12'd300); 196, 197, 198: assign_bars_1(bar_10_imag_reg,12'd330); 201, 202, 203: assign_bars_1(bar_11_imag_reg,12'd360); 
+                        206, 207, 208: assign_bars_1(bar_12_imag_reg,12'd390); 211, 212, 213: assign_bars_1(bar_13_imag_reg,12'd420); 216, 217, 218: assign_bars_1(bar_14_imag_reg,12'd450); 221, 222, 223: assign_bars_1(bar_15_imag_reg,12'd480); 
+                        226, 227, 228: assign_bars_1(bar_16_imag_reg,12'd510); 231, 232, 233: assign_bars_1(bar_17_imag_reg,12'd540); 236, 237, 238: assign_bars_1(bar_18_imag_reg,12'd570); 241, 242, 243: assign_bars_1(bar_19_imag_reg,12'd600); 
+                        246, 247, 248: assign_bars_1(bar_20_imag_reg,12'd630); 251, 252, 253: assign_bars_1(bar_21_imag_reg,12'd660); 256, 257, 258: assign_bars_1(bar_22_imag_reg,12'd690); 261, 262, 263: assign_bars_1(bar_23_imag_reg,12'd720); 
+                        266, 267, 268: assign_bars_1(bar_24_imag_reg,12'd750); 271, 272, 273: assign_bars_1(bar_25_imag_reg,12'd780); 276, 277, 278: assign_bars_1(bar_26_imag_reg,12'd810); 281, 282, 283: assign_bars_1(bar_27_imag_reg,12'd840); 
+                        286, 287, 288: assign_bars_1(bar_28_imag_reg,12'd870); 291, 292, 293: assign_bars_1(bar_29_imag_reg,12'd900); 296, 297, 298: assign_bars_1(bar_30_imag_reg,12'd930); 301, 302, 303: assign_bars_1(bar_31_imag_reg,12'd960); 
+                        306, 307, 308: assign_bars_1(bar_32_imag_reg,12'd990); 311, 312, 313: assign_bars_1(bar_33_imag_reg,12'd1020); 316, 317, 318: assign_bars_1(bar_34_imag_reg,12'd1050); 321, 322, 323: assign_bars_1(bar_35_imag_reg,12'd1080); 
+                        326, 327, 328: assign_bars_1(bar_36_imag_reg,12'd1110); 331, 332, 333: assign_bars_1(bar_37_imag_reg,12'd1140); 336, 337, 338: assign_bars_1(bar_38_imag_reg,12'd1170); 341, 342, 343: assign_bars_1(bar_39_imag_reg,12'd1200); 
+                        346, 347, 348: assign_bars_1(bar_40_imag_reg,12'd1230); 351, 352, 353: assign_bars_1(bar_41_imag_reg,12'd1260); 356, 357, 358: assign_bars_1(bar_42_imag_reg,12'd1290); 361, 362, 363: assign_bars_1(bar_43_imag_reg,12'd1320); 
+                        366, 367, 368: assign_bars_1(bar_44_imag_reg,12'd1350); 371, 372, 373: assign_bars_1(bar_45_imag_reg,12'd1380); 376, 377, 378: assign_bars_1(bar_46_imag_reg,12'd1410); 381, 382, 383: assign_bars_1(bar_47_imag_reg,12'd1440); 
+                        386, 387, 388: assign_bars_1(bar_48_imag_reg,12'd1470); 391, 392, 393: assign_bars_1(bar_49_imag_reg,12'd1500); 396, 397, 398: assign_bars_1(bar_50_imag_reg,12'd1530); 401, 402, 403: assign_bars_1(bar_51_imag_reg,12'd1560); 
+                        406, 407, 408: assign_bars_1(bar_52_imag_reg,12'd1590); 411, 412, 413: assign_bars_1(bar_53_imag_reg,12'd1620); 416, 417, 418: assign_bars_1(bar_54_imag_reg,12'd1650); 421, 422, 423: assign_bars_1(bar_55_imag_reg,12'd1680); 
+                        426, 427, 428: assign_bars_1(bar_56_imag_reg,12'd1710); 431, 432, 433: assign_bars_1(bar_57_imag_reg,12'd1740); 436, 437, 438: assign_bars_1(bar_58_imag_reg,12'd1770); 441, 442, 443: assign_bars_1(bar_59_imag_reg,12'd1800); 
+                        446, 447, 448: assign_bars_1(bar_60_imag_reg,12'd1830); 451, 452, 453: assign_bars_1(bar_61_imag_reg,12'd1860); 456, 457, 458: assign_bars_1(bar_62_imag_reg,12'd1890); 461, 462, 463: assign_bars_1(bar_63_imag_reg,12'd1920); 
+                        466, 467, 468: assign_bars_1(bar_64_imag_reg,12'd1950); 471, 472, 473: assign_bars_1(bar_65_imag_reg,12'd1980); 476, 477, 478: assign_bars_1(bar_66_imag_reg,12'd2010); 481, 482, 483: assign_bars_1(bar_67_imag_reg,12'd2040); 
+                        486, 487, 488: assign_bars_1(bar_68_imag_reg,12'd2070); 491, 492, 493: assign_bars_1(bar_69_imag_reg,12'd2100); 496, 497, 498: assign_bars_1(bar_70_imag_reg,12'd2130); 501, 502, 503: assign_bars_1(bar_71_imag_reg,12'd2160); 
+                        506, 507, 508: assign_bars_1(bar_72_imag_reg,12'd2190); 511, 512, 513: assign_bars_1(bar_73_imag_reg,12'd2220); 516, 517, 518: assign_bars_1(bar_74_imag_reg,12'd2250); 521, 522, 523: assign_bars_1(bar_75_imag_reg,12'd2280); 
+                        526, 527, 528: assign_bars_1(bar_76_imag_reg,12'd2310); 531, 532, 533: assign_bars_1(bar_77_imag_reg,12'd2340); 536, 537, 538: assign_bars_1(bar_78_imag_reg,12'd2370); 541, 542, 543: assign_bars_1(bar_79_imag_reg,12'd2400); 
+                        546, 547, 548: assign_bars_1(bar_80_imag_reg,12'd2430); 551, 552, 553: assign_bars_1(bar_81_imag_reg,12'd2460); 556, 557, 558: assign_bars_1(bar_82_imag_reg,12'd2490); 561, 562, 563: assign_bars_1(bar_83_imag_reg,12'd2520); 
+                        566, 567, 568: assign_bars_1(bar_84_imag_reg,12'd2550); 571, 572, 573: assign_bars_1(bar_85_imag_reg,12'd2580); 576, 577, 578: assign_bars_1(bar_86_imag_reg,12'd2610); 581, 582, 583: assign_bars_1(bar_87_imag_reg,12'd2640); 
+                        586, 587, 588: assign_bars_1(bar_88_imag_reg,12'd2670); 591, 592, 593: assign_bars_1(bar_89_imag_reg,12'd2700); 596, 597, 598: assign_bars_1(bar_90_imag_reg,12'd2730); 601, 602, 603: assign_bars_1(bar_91_imag_reg,12'd2760); 
+                        606, 607, 608: assign_bars_1(bar_92_imag_reg,12'd2790); 611, 612, 613: assign_bars_1(bar_93_imag_reg,12'd2820); 616, 617, 618: assign_bars_1(bar_94_imag_reg,12'd2850); 621, 622, 623: assign_bars_1(bar_95_imag_reg,12'd2880); 
+                        626, 627, 628: assign_bars_1(bar_96_imag_reg,12'd2910); 631, 632, 633: assign_bars_1(bar_97_imag_reg,12'd2940); 636, 637, 638: assign_bars_1(bar_98_imag_reg,12'd2970); 641, 642, 643: assign_bars_1(bar_99_imag_reg,12'd3000); 
+                        646, 647, 648: assign_bars_1(bar_100_imag_reg,12'd3030); 651, 652, 653: assign_bars_1(bar_101_imag_reg,12'd3060); 656, 657, 658: assign_bars_1(bar_102_imag_reg,12'd3090); 661, 662, 663: assign_bars_1(bar_103_imag_reg,12'd3120); 
+                        666, 667, 668: assign_bars_1(bar_104_imag_reg,12'd3150); 671, 672, 673: assign_bars_1(bar_105_imag_reg,12'd3180); 676, 677, 678: assign_bars_1(bar_106_imag_reg,12'd3210); 681, 682, 683: assign_bars_1(bar_107_imag_reg,12'd3240); 
+                        686, 687, 688: assign_bars_1(bar_108_imag_reg,12'd3270); 691, 692, 693: assign_bars_1(bar_109_imag_reg,12'd3300); 696, 697, 698: assign_bars_1(bar_110_imag_reg,12'd3330); 701, 702, 703: assign_bars_1(bar_111_imag_reg,12'd3360); 
+                        706, 707, 708: assign_bars_1(bar_112_imag_reg,12'd3390); 711, 712, 713: assign_bars_1(bar_113_imag_reg,12'd3420); 716, 717, 718: assign_bars_1(bar_114_imag_reg,12'd3450); 721, 722, 723: assign_bars_1(bar_115_imag_reg,12'd3480); 
+                        726, 727, 728: assign_bars_1(bar_116_imag_reg,12'd3510); 731, 732, 733: assign_bars_1(bar_117_imag_reg,12'd3540); 736, 737, 738: assign_bars_1(bar_118_imag_reg,12'd3570); 741, 742, 743: assign_bars_1(bar_119_imag_reg,12'd3600); 
+                        746, 747, 748: assign_bars_1(bar_120_imag_reg,12'd3630); 751, 752, 753: assign_bars_1(bar_121_imag_reg,12'd3660); 756, 757, 758: assign_bars_1(bar_122_imag_reg,12'd3690); 761, 762, 763: assign_bars_1(bar_123_imag_reg,12'd3720); 
+                        766, 767, 768: assign_bars_1(bar_124_imag_reg,12'd3750); 771, 772, 773: assign_bars_1(bar_125_imag_reg,12'd3780); 776, 777, 778: assign_bars_1(bar_126_imag_reg,12'd3810); 781, 782, 783: assign_bars_1(bar_127_imag_reg,12'd3840); 
+                         
+                        
                     endcase
                 end
                 ////////////////////////////////////////////////////////////////////
@@ -323,13 +339,13 @@ module VGA_Controller(
                     end
                 end
                 ////////////////////////////////////////////////////////////////////
-                //  To print font_2 (Imaginary Part) to the screen
+                //  To print font_2 (Real Part) to the screen
                 ////////////////////////////////////////////////////////////////////
                 else if ((v_counter_top >= 359 && v_counter_top <= 370) )begin
-                    if ((h_counter_top >= 400 && h_counter_top <= 456))begin
-                        font_counter <= (font_counter == 32'd683) ? (32'b0) : (font_counter + 1 );
+                    if ((h_counter_top >= 430 && h_counter_top <= 486))begin
+                        font_counter_2 <= (font_counter_2 == 32'd683) ? (32'b0) : (font_counter_2 + 1 );
                         if (font_data_2)begin
-                            Red <= Black; Green <= White; Blue <= Black;
+                            Red <= White; Green <= White; Blue <= White;
                         end
                         else begin
                             Red <= Black; Green <= Black; Blue <= Black;
@@ -340,13 +356,13 @@ module VGA_Controller(
                     end
                 end
                 ////////////////////////////////////////////////////////////////////
-                //  To print font_2 (Imaginary Part) to the screen
+                //  To print font_3 (Imaginary Part) to the screen
                 ////////////////////////////////////////////////////////////////////
                 else if ((v_counter_top >= 217 && v_counter_top <= 230) )begin
-                    if ((h_counter_top >= 400 && h_counter_top <= 493))begin
-                        font_counter <= (font_counter == 32'd1315) ? (32'b0) : (font_counter + 1 );
+                    if ((h_counter_top >= 417 && h_counter_top <= 510))begin
+                        font_counter_3 <= (font_counter_3 == 32'd1315) ? (32'b0) : (font_counter_3 + 1 );
                         if (font_data_3)begin
-                            Red <= Black; Green <= White; Blue <= Black;
+                            Red <= White; Green <= White; Blue <= White;
                         end
                         else begin
                             Red <= Black; Green <= Black; Blue <= Black;
@@ -356,6 +372,40 @@ module VGA_Controller(
                         Red <= Black; Green <= Black; Blue <= Black;
                     end
                 end
+                ////////////////////////////////////////////////////////////////////
+                //  To print font_4 (0 kHz) to the screen
+                ////////////////////////////////////////////////////////////////////
+//                else if ((v_counter_top >= 354 && v_counter_top <= 365) && h_counter_top <= 200)begin
+//                    if ((h_counter_top >= 150 && h_counter_top <= 185))begin
+//                        font_counter_4 <= (font_counter_4 == 32'd431) ? (32'b0) : (font_counter_4 + 1 );
+//                        if (font_data_4)begin
+//                            Red <= White; Green <= White; Blue <= White;
+//                        end
+//                        else begin
+//                            Red <= Black; Green <= Black; Blue <= Black;
+//                        end
+//                    end
+//                    else begin
+//                        Red <= Black; Green <= Black; Blue <= Black;
+//                    end
+//                end
+//                ////////////////////////////////////////////////////////////////////
+//                //  To print font_5 (10 kHz) to the screen
+//                ////////////////////////////////////////////////////////////////////
+//                else if ((v_counter_top >= 354 && v_counter_top <= 365) )begin
+//                    if ((h_counter_top >= 722 && h_counter_top <= 765))begin
+//                        font_counter_5 <= (font_counter_5 == 32'd527) ? (32'b0) : (font_counter_5 + 1 );
+//                        if (font_data_5)begin
+//                            Red <= White; Green <= White; Blue <= White;
+//                        end
+//                        else begin
+//                            Red <= Black; Green <= Black; Blue <= Black;
+//                        end
+//                    end
+//                    else begin
+//                        Red <= Black; Green <= Black; Blue <= Black;
+//                    end
+//                end
                 ////////////////////////////////////////////////////////////////////
                 //  Anything else is same with background
                 ////////////////////////////////////////////////////////////////////
@@ -374,19 +424,21 @@ module VGA_Controller(
     
     task assign_bars;
         input [6:0] bar_reg;
+        input [11:0] color;
         begin
-            Red     <= (v_counter_wire <= bar_reg) ? Black : White;
-            Green   <= (v_counter_wire <= bar_reg) ? Black : White;
-            Blue    <= (v_counter_wire <= bar_reg) ? v_counter_wire[3:0] : White;
+            Red     <= (v_counter_wire <= bar_reg) ? color[11:8] : White;
+            Green   <= (v_counter_wire <= bar_reg) ? color[7:4] : White;
+            Blue    <= (v_counter_wire <= bar_reg) ? color[3:0] : White;
         end
     endtask
     
     task assign_bars_1;
         input [6:0] bar_reg;
+        input [11:0] color;
         begin
-            Red     <= (v_counter_wire_1 <= bar_reg) ? Black : White;
-            Green   <= (v_counter_wire_1 <= bar_reg) ? v_counter_wire[3:0] : White;
-            Blue    <= (v_counter_wire_1 <= bar_reg) ? Black : White;
+            Red     <= (v_counter_wire_1 <= bar_reg) ? color[11:8]: White;
+            Green   <= (v_counter_wire_1 <= bar_reg) ? color[7:4] : White;
+            Blue    <= (v_counter_wire_1 <= bar_reg) ? color[3:0] : White;
         end
     endtask
     

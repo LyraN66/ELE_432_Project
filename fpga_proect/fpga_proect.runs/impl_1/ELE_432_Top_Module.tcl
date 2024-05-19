@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Users/samil/fpga_proect/fpga_proect.runs/impl_1/ELE_432_Top_Module.tcl"
+  variable script "C:/Users/ethem/ELE_432_Project/fpga_proect/fpga_proect.runs/impl_1/ELE_432_Top_Module.tcl"
   variable category "vivado_impl"
 }
 
@@ -132,16 +132,16 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir C:/Users/samil/fpga_proect/fpga_proect.cache/wt [current_project]
-  set_property parent.project_path C:/Users/samil/fpga_proect/fpga_proect.xpr [current_project]
-  set_property ip_output_repo C:/Users/samil/fpga_proect/fpga_proect.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/ethem/ELE_432_Project/fpga_proect/fpga_proect.cache/wt [current_project]
+  set_property parent.project_path C:/Users/ethem/ELE_432_Project/fpga_proect/fpga_proect.xpr [current_project]
+  set_property ip_output_repo C:/Users/ethem/ELE_432_Project/fpga_proect/fpga_proect.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet C:/Users/samil/fpga_proect/fpga_proect.runs/synth_1/ELE_432_Top_Module.dcp
-  read_ip -quiet c:/Users/samil/fpga_proect/fpga_proect.srcs/sources_1/ip/cic_compiler_0/cic_compiler_0.xci
+  add_files -quiet C:/Users/ethem/ELE_432_Project/fpga_proect/fpga_proect.runs/synth_1/ELE_432_Top_Module.dcp
+  read_ip -quiet C:/Users/ethem/ELE_432_Project/fpga_proect/fpga_proect.srcs/sources_1/ip/cic_compiler_0/cic_compiler_0.xci
 OPTRACE "read constraints: implementation" START { }
-  read_xdc C:/Users/samil/fpga_proect/fpga_proect.srcs/constrs_1/new/fft_mic.xdc
+  read_xdc C:/Users/ethem/ELE_432_Project/fpga_proect/fpga_proect.srcs/constrs_1/new/fft_mic.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "read constraints: implementation_pre" START { }
 OPTRACE "read constraints: implementation_pre" END { }

@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/samil/fpga_proect/fpga_proect.runs/synth_1/ELE_432_Top_Module.tcl"
+  variable script "C:/Users/ethem/ELE_432_Project/fpga_proect/fpga_proect.runs/synth_1/ELE_432_Top_Module.tcl"
   variable category "vivado_synth"
 }
 
@@ -79,32 +79,39 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/samil/fpga_proect/fpga_proect.cache/wt [current_project]
-set_property parent.project_path C:/Users/samil/fpga_proect/fpga_proect.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/ethem/ELE_432_Project/fpga_proect/fpga_proect.cache/wt [current_project]
+set_property parent.project_path C:/Users/ethem/ELE_432_Project/fpga_proect/fpga_proect.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:nexys-a7-100t:part0:1.3 [current_project]
-set_property ip_output_repo c:/Users/samil/fpga_proect/fpga_proect.cache/ip [current_project]
+set_property ip_output_repo c:/Users/ethem/ELE_432_Project/fpga_proect/fpga_proect.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
+read_mem {
+  C:/Users/ethem/ELE_432_Project/fpga_proect/fpga_proect.srcs/sources_1/new/font_1.mem
+  C:/Users/ethem/ELE_432_Project/fpga_proect/fpga_proect.srcs/sources_1/new/font_3.mem
+  C:/Users/ethem/ELE_432_Project/fpga_proect/fpga_proect.srcs/sources_1/new/font_2.mem
+  C:/Users/ethem/ELE_432_Project/fpga_proect/fpga_proect.srcs/sources_1/new/font_4.mem
+  C:/Users/ethem/ELE_432_Project/fpga_proect/fpga_proect.srcs/sources_1/new/font_5.mem
+}
 read_verilog -library xil_defaultlib -sv {
-  C:/Users/samil/fpga_proect/fpga_proect.srcs/sources_1/imports/new/pdm_clok_gen.sv
-  C:/Users/samil/fpga_proect/fpga_proect.srcs/sources_1/imports/new/pdm_microphone.sv
+  C:/Users/ethem/ELE_432_Project/fpga_proect/fpga_proect.srcs/sources_1/imports/new/pdm_clok_gen.sv
+  C:/Users/ethem/ELE_432_Project/fpga_proect/fpga_proect.srcs/sources_1/imports/new/pdm_microphone.sv
 }
 read_verilog -library xil_defaultlib {
-  C:/Users/samil/fpga_proect/fpga_proect.srcs/sources_1/imports/new/div_clk.v
-  C:/Users/samil/fpga_proect/fpga_proect.srcs/sources_1/imports/new/fft.v
-  C:/Users/samil/fpga_proect/fpga_proect.srcs/sources_1/imports/new/horizantal.v
-  C:/Users/samil/fpga_proect/fpga_proect.srcs/sources_1/imports/new/input.v
-  C:/Users/samil/fpga_proect/fpga_proect.srcs/sources_1/imports/new/inverter.v
-  C:/Users/samil/fpga_proect/fpga_proect.srcs/sources_1/imports/new/rom.v
-  C:/Users/samil/fpga_proect/fpga_proect.srcs/sources_1/imports/new/vertical.v
-  C:/Users/samil/fpga_proect/fpga_proect.srcs/sources_1/imports/new/vga.v
-  C:/Users/samil/fpga_proect/fpga_proect.srcs/sources_1/imports/new/Top_Module.v
+  C:/Users/ethem/ELE_432_Project/fpga_proect/fpga_proect.srcs/sources_1/imports/new/div_clk.v
+  C:/Users/ethem/ELE_432_Project/fpga_proect/fpga_proect.srcs/sources_1/imports/new/fft.v
+  C:/Users/ethem/ELE_432_Project/fpga_proect/fpga_proect.srcs/sources_1/imports/new/horizantal.v
+  C:/Users/ethem/ELE_432_Project/fpga_proect/fpga_proect.srcs/sources_1/imports/new/input.v
+  C:/Users/ethem/ELE_432_Project/fpga_proect/fpga_proect.srcs/sources_1/imports/new/inverter.v
+  C:/Users/ethem/ELE_432_Project/fpga_proect/fpga_proect.srcs/sources_1/imports/new/rom.v
+  C:/Users/ethem/ELE_432_Project/fpga_proect/fpga_proect.srcs/sources_1/imports/new/vertical.v
+  C:/Users/ethem/ELE_432_Project/fpga_proect/fpga_proect.srcs/sources_1/imports/new/vga.v
+  C:/Users/ethem/ELE_432_Project/fpga_proect/fpga_proect.srcs/sources_1/imports/new/Top_Module.v
 }
-read_ip -quiet c:/Users/samil/fpga_proect/fpga_proect.srcs/sources_1/ip/cic_compiler_0/cic_compiler_0.xci
-set_property used_in_implementation false [get_files -all c:/Users/samil/fpga_proect/fpga_proect.gen/sources_1/ip/cic_compiler_0/cic_compiler_0_ooc.xdc]
+read_ip -quiet C:/Users/ethem/ELE_432_Project/fpga_proect/fpga_proect.srcs/sources_1/ip/cic_compiler_0/cic_compiler_0.xci
+set_property used_in_implementation false [get_files -all c:/Users/ethem/ELE_432_Project/fpga_proect/fpga_proect.gen/sources_1/ip/cic_compiler_0/cic_compiler_0_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -115,12 +122,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/samil/fpga_proect/fpga_proect.srcs/constrs_1/new/fft_mic.xdc
-set_property used_in_implementation false [get_files C:/Users/samil/fpga_proect/fpga_proect.srcs/constrs_1/new/fft_mic.xdc]
+read_xdc C:/Users/ethem/ELE_432_Project/fpga_proect/fpga_proect.srcs/constrs_1/new/fft_mic.xdc
+set_property used_in_implementation false [get_files C:/Users/ethem/ELE_432_Project/fpga_proect/fpga_proect.srcs/constrs_1/new/fft_mic.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental C:/Users/samil/fpga_proect/fpga_proect.srcs/utils_1/imports/synth_1/ELE_432_Top_Module.dcp
+read_checkpoint -auto_incremental -incremental C:/Users/ethem/ELE_432_Project/fpga_proect/fpga_proect.srcs/utils_1/imports/synth_1/ELE_432_Top_Module.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
