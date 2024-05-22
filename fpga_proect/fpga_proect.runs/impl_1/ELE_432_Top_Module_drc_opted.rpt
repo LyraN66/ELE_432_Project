@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Sat May 18 00:52:17 2024
-| Host         : DESKTOP-N21QB96 running 64-bit major release  (build 9200)
+| Date         : Sun May 19 18:54:39 2024
+| Host         : DESKTOP-T0BPI3M running 64-bit major release  (build 9200)
 | Command      : report_drc -file ELE_432_Top_Module_drc_opted.rpt -pb ELE_432_Top_Module_drc_opted.pb -rpx ELE_432_Top_Module_drc_opted.rpx
 | Design       : ELE_432_Top_Module
 | Device       : xc7a100tcsg324-1

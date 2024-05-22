@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/samil/fpga_proect/fpga_proect.srcs/constrs_1/new/fft_mic.xdc rfile:../../../fpga_proect.srcs/constrs_1/new/fft_mic.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/ethem/ELE_432_Project/fpga_proect/fpga_proect.srcs/constrs_1/new/fft_mic.xdc rfile:../../../fpga_proect.srcs/constrs_1/new/fft_mic.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN E3 [get_ports clk]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
