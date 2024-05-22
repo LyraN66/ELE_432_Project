@@ -3,28 +3,14 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Sat May 18 21:04:36 2024
-# Process ID: 10776
-# Current directory: C:/Users/ethem/ELE_432_Project/fpga_proect
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17556 C:\Users\ethem\ELE_432_Project\fpga_proect\fpga_proect.xpr
-# Log file: C:/Users/ethem/ELE_432_Project/fpga_proect/vivado.log
-# Journal file: C:/Users/ethem/ELE_432_Project/fpga_proect\vivado.jou
-# Running On: DESKTOP-T0BPI3M, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 4, Host memory: 34222 MB
+# Start of session at: Sun May 19 13:28:31 2024
+# Process ID: 11860
+# Current directory: C:/Users/samil/Desktop/ELE_432_Project/fpga_proect
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15056 C:\Users\samil\Desktop\ELE_432_Project\fpga_proect\fpga_proect.xpr
+# Log file: C:/Users/samil/Desktop/ELE_432_Project/fpga_proect/vivado.log
+# Journal file: C:/Users/samil/Desktop/ELE_432_Project/fpga_proect\vivado.jou
+# Running On: DESKTOP-N21QB96, OS: Windows, CPU Frequency: 2808 MHz, CPU Physical cores: 4, Host memory: 16804 MB
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/ethem/ELE_432_Project/fpga_proect/fpga_proect.xpr
+open_project C:/Users/samil/Desktop/ELE_432_Project/fpga_proect/fpga_proect.xpr
 update_compile_order -fileset sources_1
-file mkdir C:/Users/ethem/ELE_432_Project/fpga_proect/fpga_proect.srcs/sources_1/new
-close [ open C:/Users/ethem/ELE_432_Project/fpga_proect/fpga_proect.srcs/sources_1/new/font_1.v w ]
-add_files C:/Users/ethem/ELE_432_Project/fpga_proect/fpga_proect.srcs/sources_1/new/font_1.v
-update_compile_order -fileset sources_1
-close [ open C:/Users/ethem/ELE_432_Project/fpga_proect/fpga_proect.srcs/sources_1/new/font_1.mem w ]
-add_files C:/Users/ethem/ELE_432_Project/fpga_proect/fpga_proect.srcs/sources_1/new/font_1.mem
-export_ip_user_files -of_objects  [get_files C:/Users/ethem/ELE_432_Project/fpga_proect/fpga_proect.srcs/sources_1/new/font_1.v] -no_script -reset -force -quiet
-remove_files  C:/Users/ethem/ELE_432_Project/fpga_proect/fpga_proect.srcs/sources_1/new/font_1.v
-file delete -force C:/Users/ethem/ELE_432_Project/fpga_proect/fpga_proect.srcs/sources_1/new/font_1.v
-close [ open C:/Users/ethem/ELE_432_Project/fpga_proect/fpga_proect.srcs/sources_1/new/font_3.mem w ]
-add_files C:/Users/ethem/ELE_432_Project/fpga_proect/fpga_proect.srcs/sources_1/new/font_3.mem
-close [ open C:/Users/ethem/ELE_432_Project/fpga_proect/fpga_proect.srcs/sources_1/new/font_2.mem w ]
-add_files C:/Users/ethem/ELE_432_Project/fpga_proect/fpga_proect.srcs/sources_1/new/font_2.mem
-synth_design -rtl -rtl_skip_mlo -name rtl_1

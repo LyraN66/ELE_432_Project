@@ -1,0 +1,213 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Wed May 22 03:58:41 2024
+| Host         : DESKTOP-N21QB96 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Single_Cycle_RISCV32I_control_sets_placed.rpt
+| Design       : Single_Cycle_RISCV32I
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   135 |
+|    Minimum number of control sets                        |   135 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   185 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   135 |
+| >= 0 to < 4        |     7 |
+| >= 4 to < 6        |    16 |
+| >= 6 to < 8        |     8 |
+| >= 8 to < 10       |    17 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     1 |
+| >= 16              |    83 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             201 |           73 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |            1379 |          385 |
+| Yes          | No                    | No                     |             367 |          157 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            2252 |         1029 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------------+--------------------------------------------------------+-----------------------------------------------------------+------------------+----------------+--------------+
+|                 Clock Signal                 |                      Enable Signal                     |                      Set/Reset Signal                     | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------------------------------------+--------------------------------------------------------+-----------------------------------------------------------+------------------+----------------+--------------+
+|  Decode_Stage/Alu_Control_id_reg_reg[1]_0    |                                                        |                                                           |                1 |              1 |         1.00 |
+|  Decode_Stage/Alu_Control_id_reg_reg[4]_0[0] |                                                        |                                                           |                1 |              1 |         1.00 |
+|  Decode_Stage/Alu_Control_id_reg_reg[4]_1[0] |                                                        |                                                           |                1 |              2 |         2.00 |
+|  Decode_Stage/Alu_Control_id_reg_reg[0]_2[0] |                                                        |                                                           |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG                               |                                                        |                                                           |                1 |              2 |         2.00 |
+|  slow_clk_BUFG                               | MLP_MODULE/mlp/control/next_temp1                      |                                                           |                1 |              2 |         2.00 |
+|  Decode_Stage/Alu_Control_id_reg_reg[0]_0[0] |                                                        |                                                           |                1 |              3 |         3.00 |
+|  clk_IBUF_BUFG                               | LCD_MODULE/selective_reg                               | rst_i_IBUF                                                |                1 |              4 |         4.00 |
+|  slow_clk_BUFG                               | MLP_MODULE/mlp/Fourth_LayerReg                         | rst_i_IBUF                                                |                1 |              4 |         4.00 |
+|  slow_clk_BUFG                               | MLP_MODULE/mlp/RN/E[0]                                 | rst_i_IBUF                                                |                1 |              4 |         4.00 |
+|  slow_clk_BUFG                               | MLP_MODULE/mlp/ControlStart_Reg                        | MLP_MODULE/mlp/control/MultiplierLoad_Counter1[3]_i_1_n_1 |                1 |              4 |         4.00 |
+|  slow_clk_BUFG                               | DECISION_MAKING_CONTROLLER/i2c_data_counter            | rst_i_IBUF                                                |                1 |              4 |         4.00 |
+|  slow_clk_BUFG                               | ALU/Multiplier/sel                                     | ALU/Multiplier/clear                                      |                1 |              4 |         4.00 |
+|  slow_clk_BUFG                               | MLP_MODULE/mlp/counter[3]_i_1_n_1                      | rst_i_IBUF                                                |                2 |              4 |         2.00 |
+|  state_reg[3]_i_3_n_1                        |                                                        | Seven_Segment/state[3]_i_1_n_1                            |                1 |              4 |         4.00 |
+|  slow_clk_BUFG                               | MLP_MODULE/mlp/control/Base_NeuronAdr[5]_i_1_n_1       | MLP_MODULE/mlp/control/MultiplierLoad_Counter2[3]_i_1_n_1 |                1 |              4 |         4.00 |
+|  slow_clk_BUFG                               | MLP_MODULE/mlp/FSM_sequential_state_reg[0][0]          |                                                           |                2 |              4 |         2.00 |
+|  slow_clk_BUFG                               |                                                        | ALU/Multiplier/clear                                      |                1 |              4 |         4.00 |
+|  slow_clk_BUFG                               | MLP_MODULE/mlp/valid_reg_0                             | Debouncer_Module/result_bouncer[3]_i_1_n_1                |                2 |              4 |         2.00 |
+|  slow_clk_BUFG                               | MLP_MODULE/mlp/class[3]_i_1_n_1                        | rst_i_IBUF                                                |                1 |              4 |         4.00 |
+|  slow_clk_BUFG                               | I2C_SLAVE_MODULE/bit_count[4]_i_1__0_n_1               | rst_i_IBUF                                                |                3 |              5 |         1.67 |
+|  clk_IBUF_BUFG                               | LCD_MODULE/I2C/bit_count[4]_i_1_n_1                    | rst_i_IBUF                                                |                2 |              5 |         2.50 |
+|  slow_clk_BUFG                               | ALU/Divider/count                                      | Decode_Stage/SR[0]                                        |                1 |              5 |         5.00 |
+|  slow_clk_BUFG                               | MLP_MODULE/Bias_Adr                                    | rst_i_IBUF                                                |                2 |              6 |         3.00 |
+|  slow_clk_BUFG                               | MLP_MODULE/mlp/Neuron_DataAdr_Result[5]_i_1_n_1        | rst_i_IBUF                                                |                3 |              6 |         2.00 |
+|  slow_clk_BUFG                               | MLP_MODULE/Neuron_Adr                                  | rst_i_IBUF                                                |                2 |              6 |         3.00 |
+|  slow_clk_BUFG                               | MLP_MODULE/bias_number[5]_i_1_n_1                      |                                                           |                2 |              6 |         3.00 |
+|  slow_clk_BUFG                               | MLP_MODULE/mlp/adder1/Neurons_DataWriteAdr[5]_i_1_n_1  |                                                           |                3 |              6 |         2.00 |
+|  slow_clk_BUFG                               | MLP_MODULE/mlp/control/Base_NeuronAdr[5]_i_1_n_1       | MLP_MODULE/mlp/Mlp_Mult/Mult1/uut/internal_rst_reg        |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG                               | LCD_MODULE/i2c_addrr_dut[1]_i_1_n_1                    | rst_i_IBUF                                                |                4 |              7 |         1.75 |
+|  slow_clk_BUFG                               | MLP_MODULE/mlp/adder1/input1Full3_out                  | MLP_MODULE/mlp/Mlp_Mult/Mult1/uut/internal_rst_reg        |                3 |              7 |         2.33 |
+|  slow_clk_BUFG                               | MLP_MODULE/mlp/control/E[0]                            | rst_i_IBUF                                                |                4 |              8 |         2.00 |
+|  slow_clk_BUFG                               | DECISION_MAKING_CONTROLLER/i2c_sensor_data[15]_i_1_n_1 | rst_i_IBUF                                                |                2 |              8 |         4.00 |
+|  slow_clk_BUFG                               | I2C_SLAVE_MODULE/read_operation[7]_i_1_n_1             | rst_i_IBUF                                                |                3 |              8 |         2.67 |
+|  slow_clk_BUFG                               | I2C_SLAVE_MODULE/index_1[7]_i_1_n_1                    | rst_i_IBUF                                                |                2 |              8 |         4.00 |
+|  slow_clk_BUFG                               |                                                        | MLP_MODULE/mlp/Mlp_Mult/Mult1/exponent1[7]_i_1_n_1        |                2 |              8 |         4.00 |
+|  slow_clk_BUFG                               | MLP_MODULE/mlp/E[0]                                    | rst_i_IBUF                                                |                2 |              8 |         4.00 |
+|  slow_clk_BUFG                               | DECISION_MAKING_CONTROLLER/i2c_sensor_data[31]_i_1_n_1 | rst_i_IBUF                                                |                4 |              8 |         2.00 |
+|  slow_clk_BUFG                               | BOOTLOADER/temp_data[7]                                | rst_i_IBUF                                                |                2 |              8 |         4.00 |
+|  slow_clk_BUFG                               | BOOTLOADER/temp_data[31]                               | rst_i_IBUF                                                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                               | LCD_MODULE/I2C/i2c_data[18]_i_1_n_1                    | rst_i_IBUF                                                |                3 |              8 |         2.67 |
+|  slow_clk_BUFG                               | BOOTLOADER/temp_data[15]                               | rst_i_IBUF                                                |                2 |              8 |         4.00 |
+|  state_reg[3]_i_3_n_1                        | Seven_Segment/digit[7]_i_1_n_1                         | Seven_Segment/state[3]_i_1_n_1                            |                2 |              8 |         4.00 |
+|  slow_clk_BUFG                               | I2C_SLAVE_MODULE/temp_data                             | rst_i_IBUF                                                |                3 |              8 |         2.67 |
+|  slow_clk_BUFG                               | BOOTLOADER/temp_data[23]                               | rst_i_IBUF                                                |                2 |              8 |         4.00 |
+|  slow_clk_BUFG                               | DECISION_MAKING_CONTROLLER/i2c_sensor_data[23]_i_1_n_1 | rst_i_IBUF                                                |                2 |              8 |         4.00 |
+|  slow_clk_BUFG                               | DECISION_MAKING_CONTROLLER/i2c_sensor_data[7]_i_1_n_1  | rst_i_IBUF                                                |                1 |              8 |         8.00 |
+|  slow_clk_BUFG                               | MLP_MODULE/Weights_Adr                                 | rst_i_IBUF                                                |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG                               | LCD_MODULE/counter_1[9]_i_1_n_1                        | rst_i_IBUF                                                |                4 |             10 |         2.50 |
+|  slow_clk_BUFG                               | MLP_MODULE/weights_number[9]_i_1_n_1                   |                                                           |                2 |             10 |         5.00 |
+|  Fetch_Stage/instruction_if_id_reg_reg[2]_4  |                                                        |                                                           |                6 |             13 |         2.17 |
+|  clk_IBUF_BUFG                               |                                                        | rst_i_IBUF                                                |               10 |             15 |         1.50 |
+|  slow_clk_BUFG                               | MLP_MODULE/First_Layer                                 | rst_i_IBUF                                                |                6 |             16 |         2.67 |
+|  slow_clk_BUFG                               | DECISION_MAKING_CONTROLLER/dm_address[3]_i_1_n_1       | rst_i_IBUF                                                |                4 |             16 |         4.00 |
+|  slow_clk_BUFG                               | MLP_MODULE/mlp/valid_reg_0                             |                                                           |                5 |             20 |         4.00 |
+|  slow_clk_BUFG                               |                                                        | Seven_Segment/clk_updated                                 |                6 |             20 |         3.33 |
+|  slow_clk_BUFG                               | MLP_MODULE/mlp/start_adder                             | MLP_MODULE/mlp/Mlp_Mult/Mult1/uut/rs2_ir[22]_i_1_n_1      |                8 |             23 |         2.88 |
+|  slow_clk_BUFG                               | MLP_MODULE/mlp/start_adder                             | MLP_MODULE/mlp/Mlp_Mult/Mult1/uut/internal_rst_reg        |               14 |             23 |         1.64 |
+|  slow_clk_BUFG                               | Execute_Stage/E[0]                                     | rst_i_IBUF                                                |               11 |             24 |         2.18 |
+|  Control_Unit/E[0]                           |                                                        |                                                           |                8 |             24 |         3.00 |
+|  n_0_4546_BUFG                               |                                                        |                                                           |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG                               |                                                        | LCD_MODULE/counter[0]_i_1__0_n_1                          |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG                               |                                                        | LCD_MODULE/I2C/counter[0]_i_1_n_1                         |                8 |             32 |         4.00 |
+|  slow_clk_BUFG                               | Execute_Stage/alu_result_ex_reg_reg[2]_1[0]            |                                                           |               10 |             32 |         3.20 |
+|  slow_clk_BUFG                               | Execute_Stage/alu_result_ex_reg_reg[0]_1[0]            |                                                           |                7 |             32 |         4.57 |
+|  slow_clk_BUFG                               | Execute_Stage/Mem_Write_ex_reg_reg_18[0]               |                                                           |               14 |             32 |         2.29 |
+|  slow_clk_BUFG                               |                                                        | I2C_SLAVE_MODULE/counter[0]_i_1__2_n_1                    |                8 |             32 |         4.00 |
+|  slow_clk_BUFG                               | ALU/Multiplier/result[31]_i_1_n_1                      | ALU/Multiplier/clear                                      |                7 |             32 |         4.57 |
+|  slow_clk_BUFG                               | Memory_Access_Stage/rd_addr_mem_reg_reg[1]_rep_9[0]    | rst_i_IBUF                                                |               23 |             32 |         1.39 |
+|  slow_clk_BUFG                               | Memory_Access_Stage/rd_addr_mem_reg_reg[1]_rep_4[0]    | rst_i_IBUF                                                |               23 |             32 |         1.39 |
+|  slow_clk_BUFG                               | Memory_Access_Stage/rd_addr_mem_reg_reg[1]_rep_7[0]    | rst_i_IBUF                                                |               17 |             32 |         1.88 |
+|  slow_clk_BUFG                               | Memory_Access_Stage/rd_addr_mem_reg_reg[4]_5[0]        | rst_i_IBUF                                                |               16 |             32 |         2.00 |
+|  slow_clk_BUFG                               | Memory_Access_Stage/rd_addr_mem_reg_reg[4]_2[0]        | rst_i_IBUF                                                |               17 |             32 |         1.88 |
+|  slow_clk_BUFG                               | Memory_Access_Stage/rd_addr_mem_reg_reg[3]_0[0]        | rst_i_IBUF                                                |               22 |             32 |         1.45 |
+|  slow_clk_BUFG                               | Memory_Access_Stage/rd_addr_mem_reg_reg[4]_7[0]        | rst_i_IBUF                                                |               24 |             32 |         1.33 |
+|  slow_clk_BUFG                               | Memory_Access_Stage/rd_addr_mem_reg_reg[4]_1[0]        | rst_i_IBUF                                                |               21 |             32 |         1.52 |
+|  slow_clk_BUFG                               | Memory_Access_Stage/rd_addr_mem_reg_reg[2]_4[0]        | rst_i_IBUF                                                |               18 |             32 |         1.78 |
+|  slow_clk_BUFG                               | Memory_Access_Stage/rd_addr_mem_reg_reg[1]_rep_6[0]    | rst_i_IBUF                                                |               19 |             32 |         1.68 |
+|  slow_clk_BUFG                               | Memory_Access_Stage/rd_addr_mem_reg_reg[4]_6[0]        | rst_i_IBUF                                                |               18 |             32 |         1.78 |
+|  slow_clk_BUFG                               | Memory_Access_Stage/rd_addr_mem_reg_reg[2]_8[0]        | rst_i_IBUF                                                |               17 |             32 |         1.88 |
+|  slow_clk_BUFG                               | Memory_Access_Stage/rd_addr_mem_reg_reg[2]_1[0]        | rst_i_IBUF                                                |               15 |             32 |         2.13 |
+|  slow_clk_BUFG                               | Memory_Access_Stage/rd_addr_mem_reg_reg[2]_0[0]        | rst_i_IBUF                                                |               20 |             32 |         1.60 |
+|  slow_clk_BUFG                               | Memory_Access_Stage/rd_addr_mem_reg_reg[2]_6[0]        | rst_i_IBUF                                                |               18 |             32 |         1.78 |
+|  slow_clk_BUFG                               | Memory_Access_Stage/rd_addr_mem_reg_reg[3]_1[0]        | rst_i_IBUF                                                |               17 |             32 |         1.88 |
+|  slow_clk_BUFG                               | Memory_Access_Stage/rd_addr_mem_reg_reg[1]_rep_5[0]    | rst_i_IBUF                                                |               22 |             32 |         1.45 |
+|  slow_clk_BUFG                               | Memory_Access_Stage/rd_addr_mem_reg_reg[2]_2[0]        | rst_i_IBUF                                                |               16 |             32 |         2.00 |
+|  slow_clk_BUFG                               | Memory_Access_Stage/rd_addr_mem_reg_reg[4]_3[0]        | rst_i_IBUF                                                |               22 |             32 |         1.45 |
+|  slow_clk_BUFG                               | Memory_Access_Stage/rd_addr_mem_reg_reg[4]_4[0]        | rst_i_IBUF                                                |               21 |             32 |         1.52 |
+|  slow_clk_BUFG                               | Memory_Access_Stage/rd_addr_mem_reg_reg[3]_2[0]        | rst_i_IBUF                                                |               18 |             32 |         1.78 |
+|  slow_clk_BUFG                               | Memory_Access_Stage/rd_addr_mem_reg_reg[2]_5[0]        | rst_i_IBUF                                                |               14 |             32 |         2.29 |
+|  slow_clk_BUFG                               | Memory_Access_Stage/rd_addr_mem_reg_reg[3]_3[0]        | rst_i_IBUF                                                |               24 |             32 |         1.33 |
+|  slow_clk_BUFG                               | Memory_Access_Stage/rd_addr_mem_reg_reg[2]_3[0]        | rst_i_IBUF                                                |               15 |             32 |         2.13 |
+|  slow_clk_BUFG                               | Memory_Access_Stage/rd_addr_mem_reg_reg[2]_7[0]        | rst_i_IBUF                                                |               19 |             32 |         1.68 |
+|  slow_clk_BUFG                               | Memory_Access_Stage/rd_addr_mem_reg_reg[1]_rep_3[0]    | rst_i_IBUF                                                |               18 |             32 |         1.78 |
+|  slow_clk_BUFG                               | Memory_Access_Stage/rd_addr_mem_reg_reg[1]_rep_2[0]    | rst_i_IBUF                                                |               11 |             32 |         2.91 |
+|  slow_clk_BUFG                               | Memory_Access_Stage/rd_addr_mem_reg_reg[1]_rep_10[0]   | rst_i_IBUF                                                |               19 |             32 |         1.68 |
+|  slow_clk_BUFG                               | Memory_Access_Stage/rd_addr_mem_reg_reg[1]_rep_1[0]    | rst_i_IBUF                                                |               17 |             32 |         1.88 |
+|  slow_clk_BUFG                               | I2C_SLAVE_MODULE/t_low                                 | rst_i_IBUF                                                |               10 |             32 |         3.20 |
+|  slow_clk_BUFG                               | I2C_SLAVE_MODULE/t_high                                | rst_i_IBUF                                                |               10 |             32 |         3.20 |
+|  slow_clk_BUFG                               | Memory_Access_Stage/E[0]                               | rst_i_IBUF                                                |               16 |             32 |         2.00 |
+|  slow_clk_BUFG                               | MLP_MODULE/mlp/Mlp_Mult/Mult1/uut/E[0]                 | MLP_MODULE/mlp/Mlp_Mult/Mult1/uut/internal_rst_reg        |               18 |             32 |         1.78 |
+|  slow_clk_BUFG                               | DECISION_MAKING_CONTROLLER/dm_address_reg[0]_0[0]      | rst_i_IBUF                                                |               22 |             32 |         1.45 |
+|  slow_clk_BUFG                               | BOOTLOADER/mlp_data[31]_i_1_n_1                        | rst_i_IBUF                                                |               11 |             32 |         2.91 |
+|  slow_clk_BUFG                               | MLP_MODULE/mlp/adder1/input1                           | MLP_MODULE/mlp/Mlp_Mult/Mult1/uut/internal_rst_reg        |               18 |             32 |         1.78 |
+|  slow_clk_BUFG                               | ALU/Divider/result_o[31]_i_1_n_1                       | rst_i_IBUF                                                |               11 |             32 |         2.91 |
+|  slow_clk_BUFG                               | ALU/Divider/busy_o_reg_1                               | rst_i_IBUF                                                |                9 |             32 |         3.56 |
+|  slow_clk_BUFG                               | ALU/Multiplier/product0                                | rst_i_IBUF                                                |               14 |             32 |         2.29 |
+|  slow_clk_BUFG                               | ALU/Multiplier/product05_out                           | ALU/Multiplier/clear                                      |                8 |             32 |         4.00 |
+|  slow_clk_BUFG                               | ALU/Multiplier/multiplier[31]_i_1_n_1                  | rst_i_IBUF                                                |                7 |             32 |         4.57 |
+|  slow_clk_BUFG                               | Memory_Access_Stage/rd_addr_mem_reg_reg[1]_rep_8[0]    | rst_i_IBUF                                                |               17 |             32 |         1.88 |
+|  slow_clk_BUFG                               | Execute_Stage/alu_result_ex_reg_reg[1]_1[0]            | rst_i_IBUF                                                |               11 |             32 |         2.91 |
+|  slow_clk_BUFG                               | Execute_Stage/alu_result_ex_reg_reg[1]_6[0]            |                                                           |               14 |             32 |         2.29 |
+|  slow_clk_BUFG                               | MLP_MODULE/mlp/RN/Fourth_LayerReg_reg[3][0]            |                                                           |                8 |             32 |         4.00 |
+|  slow_clk_BUFG                               | Execute_Stage/alu_result_ex_reg_reg[3]_0[0]            |                                                           |               13 |             32 |         2.46 |
+|  slow_clk_BUFG                               | Execute_Stage/alu_result_ex_reg_reg[1]_2[0]            | rst_i_IBUF                                                |               15 |             32 |         2.13 |
+|  slow_clk_BUFG                               | Execute_Stage/alu_result_ex_reg_reg[3]_1[0]            |                                                           |               21 |             32 |         1.52 |
+|  slow_clk_BUFG                               | Execute_Stage/alu_result_ex_reg_reg[1]_0[0]            | rst_i_IBUF                                                |               11 |             32 |         2.91 |
+|  slow_clk_BUFG                               | Execute_Stage/alu_result_ex_reg_reg[0]_0[0]            |                                                           |               20 |             32 |         1.60 |
+|  slow_clk_BUFG                               | Execute_Stage/alu_result_ex_reg_reg[1]_4[0]            |                                                           |               18 |             32 |         1.78 |
+|  slow_clk_BUFG                               | Execute_Stage/alu_result_ex_reg_reg[1]_5[0]            |                                                           |               17 |             32 |         1.88 |
+|  slow_clk_BUFG                               | Decode_Stage/A_Q_reg1                                  | ALU/Divider/B_reg[32]_i_1_n_1                             |                9 |             33 |         3.67 |
+|  slow_clk_BUFG                               | ALU/Divider/A_Q_reg[63]_i_1_n_1                        | rst_i_IBUF                                                |               19 |             64 |         3.37 |
+|  slow_clk_BUFG                               | BOOTLOADER/Bias_w                                      |                                                           |               16 |             64 |         4.00 |
+|  slow_clk_BUFG                               |                                                        |                                                           |               13 |             77 |         5.92 |
+|  state_reg[3]_i_3_n_1                        |                                                        |                                                           |               24 |             80 |         3.33 |
+|  slow_clk_BUFG                               | ALU/Divider/busy_o_reg_1                               | Decode_Stage/Jump_id_reg_reg_0[0]                         |               23 |             86 |         3.74 |
+|  slow_clk_BUFG                               | MLP_MODULE/mlp/ControlStart_Reg                        | MLP_MODULE/mlp/Mlp_Mult/Mult1/uut/internal_rst_reg        |               42 |             86 |         2.05 |
+|  slow_clk_BUFG                               | MLP_MODULE/mlp/control/Neurons_wr                      |                                                           |               22 |             88 |         4.00 |
+|  slow_clk_BUFG                               | MLP_MODULE/mlp/control/Weights_W_reg_reg               |                                                           |               32 |            128 |         4.00 |
+|  slow_clk_BUFG                               | MLP_MODULE/mlp/control/Weights_W_reg_reg_0             |                                                           |               32 |            128 |         4.00 |
+|  slow_clk_BUFG                               | MLP_MODULE/mlp/control/Weights_Adr_reg[8]_1            |                                                           |               32 |            128 |         4.00 |
+|  slow_clk_BUFG                               | MLP_MODULE/mlp/control/Weights_Adr_reg[8]_0            |                                                           |               32 |            128 |         4.00 |
+|  slow_clk_BUFG                               | ALU/Divider/E[0]                                       | Decode_Stage/jalr_top_reg                                 |               59 |            177 |         3.00 |
+|  slow_clk_BUFG                               |                                                        | rst_i_IBUF                                                |              130 |            348 |         2.68 |
+|  slow_clk_BUFG                               |                                                        | MLP_MODULE/mlp/Mlp_Mult/Mult1/uut/internal_rst_reg        |              211 |            884 |         4.19 |
++----------------------------------------------+--------------------------------------------------------+-----------------------------------------------------------+------------------+----------------+--------------+
+
+

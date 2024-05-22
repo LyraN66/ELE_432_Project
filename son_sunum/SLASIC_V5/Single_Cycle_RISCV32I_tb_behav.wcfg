@@ -1,0 +1,1469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Single_Cycle_RISCV32I_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Single_Cycle_RISCV32I_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000000 ms"></ZoomStartTime>
+      <ZoomEndTime time="67.600000001 ms"></ZoomEndTime>
+      <Cursor1Time time="1.805000000 ms"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="340"></NameColumnWidth>
+      <ValueColumnWidth column_width="150"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="5" />
+   <wvobject fp_name="group401" type="group">
+      <obj_property name="label">i2c</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/rst" type="logic">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/scl" type="logic">
+         <obj_property name="ElementShortName">scl</obj_property>
+         <obj_property name="ObjectShortName">scl</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/sda" type="logic">
+         <obj_property name="ElementShortName">sda</obj_property>
+         <obj_property name="ObjectShortName">sda</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/sda_enable" type="logic">
+         <obj_property name="ElementShortName">sda_enable</obj_property>
+         <obj_property name="ObjectShortName">sda_enable</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/write" type="logic">
+         <obj_property name="ElementShortName">write</obj_property>
+         <obj_property name="ObjectShortName">write</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/read_1" type="logic">
+         <obj_property name="ElementShortName">read_1</obj_property>
+         <obj_property name="ObjectShortName">read_1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/index_1" type="array">
+         <obj_property name="ElementShortName">index_1[7:0]</obj_property>
+         <obj_property name="ObjectShortName">index_1[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/data_out" type="array">
+         <obj_property name="ElementShortName">data_out[7:0]</obj_property>
+         <obj_property name="ObjectShortName">data_out[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/data_in" type="array">
+         <obj_property name="ElementShortName">data_in[7:0]</obj_property>
+         <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/busy" type="logic">
+         <obj_property name="ElementShortName">busy</obj_property>
+         <obj_property name="ObjectShortName">busy</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/valid" type="logic">
+         <obj_property name="ElementShortName">valid</obj_property>
+         <obj_property name="ObjectShortName">valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/I2C_SLAVE_ADDR" type="array">
+         <obj_property name="ElementShortName">I2C_SLAVE_ADDR[6:0]</obj_property>
+         <obj_property name="ObjectShortName">I2C_SLAVE_ADDR[6:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/i2c_data" type="array">
+         <obj_property name="ElementShortName">i2c_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">i2c_data[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/i2c_capt" type="array">
+         <obj_property name="ElementShortName">i2c_capt[28:0]</obj_property>
+         <obj_property name="ObjectShortName">i2c_capt[28:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/counter" type="array">
+         <obj_property name="ElementShortName">counter[31:0]</obj_property>
+         <obj_property name="ObjectShortName">counter[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/counter_reset" type="logic">
+         <obj_property name="ElementShortName">counter_reset</obj_property>
+         <obj_property name="ObjectShortName">counter_reset</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/send_operation" type="logic">
+         <obj_property name="ElementShortName">send_operation</obj_property>
+         <obj_property name="ObjectShortName">send_operation</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/bit_count" type="array">
+         <obj_property name="ElementShortName">bit_count[4:0]</obj_property>
+         <obj_property name="ObjectShortName">bit_count[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/temp_data" type="array">
+         <obj_property name="ElementShortName">temp_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">temp_data[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/capture_en" type="logic">
+         <obj_property name="ElementShortName">capture_en</obj_property>
+         <obj_property name="ObjectShortName">capture_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/ack_sended" type="logic">
+         <obj_property name="ElementShortName">ack_sended</obj_property>
+         <obj_property name="ObjectShortName">ack_sended</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/nack_sended" type="logic">
+         <obj_property name="ElementShortName">nack_sended</obj_property>
+         <obj_property name="ObjectShortName">nack_sended</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/half_ok" type="logic">
+         <obj_property name="ElementShortName">half_ok</obj_property>
+         <obj_property name="ObjectShortName">half_ok</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/data_will_send" type="logic">
+         <obj_property name="ElementShortName">data_will_send</obj_property>
+         <obj_property name="ObjectShortName">data_will_send</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/received_one" type="logic">
+         <obj_property name="ElementShortName">received_one</obj_property>
+         <obj_property name="ObjectShortName">received_one</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/sda_en" type="logic">
+         <obj_property name="ElementShortName">sda_en</obj_property>
+         <obj_property name="ObjectShortName">sda_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/done_high" type="logic">
+         <obj_property name="ElementShortName">done_high</obj_property>
+         <obj_property name="ObjectShortName">done_high</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/sda_enable_reg" type="logic">
+         <obj_property name="ElementShortName">sda_enable_reg</obj_property>
+         <obj_property name="ObjectShortName">sda_enable_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/t_high" type="array">
+         <obj_property name="ElementShortName">t_high[31:0]</obj_property>
+         <obj_property name="ObjectShortName">t_high[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/t_high_2" type="array">
+         <obj_property name="ElementShortName">t_high_2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">t_high_2[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/t_low" type="array">
+         <obj_property name="ElementShortName">t_low[31:0]</obj_property>
+         <obj_property name="ObjectShortName">t_low[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/t_low_2" type="array">
+         <obj_property name="ElementShortName">t_low_2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">t_low_2[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/captured" type="logic">
+         <obj_property name="ElementShortName">captured</obj_property>
+         <obj_property name="ObjectShortName">captured</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/distance" type="logic">
+         <obj_property name="ElementShortName">distance</obj_property>
+         <obj_property name="ObjectShortName">distance</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/sda_high" type="logic">
+         <obj_property name="ElementShortName">sda_high</obj_property>
+         <obj_property name="ObjectShortName">sda_high</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/sda_high_2" type="logic">
+         <obj_property name="ElementShortName">sda_high_2</obj_property>
+         <obj_property name="ObjectShortName">sda_high_2</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/stop_received" type="logic">
+         <obj_property name="ElementShortName">stop_received</obj_property>
+         <obj_property name="ObjectShortName">stop_received</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/restart" type="logic">
+         <obj_property name="ElementShortName">restart</obj_property>
+         <obj_property name="ObjectShortName">restart</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/bit_change" type="logic">
+         <obj_property name="ElementShortName">bit_change</obj_property>
+         <obj_property name="ObjectShortName">bit_change</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/read_operation" type="array">
+         <obj_property name="ElementShortName">read_operation[7:0]</obj_property>
+         <obj_property name="ObjectShortName">read_operation[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/scl_reg" type="logic">
+         <obj_property name="ElementShortName">scl_reg</obj_property>
+         <obj_property name="ObjectShortName">scl_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/scl_shift_reg" type="array">
+         <obj_property name="ElementShortName">scl_shift_reg[2:0]</obj_property>
+         <obj_property name="ObjectShortName">scl_shift_reg[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/sda_reg" type="logic">
+         <obj_property name="ElementShortName">sda_reg</obj_property>
+         <obj_property name="ObjectShortName">sda_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/sda_shift_reg" type="array">
+         <obj_property name="ElementShortName">sda_shift_reg[2:0]</obj_property>
+         <obj_property name="ObjectShortName">sda_shift_reg[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/fsm_state" type="array">
+         <obj_property name="ElementShortName">fsm_state[2:0]</obj_property>
+         <obj_property name="ObjectShortName">fsm_state[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/debounce" type="array">
+         <obj_property name="ElementShortName">debounce[31:0]</obj_property>
+         <obj_property name="ObjectShortName">debounce[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/TIME_THDSTA" type="array">
+         <obj_property name="ElementShortName">TIME_THDSTA[31:0]</obj_property>
+         <obj_property name="ObjectShortName">TIME_THDSTA[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/TIME_TLOW" type="array">
+         <obj_property name="ElementShortName">TIME_TLOW[31:0]</obj_property>
+         <obj_property name="ObjectShortName">TIME_TLOW[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/I2CBITS" type="array">
+         <obj_property name="ElementShortName">I2CBITS[31:0]</obj_property>
+         <obj_property name="ObjectShortName">I2CBITS[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/IDLE" type="array">
+         <obj_property name="ElementShortName">IDLE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">IDLE[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/START" type="array">
+         <obj_property name="ElementShortName">START[31:0]</obj_property>
+         <obj_property name="ObjectShortName">START[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/TLOW" type="array">
+         <obj_property name="ElementShortName">TLOW[31:0]</obj_property>
+         <obj_property name="ObjectShortName">TLOW[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/THIGH" type="array">
+         <obj_property name="ElementShortName">THIGH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">THIGH[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/I2C_SLAVE_MODULE/TSTO" type="array">
+         <obj_property name="ElementShortName">TSTO[31:0]</obj_property>
+         <obj_property name="ObjectShortName">TSTO[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group108" type="group">
+      <obj_property name="label">bootloader</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/BOOTLOADER/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/BOOTLOADER/rst" type="logic">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/BOOTLOADER/i2c_valid" type="logic">
+         <obj_property name="ElementShortName">i2c_valid</obj_property>
+         <obj_property name="ObjectShortName">i2c_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/BOOTLOADER/i2c_data_in" type="array">
+         <obj_property name="ElementShortName">i2c_data_in[7:0]</obj_property>
+         <obj_property name="ObjectShortName">i2c_data_in[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/BOOTLOADER/mlp_valid" type="logic">
+         <obj_property name="ElementShortName">mlp_valid</obj_property>
+         <obj_property name="ObjectShortName">mlp_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/BOOTLOADER/done" type="logic">
+         <obj_property name="ElementShortName">done</obj_property>
+         <obj_property name="ObjectShortName">done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/BOOTLOADER/start" type="logic">
+         <obj_property name="ElementShortName">start</obj_property>
+         <obj_property name="ObjectShortName">start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/BOOTLOADER/load" type="logic">
+         <obj_property name="ElementShortName">load</obj_property>
+         <obj_property name="ObjectShortName">load</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/BOOTLOADER/mlp_data" type="array">
+         <obj_property name="ElementShortName">mlp_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mlp_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/BOOTLOADER/STATE" type="array">
+         <obj_property name="ElementShortName">STATE[1:0]</obj_property>
+         <obj_property name="ObjectShortName">STATE[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/BOOTLOADER/temp_data" type="array">
+         <obj_property name="ElementShortName">temp_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">temp_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/BOOTLOADER/byte_counter" type="array">
+         <obj_property name="ElementShortName">byte_counter[2:0]</obj_property>
+         <obj_property name="ObjectShortName">byte_counter[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/BOOTLOADER/i2c_valid_reg" type="logic">
+         <obj_property name="ElementShortName">i2c_valid_reg</obj_property>
+         <obj_property name="ObjectShortName">i2c_valid_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/BOOTLOADER/IDLE" type="array">
+         <obj_property name="ElementShortName">IDLE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">IDLE[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/BOOTLOADER/PULL" type="array">
+         <obj_property name="ElementShortName">PULL[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PULL[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/BOOTLOADER/PUSH" type="array">
+         <obj_property name="ElementShortName">PUSH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PUSH[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/BOOTLOADER/DONE_S" type="array">
+         <obj_property name="ElementShortName">DONE_S[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DONE_S[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/rst" type="logic">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/i2c_valid" type="logic">
+         <obj_property name="ElementShortName">i2c_valid</obj_property>
+         <obj_property name="ObjectShortName">i2c_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/i2c_data_in" type="array">
+         <obj_property name="ElementShortName">i2c_data_in[7:0]</obj_property>
+         <obj_property name="ObjectShortName">i2c_data_in[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/mlp_start" type="logic">
+         <obj_property name="ElementShortName">mlp_start</obj_property>
+         <obj_property name="ObjectShortName">mlp_start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/mlp_busy" type="logic">
+         <obj_property name="ElementShortName">mlp_busy</obj_property>
+         <obj_property name="ObjectShortName">mlp_busy</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/mlp_valid" type="logic">
+         <obj_property name="ElementShortName">mlp_valid</obj_property>
+         <obj_property name="ObjectShortName">mlp_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/mlp_ready" type="logic">
+         <obj_property name="ElementShortName">mlp_ready</obj_property>
+         <obj_property name="ObjectShortName">mlp_ready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/lcd_start" type="logic">
+         <obj_property name="ElementShortName">lcd_start</obj_property>
+         <obj_property name="ObjectShortName">lcd_start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/dm_data" type="array">
+         <obj_property name="ElementShortName">dm_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dm_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/dm_address" type="array">
+         <obj_property name="ElementShortName">dm_address[7:0]</obj_property>
+         <obj_property name="ObjectShortName">dm_address[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/dm_write_enable" type="logic">
+         <obj_property name="ElementShortName">dm_write_enable</obj_property>
+         <obj_property name="ObjectShortName">dm_write_enable</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/start" type="logic">
+         <obj_property name="ElementShortName">start</obj_property>
+         <obj_property name="ObjectShortName">start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/real_time" type="logic">
+         <obj_property name="ElementShortName">real_time</obj_property>
+         <obj_property name="ObjectShortName">real_time</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/done" type="logic">
+         <obj_property name="ElementShortName">done</obj_property>
+         <obj_property name="ObjectShortName">done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/i2c_started_o" type="logic">
+         <obj_property name="ElementShortName">i2c_started_o</obj_property>
+         <obj_property name="ObjectShortName">i2c_started_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/esp_rst" type="logic">
+         <obj_property name="ElementShortName">esp_rst</obj_property>
+         <obj_property name="ObjectShortName">esp_rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/STATE" type="array">
+         <obj_property name="ElementShortName">STATE[1:0]</obj_property>
+         <obj_property name="ObjectShortName">STATE[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/i2c_started" type="logic">
+         <obj_property name="ElementShortName">i2c_started</obj_property>
+         <obj_property name="ObjectShortName">i2c_started</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/i2c_data_counter" type="array">
+         <obj_property name="ElementShortName">i2c_data_counter[3:0]</obj_property>
+         <obj_property name="ObjectShortName">i2c_data_counter[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/i2c_word_counter" type="array">
+         <obj_property name="ElementShortName">i2c_word_counter[2:0]</obj_property>
+         <obj_property name="ObjectShortName">i2c_word_counter[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/i2c_sensor_data" type="array">
+         <obj_property name="ElementShortName">i2c_sensor_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i2c_sensor_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/valid_flag" type="logic">
+         <obj_property name="ElementShortName">valid_flag</obj_property>
+         <obj_property name="ObjectShortName">valid_flag</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/valid2_flag" type="logic">
+         <obj_property name="ElementShortName">valid2_flag</obj_property>
+         <obj_property name="ObjectShortName">valid2_flag</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/i2c_valid_reg" type="logic">
+         <obj_property name="ElementShortName">i2c_valid_reg</obj_property>
+         <obj_property name="ObjectShortName">i2c_valid_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/rst" type="logic">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/i2c_valid" type="logic">
+         <obj_property name="ElementShortName">i2c_valid</obj_property>
+         <obj_property name="ObjectShortName">i2c_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/i2c_data_in" type="array">
+         <obj_property name="ElementShortName">i2c_data_in[7:0]</obj_property>
+         <obj_property name="ObjectShortName">i2c_data_in[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/mlp_start" type="logic">
+         <obj_property name="ElementShortName">mlp_start</obj_property>
+         <obj_property name="ObjectShortName">mlp_start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/mlp_busy" type="logic">
+         <obj_property name="ElementShortName">mlp_busy</obj_property>
+         <obj_property name="ObjectShortName">mlp_busy</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/mlp_valid" type="logic">
+         <obj_property name="ElementShortName">mlp_valid</obj_property>
+         <obj_property name="ObjectShortName">mlp_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/mlp_ready" type="logic">
+         <obj_property name="ElementShortName">mlp_ready</obj_property>
+         <obj_property name="ObjectShortName">mlp_ready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/lcd_start" type="logic">
+         <obj_property name="ElementShortName">lcd_start</obj_property>
+         <obj_property name="ObjectShortName">lcd_start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/dm_data" type="array">
+         <obj_property name="ElementShortName">dm_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dm_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/dm_address" type="array">
+         <obj_property name="ElementShortName">dm_address[7:0]</obj_property>
+         <obj_property name="ObjectShortName">dm_address[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/dm_write_enable" type="logic">
+         <obj_property name="ElementShortName">dm_write_enable</obj_property>
+         <obj_property name="ObjectShortName">dm_write_enable</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/start" type="logic">
+         <obj_property name="ElementShortName">start</obj_property>
+         <obj_property name="ObjectShortName">start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/real_time" type="logic">
+         <obj_property name="ElementShortName">real_time</obj_property>
+         <obj_property name="ObjectShortName">real_time</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/done" type="logic">
+         <obj_property name="ElementShortName">done</obj_property>
+         <obj_property name="ObjectShortName">done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/i2c_started_o" type="logic">
+         <obj_property name="ElementShortName">i2c_started_o</obj_property>
+         <obj_property name="ObjectShortName">i2c_started_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/esp_rst" type="logic">
+         <obj_property name="ElementShortName">esp_rst</obj_property>
+         <obj_property name="ObjectShortName">esp_rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/STATE" type="array">
+         <obj_property name="ElementShortName">STATE[1:0]</obj_property>
+         <obj_property name="ObjectShortName">STATE[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/i2c_started" type="logic">
+         <obj_property name="ElementShortName">i2c_started</obj_property>
+         <obj_property name="ObjectShortName">i2c_started</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/i2c_data_counter" type="array">
+         <obj_property name="ElementShortName">i2c_data_counter[3:0]</obj_property>
+         <obj_property name="ObjectShortName">i2c_data_counter[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/i2c_word_counter" type="array">
+         <obj_property name="ElementShortName">i2c_word_counter[2:0]</obj_property>
+         <obj_property name="ObjectShortName">i2c_word_counter[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/i2c_sensor_data" type="array">
+         <obj_property name="ElementShortName">i2c_sensor_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i2c_sensor_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/valid_flag" type="logic">
+         <obj_property name="ElementShortName">valid_flag</obj_property>
+         <obj_property name="ObjectShortName">valid_flag</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/valid2_flag" type="logic">
+         <obj_property name="ElementShortName">valid2_flag</obj_property>
+         <obj_property name="ObjectShortName">valid2_flag</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/i2c_valid_reg" type="logic">
+         <obj_property name="ElementShortName">i2c_valid_reg</obj_property>
+         <obj_property name="ObjectShortName">i2c_valid_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/I2C_CTRL_VAL" type="array">
+         <obj_property name="ElementShortName">I2C_CTRL_VAL[7:0]</obj_property>
+         <obj_property name="ObjectShortName">I2C_CTRL_VAL[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SENSOR_DATA_0_REGISTER_ADDRESS_OFFSET" type="array">
+         <obj_property name="ElementShortName">SENSOR_DATA_0_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SENSOR_DATA_0_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SENSOR_DATA_1_REGISTER_ADDRESS_OFFSET" type="array">
+         <obj_property name="ElementShortName">SENSOR_DATA_1_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SENSOR_DATA_1_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SENSOR_DATA_2_REGISTER_ADDRESS_OFFSET" type="array">
+         <obj_property name="ElementShortName">SENSOR_DATA_2_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SENSOR_DATA_2_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SENSOR_DATA_3_REGISTER_ADDRESS_OFFSET" type="array">
+         <obj_property name="ElementShortName">SENSOR_DATA_3_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SENSOR_DATA_3_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SENSOR_DATA_4_REGISTER_ADDRESS_OFFSET" type="array">
+         <obj_property name="ElementShortName">SENSOR_DATA_4_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SENSOR_DATA_4_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SENSOR_DATA_5_REGISTER_ADDRESS_OFFSET" type="array">
+         <obj_property name="ElementShortName">SENSOR_DATA_5_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SENSOR_DATA_5_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SENSOR_DATA_6_REGISTER_ADDRESS_OFFSET" type="array">
+         <obj_property name="ElementShortName">SENSOR_DATA_6_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SENSOR_DATA_6_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SENSOR_DATA_7_REGISTER_ADDRESS_OFFSET" type="array">
+         <obj_property name="ElementShortName">SENSOR_DATA_7_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SENSOR_DATA_7_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SENSOR_DATA_8_REGISTER_ADDRESS_OFFSET" type="array">
+         <obj_property name="ElementShortName">SENSOR_DATA_8_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SENSOR_DATA_8_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/IDLE" type="array">
+         <obj_property name="ElementShortName">IDLE[1:0]</obj_property>
+         <obj_property name="ObjectShortName">IDLE[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/GET" type="array">
+         <obj_property name="ElementShortName">GET[1:0]</obj_property>
+         <obj_property name="ObjectShortName">GET[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/RUN" type="array">
+         <obj_property name="ElementShortName">RUN[1:0]</obj_property>
+         <obj_property name="ObjectShortName">RUN[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SET" type="array">
+         <obj_property name="ElementShortName">SET[1:0]</obj_property>
+         <obj_property name="ObjectShortName">SET[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/rst" type="logic">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/i2c_valid" type="logic">
+         <obj_property name="ElementShortName">i2c_valid</obj_property>
+         <obj_property name="ObjectShortName">i2c_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/i2c_data_in" type="array">
+         <obj_property name="ElementShortName">i2c_data_in[7:0]</obj_property>
+         <obj_property name="ObjectShortName">i2c_data_in[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/mlp_start" type="logic">
+         <obj_property name="ElementShortName">mlp_start</obj_property>
+         <obj_property name="ObjectShortName">mlp_start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/mlp_busy" type="logic">
+         <obj_property name="ElementShortName">mlp_busy</obj_property>
+         <obj_property name="ObjectShortName">mlp_busy</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/mlp_valid" type="logic">
+         <obj_property name="ElementShortName">mlp_valid</obj_property>
+         <obj_property name="ObjectShortName">mlp_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/mlp_ready" type="logic">
+         <obj_property name="ElementShortName">mlp_ready</obj_property>
+         <obj_property name="ObjectShortName">mlp_ready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/lcd_start" type="logic">
+         <obj_property name="ElementShortName">lcd_start</obj_property>
+         <obj_property name="ObjectShortName">lcd_start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/dm_data" type="array">
+         <obj_property name="ElementShortName">dm_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dm_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/dm_address" type="array">
+         <obj_property name="ElementShortName">dm_address[7:0]</obj_property>
+         <obj_property name="ObjectShortName">dm_address[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/dm_write_enable" type="logic">
+         <obj_property name="ElementShortName">dm_write_enable</obj_property>
+         <obj_property name="ObjectShortName">dm_write_enable</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/start" type="logic">
+         <obj_property name="ElementShortName">start</obj_property>
+         <obj_property name="ObjectShortName">start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/real_time" type="logic">
+         <obj_property name="ElementShortName">real_time</obj_property>
+         <obj_property name="ObjectShortName">real_time</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/done" type="logic">
+         <obj_property name="ElementShortName">done</obj_property>
+         <obj_property name="ObjectShortName">done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/i2c_started_o" type="logic">
+         <obj_property name="ElementShortName">i2c_started_o</obj_property>
+         <obj_property name="ObjectShortName">i2c_started_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/esp_rst" type="logic">
+         <obj_property name="ElementShortName">esp_rst</obj_property>
+         <obj_property name="ObjectShortName">esp_rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/STATE" type="array">
+         <obj_property name="ElementShortName">STATE[1:0]</obj_property>
+         <obj_property name="ObjectShortName">STATE[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/i2c_started" type="logic">
+         <obj_property name="ElementShortName">i2c_started</obj_property>
+         <obj_property name="ObjectShortName">i2c_started</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/i2c_data_counter" type="array">
+         <obj_property name="ElementShortName">i2c_data_counter[3:0]</obj_property>
+         <obj_property name="ObjectShortName">i2c_data_counter[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/i2c_word_counter" type="array">
+         <obj_property name="ElementShortName">i2c_word_counter[2:0]</obj_property>
+         <obj_property name="ObjectShortName">i2c_word_counter[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/i2c_sensor_data" type="array">
+         <obj_property name="ElementShortName">i2c_sensor_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i2c_sensor_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/valid_flag" type="logic">
+         <obj_property name="ElementShortName">valid_flag</obj_property>
+         <obj_property name="ObjectShortName">valid_flag</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/valid2_flag" type="logic">
+         <obj_property name="ElementShortName">valid2_flag</obj_property>
+         <obj_property name="ObjectShortName">valid2_flag</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/i2c_valid_reg" type="logic">
+         <obj_property name="ElementShortName">i2c_valid_reg</obj_property>
+         <obj_property name="ObjectShortName">i2c_valid_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/I2C_CTRL_VAL" type="array">
+         <obj_property name="ElementShortName">I2C_CTRL_VAL[7:0]</obj_property>
+         <obj_property name="ObjectShortName">I2C_CTRL_VAL[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SENSOR_DATA_0_REGISTER_ADDRESS_OFFSET" type="array">
+         <obj_property name="ElementShortName">SENSOR_DATA_0_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SENSOR_DATA_0_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SENSOR_DATA_1_REGISTER_ADDRESS_OFFSET" type="array">
+         <obj_property name="ElementShortName">SENSOR_DATA_1_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SENSOR_DATA_1_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SENSOR_DATA_2_REGISTER_ADDRESS_OFFSET" type="array">
+         <obj_property name="ElementShortName">SENSOR_DATA_2_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SENSOR_DATA_2_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SENSOR_DATA_3_REGISTER_ADDRESS_OFFSET" type="array">
+         <obj_property name="ElementShortName">SENSOR_DATA_3_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SENSOR_DATA_3_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SENSOR_DATA_4_REGISTER_ADDRESS_OFFSET" type="array">
+         <obj_property name="ElementShortName">SENSOR_DATA_4_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SENSOR_DATA_4_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SENSOR_DATA_5_REGISTER_ADDRESS_OFFSET" type="array">
+         <obj_property name="ElementShortName">SENSOR_DATA_5_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SENSOR_DATA_5_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SENSOR_DATA_6_REGISTER_ADDRESS_OFFSET" type="array">
+         <obj_property name="ElementShortName">SENSOR_DATA_6_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SENSOR_DATA_6_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SENSOR_DATA_7_REGISTER_ADDRESS_OFFSET" type="array">
+         <obj_property name="ElementShortName">SENSOR_DATA_7_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SENSOR_DATA_7_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SENSOR_DATA_8_REGISTER_ADDRESS_OFFSET" type="array">
+         <obj_property name="ElementShortName">SENSOR_DATA_8_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SENSOR_DATA_8_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/IDLE" type="array">
+         <obj_property name="ElementShortName">IDLE[1:0]</obj_property>
+         <obj_property name="ObjectShortName">IDLE[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/GET" type="array">
+         <obj_property name="ElementShortName">GET[1:0]</obj_property>
+         <obj_property name="ObjectShortName">GET[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/RUN" type="array">
+         <obj_property name="ElementShortName">RUN[1:0]</obj_property>
+         <obj_property name="ObjectShortName">RUN[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SET" type="array">
+         <obj_property name="ElementShortName">SET[1:0]</obj_property>
+         <obj_property name="ObjectShortName">SET[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/rst" type="logic">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/i2c_valid" type="logic">
+         <obj_property name="ElementShortName">i2c_valid</obj_property>
+         <obj_property name="ObjectShortName">i2c_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/i2c_data_in" type="array">
+         <obj_property name="ElementShortName">i2c_data_in[7:0]</obj_property>
+         <obj_property name="ObjectShortName">i2c_data_in[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/mlp_start" type="logic">
+         <obj_property name="ElementShortName">mlp_start</obj_property>
+         <obj_property name="ObjectShortName">mlp_start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/mlp_busy" type="logic">
+         <obj_property name="ElementShortName">mlp_busy</obj_property>
+         <obj_property name="ObjectShortName">mlp_busy</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/mlp_valid" type="logic">
+         <obj_property name="ElementShortName">mlp_valid</obj_property>
+         <obj_property name="ObjectShortName">mlp_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/mlp_ready" type="logic">
+         <obj_property name="ElementShortName">mlp_ready</obj_property>
+         <obj_property name="ObjectShortName">mlp_ready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/lcd_start" type="logic">
+         <obj_property name="ElementShortName">lcd_start</obj_property>
+         <obj_property name="ObjectShortName">lcd_start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/dm_data" type="array">
+         <obj_property name="ElementShortName">dm_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dm_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/dm_address" type="array">
+         <obj_property name="ElementShortName">dm_address[7:0]</obj_property>
+         <obj_property name="ObjectShortName">dm_address[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/dm_write_enable" type="logic">
+         <obj_property name="ElementShortName">dm_write_enable</obj_property>
+         <obj_property name="ObjectShortName">dm_write_enable</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/start" type="logic">
+         <obj_property name="ElementShortName">start</obj_property>
+         <obj_property name="ObjectShortName">start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/real_time" type="logic">
+         <obj_property name="ElementShortName">real_time</obj_property>
+         <obj_property name="ObjectShortName">real_time</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/done" type="logic">
+         <obj_property name="ElementShortName">done</obj_property>
+         <obj_property name="ObjectShortName">done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/i2c_started_o" type="logic">
+         <obj_property name="ElementShortName">i2c_started_o</obj_property>
+         <obj_property name="ObjectShortName">i2c_started_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/esp_rst" type="logic">
+         <obj_property name="ElementShortName">esp_rst</obj_property>
+         <obj_property name="ObjectShortName">esp_rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/STATE" type="array">
+         <obj_property name="ElementShortName">STATE[1:0]</obj_property>
+         <obj_property name="ObjectShortName">STATE[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/i2c_started" type="logic">
+         <obj_property name="ElementShortName">i2c_started</obj_property>
+         <obj_property name="ObjectShortName">i2c_started</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/i2c_data_counter" type="array">
+         <obj_property name="ElementShortName">i2c_data_counter[3:0]</obj_property>
+         <obj_property name="ObjectShortName">i2c_data_counter[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/i2c_word_counter" type="array">
+         <obj_property name="ElementShortName">i2c_word_counter[2:0]</obj_property>
+         <obj_property name="ObjectShortName">i2c_word_counter[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/i2c_sensor_data" type="array">
+         <obj_property name="ElementShortName">i2c_sensor_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i2c_sensor_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/valid_flag" type="logic">
+         <obj_property name="ElementShortName">valid_flag</obj_property>
+         <obj_property name="ObjectShortName">valid_flag</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/valid2_flag" type="logic">
+         <obj_property name="ElementShortName">valid2_flag</obj_property>
+         <obj_property name="ObjectShortName">valid2_flag</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/i2c_valid_reg" type="logic">
+         <obj_property name="ElementShortName">i2c_valid_reg</obj_property>
+         <obj_property name="ObjectShortName">i2c_valid_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/I2C_CTRL_VAL" type="array">
+         <obj_property name="ElementShortName">I2C_CTRL_VAL[7:0]</obj_property>
+         <obj_property name="ObjectShortName">I2C_CTRL_VAL[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SENSOR_DATA_0_REGISTER_ADDRESS_OFFSET" type="array">
+         <obj_property name="ElementShortName">SENSOR_DATA_0_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SENSOR_DATA_0_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SENSOR_DATA_1_REGISTER_ADDRESS_OFFSET" type="array">
+         <obj_property name="ElementShortName">SENSOR_DATA_1_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SENSOR_DATA_1_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SENSOR_DATA_2_REGISTER_ADDRESS_OFFSET" type="array">
+         <obj_property name="ElementShortName">SENSOR_DATA_2_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SENSOR_DATA_2_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SENSOR_DATA_3_REGISTER_ADDRESS_OFFSET" type="array">
+         <obj_property name="ElementShortName">SENSOR_DATA_3_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SENSOR_DATA_3_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SENSOR_DATA_4_REGISTER_ADDRESS_OFFSET" type="array">
+         <obj_property name="ElementShortName">SENSOR_DATA_4_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SENSOR_DATA_4_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SENSOR_DATA_5_REGISTER_ADDRESS_OFFSET" type="array">
+         <obj_property name="ElementShortName">SENSOR_DATA_5_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SENSOR_DATA_5_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SENSOR_DATA_6_REGISTER_ADDRESS_OFFSET" type="array">
+         <obj_property name="ElementShortName">SENSOR_DATA_6_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SENSOR_DATA_6_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SENSOR_DATA_7_REGISTER_ADDRESS_OFFSET" type="array">
+         <obj_property name="ElementShortName">SENSOR_DATA_7_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SENSOR_DATA_7_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SENSOR_DATA_8_REGISTER_ADDRESS_OFFSET" type="array">
+         <obj_property name="ElementShortName">SENSOR_DATA_8_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SENSOR_DATA_8_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/IDLE" type="array">
+         <obj_property name="ElementShortName">IDLE[1:0]</obj_property>
+         <obj_property name="ObjectShortName">IDLE[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/GET" type="array">
+         <obj_property name="ElementShortName">GET[1:0]</obj_property>
+         <obj_property name="ObjectShortName">GET[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/RUN" type="array">
+         <obj_property name="ElementShortName">RUN[1:0]</obj_property>
+         <obj_property name="ObjectShortName">RUN[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SET" type="array">
+         <obj_property name="ElementShortName">SET[1:0]</obj_property>
+         <obj_property name="ObjectShortName">SET[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/rst" type="logic">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/i2c_valid" type="logic">
+         <obj_property name="ElementShortName">i2c_valid</obj_property>
+         <obj_property name="ObjectShortName">i2c_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/i2c_data_in" type="array">
+         <obj_property name="ElementShortName">i2c_data_in[7:0]</obj_property>
+         <obj_property name="ObjectShortName">i2c_data_in[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/mlp_start" type="logic">
+         <obj_property name="ElementShortName">mlp_start</obj_property>
+         <obj_property name="ObjectShortName">mlp_start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/mlp_busy" type="logic">
+         <obj_property name="ElementShortName">mlp_busy</obj_property>
+         <obj_property name="ObjectShortName">mlp_busy</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/mlp_valid" type="logic">
+         <obj_property name="ElementShortName">mlp_valid</obj_property>
+         <obj_property name="ObjectShortName">mlp_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/mlp_ready" type="logic">
+         <obj_property name="ElementShortName">mlp_ready</obj_property>
+         <obj_property name="ObjectShortName">mlp_ready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/lcd_start" type="logic">
+         <obj_property name="ElementShortName">lcd_start</obj_property>
+         <obj_property name="ObjectShortName">lcd_start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/dm_data" type="array">
+         <obj_property name="ElementShortName">dm_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dm_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/dm_address" type="array">
+         <obj_property name="ElementShortName">dm_address[7:0]</obj_property>
+         <obj_property name="ObjectShortName">dm_address[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/dm_write_enable" type="logic">
+         <obj_property name="ElementShortName">dm_write_enable</obj_property>
+         <obj_property name="ObjectShortName">dm_write_enable</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/start" type="logic">
+         <obj_property name="ElementShortName">start</obj_property>
+         <obj_property name="ObjectShortName">start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/real_time" type="logic">
+         <obj_property name="ElementShortName">real_time</obj_property>
+         <obj_property name="ObjectShortName">real_time</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/done" type="logic">
+         <obj_property name="ElementShortName">done</obj_property>
+         <obj_property name="ObjectShortName">done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/i2c_started_o" type="logic">
+         <obj_property name="ElementShortName">i2c_started_o</obj_property>
+         <obj_property name="ObjectShortName">i2c_started_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/esp_rst" type="logic">
+         <obj_property name="ElementShortName">esp_rst</obj_property>
+         <obj_property name="ObjectShortName">esp_rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/STATE" type="array">
+         <obj_property name="ElementShortName">STATE[1:0]</obj_property>
+         <obj_property name="ObjectShortName">STATE[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/i2c_started" type="logic">
+         <obj_property name="ElementShortName">i2c_started</obj_property>
+         <obj_property name="ObjectShortName">i2c_started</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/i2c_data_counter" type="array">
+         <obj_property name="ElementShortName">i2c_data_counter[3:0]</obj_property>
+         <obj_property name="ObjectShortName">i2c_data_counter[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/i2c_word_counter" type="array">
+         <obj_property name="ElementShortName">i2c_word_counter[2:0]</obj_property>
+         <obj_property name="ObjectShortName">i2c_word_counter[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/i2c_sensor_data" type="array">
+         <obj_property name="ElementShortName">i2c_sensor_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i2c_sensor_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/valid_flag" type="logic">
+         <obj_property name="ElementShortName">valid_flag</obj_property>
+         <obj_property name="ObjectShortName">valid_flag</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/valid2_flag" type="logic">
+         <obj_property name="ElementShortName">valid2_flag</obj_property>
+         <obj_property name="ObjectShortName">valid2_flag</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/i2c_valid_reg" type="logic">
+         <obj_property name="ElementShortName">i2c_valid_reg</obj_property>
+         <obj_property name="ObjectShortName">i2c_valid_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/I2C_CTRL_VAL" type="array">
+         <obj_property name="ElementShortName">I2C_CTRL_VAL[7:0]</obj_property>
+         <obj_property name="ObjectShortName">I2C_CTRL_VAL[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SENSOR_DATA_0_REGISTER_ADDRESS_OFFSET" type="array">
+         <obj_property name="ElementShortName">SENSOR_DATA_0_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SENSOR_DATA_0_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SENSOR_DATA_1_REGISTER_ADDRESS_OFFSET" type="array">
+         <obj_property name="ElementShortName">SENSOR_DATA_1_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SENSOR_DATA_1_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SENSOR_DATA_2_REGISTER_ADDRESS_OFFSET" type="array">
+         <obj_property name="ElementShortName">SENSOR_DATA_2_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SENSOR_DATA_2_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SENSOR_DATA_3_REGISTER_ADDRESS_OFFSET" type="array">
+         <obj_property name="ElementShortName">SENSOR_DATA_3_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SENSOR_DATA_3_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SENSOR_DATA_4_REGISTER_ADDRESS_OFFSET" type="array">
+         <obj_property name="ElementShortName">SENSOR_DATA_4_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SENSOR_DATA_4_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SENSOR_DATA_5_REGISTER_ADDRESS_OFFSET" type="array">
+         <obj_property name="ElementShortName">SENSOR_DATA_5_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SENSOR_DATA_5_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SENSOR_DATA_6_REGISTER_ADDRESS_OFFSET" type="array">
+         <obj_property name="ElementShortName">SENSOR_DATA_6_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SENSOR_DATA_6_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SENSOR_DATA_7_REGISTER_ADDRESS_OFFSET" type="array">
+         <obj_property name="ElementShortName">SENSOR_DATA_7_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SENSOR_DATA_7_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SENSOR_DATA_8_REGISTER_ADDRESS_OFFSET" type="array">
+         <obj_property name="ElementShortName">SENSOR_DATA_8_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SENSOR_DATA_8_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/IDLE" type="array">
+         <obj_property name="ElementShortName">IDLE[1:0]</obj_property>
+         <obj_property name="ObjectShortName">IDLE[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/GET" type="array">
+         <obj_property name="ElementShortName">GET[1:0]</obj_property>
+         <obj_property name="ObjectShortName">GET[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/RUN" type="array">
+         <obj_property name="ElementShortName">RUN[1:0]</obj_property>
+         <obj_property name="ObjectShortName">RUN[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SET" type="array">
+         <obj_property name="ElementShortName">SET[1:0]</obj_property>
+         <obj_property name="ObjectShortName">SET[1:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group345" type="group">
+      <obj_property name="label">dmc</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/rst" type="logic">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/i2c_valid" type="logic">
+         <obj_property name="ElementShortName">i2c_valid</obj_property>
+         <obj_property name="ObjectShortName">i2c_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/i2c_data_in" type="array">
+         <obj_property name="ElementShortName">i2c_data_in[7:0]</obj_property>
+         <obj_property name="ObjectShortName">i2c_data_in[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/mlp_start" type="logic">
+         <obj_property name="ElementShortName">mlp_start</obj_property>
+         <obj_property name="ObjectShortName">mlp_start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/mlp_busy" type="logic">
+         <obj_property name="ElementShortName">mlp_busy</obj_property>
+         <obj_property name="ObjectShortName">mlp_busy</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/mlp_valid" type="logic">
+         <obj_property name="ElementShortName">mlp_valid</obj_property>
+         <obj_property name="ObjectShortName">mlp_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/mlp_ready" type="logic">
+         <obj_property name="ElementShortName">mlp_ready</obj_property>
+         <obj_property name="ObjectShortName">mlp_ready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/lcd_start" type="logic">
+         <obj_property name="ElementShortName">lcd_start</obj_property>
+         <obj_property name="ObjectShortName">lcd_start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/dm_data" type="array">
+         <obj_property name="ElementShortName">dm_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dm_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/dm_address" type="array">
+         <obj_property name="ElementShortName">dm_address[7:0]</obj_property>
+         <obj_property name="ObjectShortName">dm_address[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/dm_write_enable" type="logic">
+         <obj_property name="ElementShortName">dm_write_enable</obj_property>
+         <obj_property name="ObjectShortName">dm_write_enable</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/start" type="logic">
+         <obj_property name="ElementShortName">start</obj_property>
+         <obj_property name="ObjectShortName">start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/real_time" type="logic">
+         <obj_property name="ElementShortName">real_time</obj_property>
+         <obj_property name="ObjectShortName">real_time</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/done" type="logic">
+         <obj_property name="ElementShortName">done</obj_property>
+         <obj_property name="ObjectShortName">done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/i2c_started_o" type="logic">
+         <obj_property name="ElementShortName">i2c_started_o</obj_property>
+         <obj_property name="ObjectShortName">i2c_started_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/esp_rst" type="logic">
+         <obj_property name="ElementShortName">esp_rst</obj_property>
+         <obj_property name="ObjectShortName">esp_rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/STATE" type="array">
+         <obj_property name="ElementShortName">STATE[1:0]</obj_property>
+         <obj_property name="ObjectShortName">STATE[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/i2c_started" type="logic">
+         <obj_property name="ElementShortName">i2c_started</obj_property>
+         <obj_property name="ObjectShortName">i2c_started</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/i2c_data_counter" type="array">
+         <obj_property name="ElementShortName">i2c_data_counter[3:0]</obj_property>
+         <obj_property name="ObjectShortName">i2c_data_counter[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/i2c_word_counter" type="array">
+         <obj_property name="ElementShortName">i2c_word_counter[2:0]</obj_property>
+         <obj_property name="ObjectShortName">i2c_word_counter[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/i2c_sensor_data" type="array">
+         <obj_property name="ElementShortName">i2c_sensor_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i2c_sensor_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/valid_flag" type="logic">
+         <obj_property name="ElementShortName">valid_flag</obj_property>
+         <obj_property name="ObjectShortName">valid_flag</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/valid2_flag" type="logic">
+         <obj_property name="ElementShortName">valid2_flag</obj_property>
+         <obj_property name="ObjectShortName">valid2_flag</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/i2c_valid_reg" type="logic">
+         <obj_property name="ElementShortName">i2c_valid_reg</obj_property>
+         <obj_property name="ObjectShortName">i2c_valid_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/I2C_CTRL_VAL" type="array">
+         <obj_property name="ElementShortName">I2C_CTRL_VAL[7:0]</obj_property>
+         <obj_property name="ObjectShortName">I2C_CTRL_VAL[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SENSOR_DATA_0_REGISTER_ADDRESS_OFFSET" type="array">
+         <obj_property name="ElementShortName">SENSOR_DATA_0_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SENSOR_DATA_0_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SENSOR_DATA_1_REGISTER_ADDRESS_OFFSET" type="array">
+         <obj_property name="ElementShortName">SENSOR_DATA_1_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SENSOR_DATA_1_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SENSOR_DATA_2_REGISTER_ADDRESS_OFFSET" type="array">
+         <obj_property name="ElementShortName">SENSOR_DATA_2_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SENSOR_DATA_2_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SENSOR_DATA_3_REGISTER_ADDRESS_OFFSET" type="array">
+         <obj_property name="ElementShortName">SENSOR_DATA_3_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SENSOR_DATA_3_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SENSOR_DATA_4_REGISTER_ADDRESS_OFFSET" type="array">
+         <obj_property name="ElementShortName">SENSOR_DATA_4_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SENSOR_DATA_4_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SENSOR_DATA_5_REGISTER_ADDRESS_OFFSET" type="array">
+         <obj_property name="ElementShortName">SENSOR_DATA_5_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SENSOR_DATA_5_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SENSOR_DATA_6_REGISTER_ADDRESS_OFFSET" type="array">
+         <obj_property name="ElementShortName">SENSOR_DATA_6_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SENSOR_DATA_6_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SENSOR_DATA_7_REGISTER_ADDRESS_OFFSET" type="array">
+         <obj_property name="ElementShortName">SENSOR_DATA_7_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SENSOR_DATA_7_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SENSOR_DATA_8_REGISTER_ADDRESS_OFFSET" type="array">
+         <obj_property name="ElementShortName">SENSOR_DATA_8_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SENSOR_DATA_8_REGISTER_ADDRESS_OFFSET[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/IDLE" type="array">
+         <obj_property name="ElementShortName">IDLE[1:0]</obj_property>
+         <obj_property name="ObjectShortName">IDLE[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/GET" type="array">
+         <obj_property name="ElementShortName">GET[1:0]</obj_property>
+         <obj_property name="ObjectShortName">GET[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/RUN" type="array">
+         <obj_property name="ElementShortName">RUN[1:0]</obj_property>
+         <obj_property name="ObjectShortName">RUN[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/DECISION_MAKING_CONTROLLER/SET" type="array">
+         <obj_property name="ElementShortName">SET[1:0]</obj_property>
+         <obj_property name="ObjectShortName">SET[1:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group417" type="group">
+      <obj_property name="label">TOP</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/clk_tb" type="logic">
+         <obj_property name="ElementShortName">clk_tb</obj_property>
+         <obj_property name="ObjectShortName">clk_tb</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/rst_i_tb" type="logic">
+         <obj_property name="ElementShortName">rst_i_tb</obj_property>
+         <obj_property name="ObjectShortName">rst_i_tb</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/scl_slave_tb" type="logic">
+         <obj_property name="ElementShortName">scl_slave_tb</obj_property>
+         <obj_property name="ObjectShortName">scl_slave_tb</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/sda_slave_tb" type="logic">
+         <obj_property name="ElementShortName">sda_slave_tb</obj_property>
+         <obj_property name="ObjectShortName">sda_slave_tb</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/dmc_start_switch_tb" type="logic">
+         <obj_property name="ElementShortName">dmc_start_switch_tb</obj_property>
+         <obj_property name="ObjectShortName">dmc_start_switch_tb</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/esp_rst_tb" type="logic">
+         <obj_property name="ElementShortName">esp_rst_tb</obj_property>
+         <obj_property name="ObjectShortName">esp_rst_tb</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/sda_slave_tb_reg" type="logic">
+         <obj_property name="ElementShortName">sda_slave_tb_reg</obj_property>
+         <obj_property name="ObjectShortName">sda_slave_tb_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/i" type="array">
+         <obj_property name="ElementShortName">i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/j" type="array">
+         <obj_property name="ElementShortName">j[31:0]</obj_property>
+         <obj_property name="ObjectShortName">j[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/i2c_data" type="array">
+         <obj_property name="ElementShortName">i2c_data[27:0]</obj_property>
+         <obj_property name="ObjectShortName">i2c_data[27:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group471" type="group">
+      <obj_property name="label">MLP</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/rst" type="logic">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/start" type="logic">
+         <obj_property name="ElementShortName">start</obj_property>
+         <obj_property name="ObjectShortName">start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/busy" type="logic">
+         <obj_property name="ElementShortName">busy</obj_property>
+         <obj_property name="ObjectShortName">busy</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/valid" type="logic">
+         <obj_property name="ElementShortName">valid</obj_property>
+         <obj_property name="ObjectShortName">valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/load_start" type="logic">
+         <obj_property name="ElementShortName">load_start</obj_property>
+         <obj_property name="ObjectShortName">load_start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/load_valid" type="logic">
+         <obj_property name="ElementShortName">load_valid</obj_property>
+         <obj_property name="ObjectShortName">load_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/load_done" type="logic">
+         <obj_property name="ElementShortName">load_done</obj_property>
+         <obj_property name="ObjectShortName">load_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/memory_ready" type="logic">
+         <obj_property name="ElementShortName">memory_ready</obj_property>
+         <obj_property name="ObjectShortName">memory_ready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/first_data" type="array">
+         <obj_property name="ElementShortName">first_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">first_data[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/last_data" type="array">
+         <obj_property name="ElementShortName">last_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">last_data[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/data_req_address" type="array">
+         <obj_property name="ElementShortName">data_req_address[31:0]</obj_property>
+         <obj_property name="ObjectShortName">data_req_address[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/read" type="logic">
+         <obj_property name="ElementShortName">read</obj_property>
+         <obj_property name="ObjectShortName">read</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/data" type="array">
+         <obj_property name="ElementShortName">data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/data_mem" type="array">
+         <obj_property name="ElementShortName">data_mem[31:0]</obj_property>
+         <obj_property name="ObjectShortName">data_mem[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/decsion_result" type="array">
+         <obj_property name="ElementShortName">decsion_result[3:0]</obj_property>
+         <obj_property name="ObjectShortName">decsion_result[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/state" type="array">
+         <obj_property name="ElementShortName">state[2:0]</obj_property>
+         <obj_property name="ObjectShortName">state[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/load_state" type="array">
+         <obj_property name="ElementShortName">load_state[2:0]</obj_property>
+         <obj_property name="ObjectShortName">load_state[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/start_state" type="array">
+         <obj_property name="ElementShortName">start_state[1:0]</obj_property>
+         <obj_property name="ObjectShortName">start_state[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/First_Layer" type="array">
+         <obj_property name="ElementShortName">First_Layer[3:0]</obj_property>
+         <obj_property name="ObjectShortName">First_Layer[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/Second_Layer" type="array">
+         <obj_property name="ElementShortName">Second_Layer[3:0]</obj_property>
+         <obj_property name="ObjectShortName">Second_Layer[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/Third_Layer" type="array">
+         <obj_property name="ElementShortName">Third_Layer[3:0]</obj_property>
+         <obj_property name="ObjectShortName">Third_Layer[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/Fourth_Layer" type="array">
+         <obj_property name="ElementShortName">Fourth_Layer[3:0]</obj_property>
+         <obj_property name="ObjectShortName">Fourth_Layer[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/Weights_W_reg" type="logic">
+         <obj_property name="ElementShortName">Weights_W_reg</obj_property>
+         <obj_property name="ObjectShortName">Weights_W_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/Bias_W_reg" type="logic">
+         <obj_property name="ElementShortName">Bias_W_reg</obj_property>
+         <obj_property name="ObjectShortName">Bias_W_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/Neuron_W_reg" type="logic">
+         <obj_property name="ElementShortName">Neuron_W_reg</obj_property>
+         <obj_property name="ObjectShortName">Neuron_W_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/Weight_w" type="logic">
+         <obj_property name="ElementShortName">Weight_w</obj_property>
+         <obj_property name="ObjectShortName">Weight_w</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/Bias_w" type="logic">
+         <obj_property name="ElementShortName">Bias_w</obj_property>
+         <obj_property name="ObjectShortName">Bias_w</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/Neuron_w" type="logic">
+         <obj_property name="ElementShortName">Neuron_w</obj_property>
+         <obj_property name="ObjectShortName">Neuron_w</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/load_wb" type="logic">
+         <obj_property name="ElementShortName">load_wb</obj_property>
+         <obj_property name="ObjectShortName">load_wb</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/Weights_Adr" type="array">
+         <obj_property name="ElementShortName">Weights_Adr[8:0]</obj_property>
+         <obj_property name="ObjectShortName">Weights_Adr[8:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/Bias_Adr" type="array">
+         <obj_property name="ElementShortName">Bias_Adr[5:0]</obj_property>
+         <obj_property name="ObjectShortName">Bias_Adr[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/Neuron_Adr" type="array">
+         <obj_property name="ElementShortName">Neuron_Adr[5:0]</obj_property>
+         <obj_property name="ObjectShortName">Neuron_Adr[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/Mlp_Start" type="logic">
+         <obj_property name="ElementShortName">Mlp_Start</obj_property>
+         <obj_property name="ObjectShortName">Mlp_Start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/Result" type="array">
+         <obj_property name="ElementShortName">Result[3:0]</obj_property>
+         <obj_property name="ObjectShortName">Result[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/busy_wire" type="logic">
+         <obj_property name="ElementShortName">busy_wire</obj_property>
+         <obj_property name="ObjectShortName">busy_wire</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/valid_wire" type="logic">
+         <obj_property name="ElementShortName">valid_wire</obj_property>
+         <obj_property name="ObjectShortName">valid_wire</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/load_counter" type="array">
+         <obj_property name="ElementShortName">load_counter[11:0]</obj_property>
+         <obj_property name="ObjectShortName">load_counter[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/input_counter" type="array">
+         <obj_property name="ElementShortName">input_counter[5:0]</obj_property>
+         <obj_property name="ObjectShortName">input_counter[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/weights_number" type="array">
+         <obj_property name="ElementShortName">weights_number[8:0]</obj_property>
+         <obj_property name="ObjectShortName">weights_number[8:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/bias_number" type="array">
+         <obj_property name="ElementShortName">bias_number[5:0]</obj_property>
+         <obj_property name="ObjectShortName">bias_number[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/Input_Adress" type="array">
+         <obj_property name="ElementShortName">Input_Adress[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Input_Adress[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/idle" type="array">
+         <obj_property name="ElementShortName">idle[2:0]</obj_property>
+         <obj_property name="ObjectShortName">idle[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/load" type="array">
+         <obj_property name="ElementShortName">load[2:0]</obj_property>
+         <obj_property name="ObjectShortName">load[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/start_network" type="array">
+         <obj_property name="ElementShortName">start_network[2:0]</obj_property>
+         <obj_property name="ObjectShortName">start_network[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/Layer_Size" type="array">
+         <obj_property name="ElementShortName">Layer_Size[2:0]</obj_property>
+         <obj_property name="ObjectShortName">Layer_Size[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/Weights_N" type="array">
+         <obj_property name="ElementShortName">Weights_N[2:0]</obj_property>
+         <obj_property name="ObjectShortName">Weights_N[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/Biases_N" type="array">
+         <obj_property name="ElementShortName">Biases_N[2:0]</obj_property>
+         <obj_property name="ObjectShortName">Biases_N[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/Weights" type="array">
+         <obj_property name="ElementShortName">Weights[2:0]</obj_property>
+         <obj_property name="ObjectShortName">Weights[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/Biases" type="array">
+         <obj_property name="ElementShortName">Biases[2:0]</obj_property>
+         <obj_property name="ObjectShortName">Biases[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/Neurons" type="array">
+         <obj_property name="ElementShortName">Neurons[2:0]</obj_property>
+         <obj_property name="ObjectShortName">Neurons[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/load_inputs" type="array">
+         <obj_property name="ElementShortName">load_inputs[1:0]</obj_property>
+         <obj_property name="ObjectShortName">load_inputs[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_RISCV32I_tb/DUT/MLP_MODULE/start_inputs" type="array">
+         <obj_property name="ElementShortName">start_inputs[1:0]</obj_property>
+         <obj_property name="ObjectShortName">start_inputs[1:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

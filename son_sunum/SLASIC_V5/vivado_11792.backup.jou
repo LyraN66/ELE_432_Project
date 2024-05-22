@@ -1,0 +1,135 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sun May 12 10:40:51 2024
+# Process ID: 11792
+# Current directory: C:/Users/ethem/SL-ASIC-NOSE/SLASIC_DEMO_REV_3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5020 C:\Users\ethem\SL-ASIC-NOSE\SLASIC_DEMO_REV_3\SLASIC_DEMO_REV_3.xpr
+# Log file: C:/Users/ethem/SL-ASIC-NOSE/SLASIC_DEMO_REV_3/vivado.log
+# Journal file: C:/Users/ethem/SL-ASIC-NOSE/SLASIC_DEMO_REV_3\vivado.jou
+# Running On: DESKTOP-T0BPI3M, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 4, Host memory: 34222 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ethem/SL-ASIC-NOSE/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.xpr
+update_compile_order -fileset sources_1
+close [ open C:/Users/ethem/SL-ASIC-NOSE/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.srcs/sources_1/new/Seven_Segment_Display_Final_Manual.v w ]
+add_files C:/Users/ethem/SL-ASIC-NOSE/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.srcs/sources_1/new/Seven_Segment_Display_Final_Manual.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+place_ports {AN_X_Display[7]} U13
+place_ports {AN_X_Display[6]} K2
+place_ports {AN_X_Display[5]} T14
+place_ports {AN_X_Display[4]} P14
+place_ports {AN_X_Display[3]} J14
+place_ports {AN_X_Display[2]} T9
+place_ports {AN_X_Display[1]} J18
+place_ports {AN_X_Display[0]} J17
+place_ports {CX_Display[7]} T10
+place_ports {CX_Display[6]} R10
+place_ports {CX_Display[5]} K16
+place_ports {CX_Display[4]} K13
+place_ports {CX_Display[3]} P15
+place_ports {CX_Display[2]} T11
+place_ports {CX_Display[1]} L18
+place_ports {CX_Display[0]} U8
+set_property IOSTANDARD LVCMOS33 [get_ports [list {AN_X_Display[7]} {AN_X_Display[6]} {AN_X_Display[5]} {AN_X_Display[4]} {AN_X_Display[3]} {AN_X_Display[2]} {AN_X_Display[1]} {AN_X_Display[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {CX_Display[7]} {CX_Display[6]} {CX_Display[5]} {CX_Display[4]} {CX_Display[3]} {CX_Display[2]} {CX_Display[1]} {CX_Display[0]}]]
+save_constraints
+close_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/ethem/SL-ASIC-NOSE/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.runs/impl_1/Single_Cycle_RISCV32I.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ethem/SL-ASIC-NOSE/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.runs/impl_1/Single_Cycle_RISCV32I.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ethem/SL-ASIC-NOSE/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.runs/impl_1/Single_Cycle_RISCV32I.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ethem/SL-ASIC-NOSE/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.runs/impl_1/Single_Cycle_RISCV32I.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+place_ports dmc_start_switch U11
+place_ports {select_seven[1]} U12
+place_ports {select_seven[0]} H6
+set_property IOSTANDARD LVCMOS33 [get_ports [list {select_seven[1]} {select_seven[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {switch_seven[11]} {switch_seven[10]} {switch_seven[9]} {switch_seven[8]} {switch_seven[7]} {switch_seven[6]} {switch_seven[5]} {switch_seven[4]} {switch_seven[3]} {switch_seven[2]} {switch_seven[1]} {switch_seven[0]}]]
+save_constraints
+place_ports {switch_seven[11]} T13
+place_ports {switch_seven[10]} R16
+place_ports {CX_Display[0]} H15
+place_ports {switch_seven[9]} U8
+place_ports {switch_seven[8]} T8
+place_ports {switch_seven[7]} R13
+place_ports {switch_seven[6]} U18
+place_ports {switch_seven[5]} T18
+place_ports {switch_seven[4]} R17
+place_ports {switch_seven[3]} R15
+place_ports {switch_seven[2]} M13
+place_ports {switch_seven[1]} L16
+place_ports {switch_seven[0]} J15
+save_constraints
+close_design
+synth_design -top Single_Cycle_RISCV32I -part xc7a100tcsg324-1 -lint 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ethem/SL-ASIC-NOSE/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.runs/impl_1/Single_Cycle_RISCV32I.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+place_ports {led[1]} K15
+place_ports {led[0]} H17
+save_constraints
+close_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/ethem/SL-ASIC-NOSE/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.runs/impl_1/Single_Cycle_RISCV32I.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ethem/SL-ASIC-NOSE/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.runs/impl_1/Single_Cycle_RISCV32I.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+export_ip_user_files -of_objects  [get_files C:/Users/ethem/SL-ASIC-NOSE/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.srcs/sources_1/imports/Masaüstü/SLASIC_V0/SLASIC_V0.srcs/sources_1/new/lcd_driver.v] -no_script -reset -force -quiet
+remove_files  C:/Users/ethem/SL-ASIC-NOSE/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.srcs/sources_1/imports/Masaüstü/SLASIC_V0/SLASIC_V0.srcs/sources_1/new/lcd_driver.v
+file delete -force C:/Users/ethem/SL-ASIC-NOSE/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.srcs/sources_1/imports/Masaüstü/SLASIC_V0/SLASIC_V0.srcs/sources_1/new/lcd_driver.v
+export_ip_user_files -of_objects  [get_files C:/Users/ethem/SL-ASIC-NOSE/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.srcs/sources_1/imports/Masaüstü/SLASIC_V0/SLASIC_V0.srcs/sources_1/new/i2c_driver.v] -no_script -reset -force -quiet
+remove_files  C:/Users/ethem/SL-ASIC-NOSE/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.srcs/sources_1/imports/Masaüstü/SLASIC_V0/SLASIC_V0.srcs/sources_1/new/i2c_driver.v
+file delete -force C:/Users/ethem/SL-ASIC-NOSE/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.srcs/sources_1/imports/Masaüstü/SLASIC_V0/SLASIC_V0.srcs/sources_1/new/i2c_driver.v

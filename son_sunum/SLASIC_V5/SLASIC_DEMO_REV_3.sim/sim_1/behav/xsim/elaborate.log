@@ -1,0 +1,104 @@
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Single_Cycle_RISCV32I_tb_behav xil_defaultlib.Single_Cycle_RISCV32I_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 6 for port 'class' [C:/Users/samil/Desktop/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.srcs/sources_1/imports/Masaüstü/mlp1/new/Neural_Network.v:96]
+WARNING: [VRFC 10-3091] actual bit length 50 differs from formal bit length 49 for port 'x3_i' [C:/Users/samil/Desktop/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.srcs/sources_1/imports/Masaüstü/mlp1/new/multiplier.v:148]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 3 for port 'selective' [C:/Users/samil/Desktop/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.srcs/sources_1/imports/Masaüstü/SLASIC_V0/SLASIC_V0.srcs/sources_1/new/Single_Cycle_RISCV32I.v:217]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/samil/Desktop/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.srcs/sources_1/new/Divided_Clock.v" Line 1. Module Divided_Clock doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/samil/Desktop/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.srcs/sources_1/imports/Masaüstü/SLASIC_V0/SLASIC_V0.srcs/sources_1/new/I2C_Slave.v" Line 1. Module I2C_Slave doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/samil/Desktop/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.srcs/sources_1/imports/Masaüstü/mlp1/new/MLP.v" Line 21. Module MLP doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/samil/Desktop/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.srcs/sources_1/imports/Masaüstü/mlp1/new/IEEE754_Multiplier.v" Line 22. Module IEEE754_Multiplier doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/samil/Desktop/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.srcs/sources_1/imports/Masaüstü/SLASIC_V0/SLASIC_V0.srcs/sources_1/new/Data_Memory.v" Line 1. Module Data_Memory_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/samil/Desktop/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.srcs/sources_1/imports/Masaüstü/SLASIC_V0/SLASIC_V0.srcs/sources_1/new/Hazard_Unit.v" Line 1. Module Hazard_Unit_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/samil/Desktop/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.srcs/sources_1/imports/Masaüstü/SLASIC_V0/SLASIC_V0.srcs/sources_1/new/Control_Unit.v" Line 1. Module Control_Unit_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/samil/Desktop/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.srcs/sources_1/imports/Masaüstü/SLASIC_V0/SLASIC_V0.srcs/sources_1/new/Instructrion_Memory.v" Line 1. Module Instruction_Memory_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/samil/Desktop/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.srcs/sources_1/imports/Masaüstü/SLASIC_V0/SLASIC_V0.srcs/sources_1/new/Fetch_Stage.v" Line 1. Module Fetch_Stage_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/samil/Desktop/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.srcs/sources_1/imports/Masaüstü/SLASIC_V0/SLASIC_V0.srcs/sources_1/new/Instruction_Decoder.v" Line 1. Module Instruction_Decoder_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/samil/Desktop/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.srcs/sources_1/imports/Masaüstü/SLASIC_V0/SLASIC_V0.srcs/sources_1/new/Decode_Stage.v" Line 1. Module Decode_Stage_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/samil/Desktop/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.srcs/sources_1/imports/Masaüstü/SLASIC_V0/SLASIC_V0.srcs/sources_1/new/ALU_top.v" Line 1. Module ALU_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/samil/Desktop/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.srcs/sources_1/imports/Masaüstü/SLASIC_V0/SLASIC_V0.srcs/sources_1/new/Function_Control.v" Line 1. Module Function_Control doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/samil/Desktop/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.srcs/sources_1/imports/Masaüstü/SLASIC_V0/SLASIC_V0.srcs/sources_1/new/Logic_Unit.v" Line 1. Module Logic_Unit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/samil/Desktop/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.srcs/sources_1/imports/Masaüstü/SLASIC_V0/SLASIC_V0.srcs/sources_1/new/Comparison_Unit.v" Line 1. Module Comparison_Unit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/samil/Desktop/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.srcs/sources_1/imports/Masaüstü/SLASIC_V0/SLASIC_V0.srcs/sources_1/new/Booth_Radix4_Multiplier.v" Line 1. Module Booth_Radix4_Multiplier doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/samil/Desktop/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.srcs/sources_1/imports/Masaüstü/SLASIC_V0/SLASIC_V0.srcs/sources_1/new/Booth_Radix2_Divider.v" Line 1. Module Booth_Radix2_Divider doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/samil/Desktop/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.srcs/sources_1/imports/Masaüstü/SLASIC_V0/SLASIC_V0.srcs/sources_1/new/Extend.v" Line 1. Module Extend_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/samil/Desktop/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.srcs/sources_1/imports/Masaüstü/SLASIC_V0/SLASIC_V0.srcs/sources_1/new/Execute_Stage.v" Line 1. Module Execute_Stage_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/samil/Desktop/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.srcs/sources_1/new/Divided_Clock.v" Line 1. Module Divided_Clock doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/samil/Desktop/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.srcs/sources_1/imports/Masaüstü/SLASIC_V0/SLASIC_V0.srcs/sources_1/new/I2C_Slave.v" Line 1. Module I2C_Slave doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/samil/Desktop/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.srcs/sources_1/imports/Masaüstü/mlp1/new/MLP.v" Line 21. Module MLP doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/samil/Desktop/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.srcs/sources_1/imports/Masaüstü/mlp1/new/IEEE754_Multiplier.v" Line 22. Module IEEE754_Multiplier doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/samil/Desktop/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.srcs/sources_1/imports/Masaüstü/SLASIC_V0/SLASIC_V0.srcs/sources_1/new/Data_Memory.v" Line 1. Module Data_Memory_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/samil/Desktop/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.srcs/sources_1/imports/Masaüstü/SLASIC_V0/SLASIC_V0.srcs/sources_1/new/Hazard_Unit.v" Line 1. Module Hazard_Unit_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/samil/Desktop/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.srcs/sources_1/imports/Masaüstü/SLASIC_V0/SLASIC_V0.srcs/sources_1/new/Control_Unit.v" Line 1. Module Control_Unit_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/samil/Desktop/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.srcs/sources_1/imports/Masaüstü/SLASIC_V0/SLASIC_V0.srcs/sources_1/new/Instructrion_Memory.v" Line 1. Module Instruction_Memory_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/samil/Desktop/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.srcs/sources_1/imports/Masaüstü/SLASIC_V0/SLASIC_V0.srcs/sources_1/new/Fetch_Stage.v" Line 1. Module Fetch_Stage_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/samil/Desktop/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.srcs/sources_1/imports/Masaüstü/SLASIC_V0/SLASIC_V0.srcs/sources_1/new/Instruction_Decoder.v" Line 1. Module Instruction_Decoder_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/samil/Desktop/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.srcs/sources_1/imports/Masaüstü/SLASIC_V0/SLASIC_V0.srcs/sources_1/new/Decode_Stage.v" Line 1. Module Decode_Stage_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/samil/Desktop/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.srcs/sources_1/imports/Masaüstü/SLASIC_V0/SLASIC_V0.srcs/sources_1/new/ALU_top.v" Line 1. Module ALU_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/samil/Desktop/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.srcs/sources_1/imports/Masaüstü/SLASIC_V0/SLASIC_V0.srcs/sources_1/new/Function_Control.v" Line 1. Module Function_Control doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/samil/Desktop/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.srcs/sources_1/imports/Masaüstü/SLASIC_V0/SLASIC_V0.srcs/sources_1/new/Logic_Unit.v" Line 1. Module Logic_Unit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/samil/Desktop/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.srcs/sources_1/imports/Masaüstü/SLASIC_V0/SLASIC_V0.srcs/sources_1/new/Comparison_Unit.v" Line 1. Module Comparison_Unit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/samil/Desktop/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.srcs/sources_1/imports/Masaüstü/SLASIC_V0/SLASIC_V0.srcs/sources_1/new/Booth_Radix4_Multiplier.v" Line 1. Module Booth_Radix4_Multiplier doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/samil/Desktop/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.srcs/sources_1/imports/Masaüstü/SLASIC_V0/SLASIC_V0.srcs/sources_1/new/Booth_Radix2_Divider.v" Line 1. Module Booth_Radix2_Divider doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/samil/Desktop/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.srcs/sources_1/imports/Masaüstü/SLASIC_V0/SLASIC_V0.srcs/sources_1/new/Extend.v" Line 1. Module Extend_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/samil/Desktop/SLASIC_DEMO_REV_3/SLASIC_DEMO_REV_3.srcs/sources_1/imports/Masaüstü/SLASIC_V0/SLASIC_V0.srcs/sources_1/new/Execute_Stage.v" Line 1. Module Execute_Stage_1 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Divided_Clock
+Compiling module xil_defaultlib.bootloader
+Compiling module xil_defaultlib.decision_making_controller
+Compiling module xil_defaultlib.I2C_Slave
+Compiling module xil_defaultlib.comparasor4_2
+Compiling module xil_defaultlib.comparasor_46bit_default
+Compiling module xil_defaultlib.fulladder
+Compiling module xil_defaultlib.fulladder_46bit_default
+Compiling module xil_defaultlib.multiplier
+Compiling module xil_defaultlib.IEEE754_Multiplier
+Compiling module xil_defaultlib.MLP
+Compiling module xil_defaultlib.Register_Bias
+Compiling module xil_defaultlib.Register_Weights
+Compiling module xil_defaultlib.Register_Neurons
+Compiling module xil_defaultlib.MLP_Control
+Compiling module xil_defaultlib.comparator
+Compiling module xil_defaultlib.leading
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.Mlp_Adder
+Compiling module xil_defaultlib.MLP_TOP
+Compiling module xil_defaultlib.Neural_Network
+Compiling module xil_defaultlib.i2c_driver
+Compiling module xil_defaultlib.lcd_driver
+Compiling module xil_defaultlib.Data_Memory_1
+Compiling module xil_defaultlib.Hazard_Unit_1
+Compiling module xil_defaultlib.Control_Unit_1
+Compiling module xil_defaultlib.PC_Counter_1
+Compiling module xil_defaultlib.pc_plus_4_1
+Compiling module xil_defaultlib.Instruction_Memory_1
+Compiling module xil_defaultlib.Fetch_Stage_1
+Compiling module xil_defaultlib.Instruction_Decoder_1
+Compiling module xil_defaultlib.Register_File_1
+Compiling module xil_defaultlib.Decode_Stage_1
+Compiling module xil_defaultlib.pc_imm_adder_1
+Compiling module xil_defaultlib.Function_Control
+Compiling module xil_defaultlib.full_adder
+Compiling module xil_defaultlib.Ripple_Carry_Adder_default
+Compiling module xil_defaultlib.Logic_Unit
+Compiling module xil_defaultlib.mux
+Compiling module xil_defaultlib.Shifter_Unit
+Compiling module xil_defaultlib.Comparison_Unit
+Compiling module xil_defaultlib.Booth_Radix4_Multiplier
+Compiling module xil_defaultlib.Booth_Radix2_Divider
+Compiling module xil_defaultlib.ALU_1
+Compiling module xil_defaultlib.Extend_1
+Compiling module xil_defaultlib.Execute_Stage_1
+Compiling module xil_defaultlib.Memory_Access_Stage_1
+Compiling module xil_defaultlib.Mux_2
+Compiling module xil_defaultlib.Single_Cycle_RISCV32I
+Compiling module xil_defaultlib.Single_Cycle_RISCV32I_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Single_Cycle_RISCV32I_tb_behav
